@@ -1,0 +1,12 @@
+html, body{
+    color: rgb(238, 43, 76);
+    background: #ffffff;
+    width: 80%; margin: 0 auto;
+    }
+#Experience {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul.none {
+    list-style-type: none;
+}

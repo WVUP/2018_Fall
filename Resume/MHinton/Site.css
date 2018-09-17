@@ -1,0 +1,7 @@
+html, body {
+    background: lightgoldenrodyellow;
+}
+
+html, li {
+    list-style-type: square;
+}
