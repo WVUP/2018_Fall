@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Layouts</title>
+
+    <style>
+        html, body { margin:0; padding:0; }
+        * { box-sizing: border-box; }
+
+        /* td { border: 1px solid lime} */
+
+        tbody tr:nth-child(odd) { background: ghostwhite; }
+    </style>
+</head>
+<body>
+
+    <div style="background: blue; color:white;">
+        <h3>Header</h3>
+    </div>
+
+    <div style="background: silver">
+
+        <div style="background: purple; width: 49%; display: inline-block;">
+            left pane
+        </div>
+
+        <div style="background: red; width: 50%; display: inline-block;">
+            right pane
+        </div>
+    </div>
+
+    <div style="background: silver; margin-top:50px;">
+
+        <div style="background: purple; width: 33%; display: inline-block;">
+            1
+        </div>
+
+        <div style="background: red; width: 33%; display: inline-block;">
+            2
+        </div>
+
+        <div style="background: yellow; width: 33%; display: inline-block;">
+            3
+        </div>
+    </div>
+
+    <table style="width:100%;">
+        <caption>This is my table</caption>
+        <thead>
+            <tr>
+                <th>Header1</th>
+                <th>Header2</th>
+                <th>Header3</th>
+                <th>Header4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Option 1</td>
+                <td>Option 2</td>
+                <td>Option 3</td>
+                <td>Option 4</td>
+            </tr>
+            <tr>
+                <td>Option 1</td>
+                <td>Option 2</td>
+                <td>Option 3</td>
+                <td>Option 4</td>
+            </tr>
+            <tr>
+                <td>Option 1</td>
+                <td>Option 2</td>
+                <td>Option 3</td>
+                <td>Option 4</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
