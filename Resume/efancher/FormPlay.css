@@ -1,0 +1,20 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    background: silver; 
+    color: rgb(4, 4, 63);
+}
+div.header {
+    background: rgb(4, 4, 63);
+    color: silver;
+    display: inline-block;
+}
+div.style {
+    margin-top: 50px;
+    display: inline-block; 
+    background: palevioletred;
+}
+textarea.message {
+    width: 50%;
+    height: 200px;
+}
