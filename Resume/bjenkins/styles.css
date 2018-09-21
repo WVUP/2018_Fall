@@ -1,10 +1,14 @@
 body {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: "Sans Serif", Serif;
 	font-weight: 300;
 	background-color: #f9f9f7;
 	color: #444;
 	hyphens: auto;
+}
+
+p {
+	font-family: "Monospace", Times;
 }
 
 header {
@@ -28,7 +32,7 @@ footer {
 
 #title h1 {
 	font-weight: 400;
-	font-size: 20pt;
+	font-size: 22pt;
 	line-height: 1.5;
 	color: #42a7f4;
 }
@@ -40,7 +44,7 @@ h3 {
 
 h4 {
 	margin-left: 120px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 h5 {
