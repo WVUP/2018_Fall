@@ -7,124 +7,168 @@
     <link rel="stylesheet" href="FormPlay.css"/>
 </head>
 <style>
-    td {width:10%; border: 1px solid block; box-sizing: border-box; center;}
-    th {width:10%; border:2px solid block; box-sizing: border-box;}
+    a {
+        text-decoration: none;
+        color:silver;
+    }
+    a:visited {
+        color:gray;
+    }
+    a.blue {
+        text-decoration: none;
+        color: rgb(5, 5, 54);
+    }
+
 </style>
-<body>
-    <h3>Class Signup</h3>
-    <div id="header">
-        <table>
-            <caption>Class Offerings</caption>
-            <tr>
-                <th>Classes</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
-            <tr>
-                <th>Ballet</th>
-                <td>3:0PM, 7:00PM</td>
-                <td>12:00PM, 3:00PM</td>
-                <td>-</td>
-                <td>12:00PM, 7:00PM</td>
-                <td>9:00AM, 1:45PM</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <th>Tap</th>
-                <td>-</td>
-                <td>9:00AM, 1:45PM</td>
-                <td>3:00PM, 5:30PM</td>
-                <td>10:45AM, 3:00PM</td>
-                <td>-</td>
-                <td>9:00AM, 1:45PM</td>
-            </tr>
-
-            <tr>
-                <th>Hip Hop</th>
-                <td>5:30PM</td>
-                <td>-</td>
-                <td>5:30PM</td>
-                <td>3:00PM, 7:00PM</td>
-                <td>-</td>
-                <td>5:30PM, 7:00PM</td>
-            </tr>
-
-            <tr>
-                <th>Contemporary</th>
-                <td>9:00AM, 12:00 PM</td>
-                <td>10:45PM</td>
-                <td>10:45AM, 1:45PM</td>
-                <td>-</td>
-                <td>9:00AM, 12:00PM</td>
-                <td>-</td>
-            </tr>
-
-            <tr>
-                <th>Jazz</th>
-                <td>12:00PM, 3:00PM</td>
-                <td>1:45PM,7:00PM</td>
-                <td>9:00AM, 12:00PM</td>
-                <td>-</td>
-                <td>3:00PM, 7:00PM</td>
-                <td>-</td>
-            </tr>
-
-            <tr>
-                <th>Ballroom</th>
-                <td>-</td>
-                <td>5:30PM, 7:00PM</td>
-                <td>12:00PM, 7:00PM</td>
-                <td>1:45PM, 5:30PM</td>
-                <td>-</td>
-                <td>9:00AM, 12:00PM</td>
-            </tr>
-
-                
-                
-        </table>
+<body link="">
+    <div style="display: inline-block; width: 7.7%; padding: 0 auto; margin: 0 auto;">
+            <img title="Logo" src="logo.jpg" alt="logo" style="width:110px; height: 85px;">
     </div>
-    <div id="style">
-        Test
+    <div id="header" style="font-size: 30px; vertical-align: 20px; text-indent: 1em;">
+        <p style="font-family: jokerman;">Fancher's Dance School of Imagination</p>
     </div>
-    <div id="style">
-        Test
+    <div id="header" style="font-size: 17px; text-align: right; position: absolute;">
+        <br>
+        <p style="font-family: -webkit-body;"><a href="www.fancherdance.com/home">Home</a> | <a href="www.fancherdance.com/classes">Classes</a> | <a href="www.fancherdance.com/signup">Class Signup</a> | <a href= "www.fancherdance.com/mission">Our Mission</a> | <a href="www.fancherdance.com/contact">Contact Us</a> | <a href="www.fancherdance.com/search">Search</a> |</p>
     </div>
-    <form>
-        <label for="username">Name</label>
-        <input type="text" id="username" placeholder="FirstName LastName">
+    <p class="SignupForm">
             <br>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="example@email.com">
+        <h2>Class Signup</h2>
+        <br>
+        <form>
+            <label for="username">Name:</label>
+            <input type="text" id="username" placeholder="FirstName LastName">
+                <br>
+                <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="example@email.com">
+                <br>
+                <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone number" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="phone">
+                <br>
+                <br>
+            <label for="contact">Best way to contact:</label>
+            <select name="" id="">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+            </select>
+                <br>
+                <br>
+            <label for="style">Dance Style:</label>
+            <input type="radio" name="dancestyle" value="Ballet">Ballet
+            <input type="radio" name="dancestyle" value="Tap">Tap
+            <input type="radio" name="dancestyle" value="Hip Hop">Hip Hop
+            <input type="radio" name="dancestyle" value="Contemporary">Contemporary
+            <input type="radio" name="dancestyle" value="Jazz">Jazz
+            <input type="radio" name="dancestyle" value="Ballroom">Ballroom
             <br>
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone number" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="phone">
             <br>
-        <label for="contact">Best way to contact</label>
-        <select name="" id="">
-            <option value="phone">Phone</option>
-            <option value="email">Email</option>
-        </select>
+            <label for="date">Class Date:</label>
+            <input type="date" placeholder="MM/DD/YYYY">
+                <br>
+                <br>
+            <label for="time">Class Time:</label>
+            <input type="radio" name="classtime" value="9:00">9:00 AM
+            <input type="radio" name="classtime" value="10:45">10:45 AM
+            <input type="radio" name="classtime" value="12:00">12:00 PM
+            <input type="radio" name="classtime" value="1:45">1:45 PM
+            <input type="radio" name="classtime" value="3:00">3:00 PM
+            <input type="radio" name="classtime" value="5:30">5:30 PM
+            <input type="radio" name="classtime" value="7:00">7:00 PM
+                <br>
+                <br>
+            <label for="message">Message for instructor:</label>
+            <textarea name="message" class="message" placeholder="Please enter any information you wish to be passed on to your instructor"></textarea>
+                <br>
+                <br>
+                <br>
+                <input type="submit" id="submit">
+                <br>
+        </form>
+    </p>
+
+    <div>
+            <table>
+                <caption><h2>Class Offerings</h2></caption>
+                <br>
+                <tr>
+                    <th>Classes</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>Ballet</th>
+                    <td>3:00PM, 7:00PM</td>
+                    <td>12:00PM, 3:00PM</td>
+                    <td>-</td>
+                    <td>12:00PM, 7:00PM</td>
+                    <td>9:00AM, 1:45PM</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Tap</th>
+                    <td>-</td>
+                    <td>9:00AM, 1:45PM</td>
+                    <td>3:00PM, 5:30PM</td>
+                    <td>10:45AM, 3:00PM</td>
+                    <td>-</td>
+                    <td>9:00AM, 1:45PM</td>
+                </tr>
+    
+                <tr>
+                    <th>Hip Hop</th>
+                    <td>5:30PM</td>
+                    <td>-</td>
+                    <td>5:30PM</td>
+                    <td>3:00PM, 7:00PM</td>
+                    <td>-</td>
+                    <td>5:30PM, 7:00PM</td>
+                </tr>
+    
+                <tr>
+                    <th>Contemporary</th>
+                    <td>9:00AM, 12:00 PM</td>
+                    <td>10:45PM</td>
+                    <td>10:45AM, 1:45PM</td>
+                    <td>-</td>
+                    <td>9:00AM, 12:00PM</td>
+                    <td>-</td>
+                </tr>
+    
+                <tr>
+                    <th>Jazz</th>
+                    <td>12:00PM, 3:00PM</td>
+                    <td>1:45PM,7:00PM</td>
+                    <td>9:00AM, 12:00PM</td>
+                    <td>-</td>
+                    <td>3:00PM, 7:00PM</td>
+                    <td>-</td>
+                </tr>
+    
+                <tr>
+                    <th>Ballroom</th>
+                    <td>-</td>
+                    <td>5:30PM, 7:00PM</td>
+                    <td>12:00PM, 7:00PM</td>
+                    <td>1:45PM, 5:30PM</td>
+                    <td>-</td>
+                    <td>9:00AM, 12:00PM</td>
+                </tr>     
+            </table>
             <br>
-        <label for="date">Class Date</label>
-        <input type="date" placeholder="MM/DD/YYYY">
-            <br>
-        <label for="time">Class Time</label>
-        <input type="radio" name="makechanges" value="9:00">9:00 AM
-        <input type="radio" name="makechanges" value="10:45">10:45 AM
-        <input type="radio" name="makechanges" value="12:00">12:00 PM
-        <input type="radio" name="makechanges" value="1:45">1:45 PM
-        <input type="radio" name="makechanges" value="3:00">3:00 PM
-        <input type="radio" name="makechanges" value="5:30">5:30 PM
-        <input type="radio" name="makechanges" value="7:00">7:00 PM
-            <br>
-        <label for="message">Message for instructor</label>
-        <textarea name="message" id="message" placeholder="Please enter any information you wish to be passed on to your instructor"></textarea>
-            <br>
-        <input type="submit" id="submit">
-    </form>
+        <center>*Please see "Classes" page for more details on classes such as required materials, experience level and cost*</center>
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div style="position:fixed; bottom:15px; right:15px; background: rgba(192, 192, 192, 0.26)">
+        <a class="blue" href="#top">Back to Top</a>
+    </div>
 </body>
 </html>
