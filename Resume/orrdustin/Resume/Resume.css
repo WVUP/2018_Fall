@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray; font-family: 'Courier New';
+}
+h1,h5{text-align:center;
+}
+h4{
+    text-align:left;
+}
+table{
+    width: 100%; text-align: center;
+}
+div{
+    text-align: center; 
+}
+section{
+    padding: 10px;
+}
+columns{
+    border:solid 100px black;
+}
+li.Ranger{
+    background: url('https://amp.businessinsider.com/images/55d4e280bd86ef11008b45ac-480-549.png')no-repeat left top; 
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 3px;
+}

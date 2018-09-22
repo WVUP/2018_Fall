@@ -1,0 +1,22 @@
+label{
+    float: left;
+    padding-right: 0.5em;
+    text-align: right;
+    width: 8em;
+}
+input, select, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+label{
+    display: block;
+}
+form ul{
+    list-style-type: none;
+}
+form li{
+    list-style-type: none;
+}
+.damage{
+    display: inline-block;
+}
