@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        .row {
+            display: flex;
+        }
+    
+       
+        .column {
+            flex: 50%;
+            padding: 10px;
+            height: 200px;
+        
+        }
+    </style>
+</head>
+<body>
+   
+   
+    <h3>Butt Hurt Report</h3>
+
+    <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <br>
+
+        <label for="Email">Email</label>
+        <input type="email" id="email" placeholder="Enter email address">
+        
+        <br>
+
+        <label for="Date of Hurtfullness">Date of Hurtfullness</label>
+        <input type="date"</label>
+        <label for="Time">Time:</label>
+        <input type="time">
+
+        <br>
+
+        <label for="What caused the butthurt">What caused the butthurt</label>
+        <input type="radio" name="makeChanges" value="Someone posted it"> Someone posted it
+        <input type="radio" name="makeChanges" value="Offensive picture on the Internet">Offensive picture on the Internet
+        
+        <br>
+
+        <label for="Was a tissue needed for the tears">Was a tissue needed for the tears</label>
+        <select name="" id="">
+            <option value="Select one">Select one</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        
+        <br>
+
+        <label for="Will you be able to move past it">Will you be able to move past it</label>
+            <select name="" id="">
+                <option value="Select one">Select one</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+        <br>
+            
+            <div class="row">
+                <div class="column" style="background-color:gold;">
+                    <h2><label for="Reason for filing the Report">Reason for filing the Report</label><br></h2>
+                    <p><input type="checkbox" name="Reason" value="I am an idiot">I am an idiot<br>
+                       <input type="checkbox" name="Reason" value="I am a crybaby">I am a crybaby<br>
+                       <input type="checkbox" name="Reason" value="I am thin-skinned">I am thin-skinned<br>
+                       <input type="checkbox" name="Reason" value="I am a little bitch">I am a little bitch<br>
+                       <input type="checkbox" name="Reason" value="I want my mommy!">I want my mommy!<br>
+                       <input type="checkbox" name="Reason" value="I felt picked on   ">I felt picked on<br>
+                    </p>
+                </div>
+                <div class="column" style="background-color:blue;">
+                    <h2>(Select all that apply)</h2>
+                    <p><input type="checkbox" name="Reason" value="I'm better than everyone else">I'm better than everyone else<br>
+                        <input type="checkbox" name="Reason" value="I'm a prude">I'm a prude<br>
+                        <input type="checkbox" name="Reason" value="It wasn't my joke">It wasn't my joke<br>
+                        <input type="checkbox" name="Reason" value="No one liked my selfie today">No one liked my selfie today<br>
+                        <input type="checkbox" name="Reason" value="Life just isn't fair">Life just isn't fair <br>
+                        <input type="checkbox" name="Reason" value="Other (please explain below)">Other (please explain below)<br>
+                </p>
+                </div>
+            </div>
+       
+        <label for="">Additional whining(We will get back to you when we stop laughing)</label><br>
+            <textarea name="" id="" style="width: 75%; height: 350ppx";></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit"> <br>
+        
+
+    </form>
+
+</body>
+</html>
