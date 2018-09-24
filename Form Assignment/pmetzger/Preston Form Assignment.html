@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT Ticket</title>
+
+    <style>
+        body {background: rgba(0, 162, 255, 0.7);} 
+        label {font-size: 18px}
+        table {margin-left: auto; margin-right: auto}
+        th, td {border: 1px solid black;}
+
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align:center;">IT Ticket</h1>
+
+
+    <form>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Preston Metzger" required pattern="[A-Za-z]{3}"  title="Three letter country code" style="width: 350px;">
+
+        <br>
+        <label for="password">Password</label>
+        <input type="password" style="width: 350px;">
+
+        <br>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" placeholder="pmetzger@wvup.edu" style="width: 350px;">
+
+        <br>
+        
+        <p>
+            &emsp;
+        </p>
+
+        <br>
+
+        <label for="">Computer Issue</label>
+        <select name="" id="">
+            <option value="Password Reset">Password Reset</option>
+            <option value="Blackboard Issues">BlackBoard Issues</option>
+            <option value="Try turning it on">Computer won't start</option>
+            <option value="Network Issues">Network Issues</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br>
+
+
+        <label for="">Department</label>
+        <input type="radio" name="makeChanges" value="HR"> Human Resources
+        <input type="radio" name="makeChanges" value="IT"> Information Technology
+        <input type="radio" name="makeChanges" value="MG"> Management
+
+
+        <br>
+        <label for="">Date</label>
+        <input type="date">
+
+        <br>
+
+        <!-- <label for="">My complaints</label> <br>
+        <textarea name="" id="" style="width: 100%; height: 200px;">
+
+        </textarea>
+
+        <br> -->
+
+        <input type="submit" value="Submit">
+
+        <!-- <audio src="" controls>
+            <source src="/audio.mp3" type="audio/mp3"></source>
+            <source src="/audio.ogg" type="audio/ogg"></source>
+        </audio> -->
+
+    </form>
+
+    <table style="width:50%;">
+        <caption><h3>Common Computer Issues</h3></caption>
+        <thead>
+            <tr>
+                <th>Networking</th>
+                <th>Hardware</th>
+                <th>Applications</th>
+                <th>Virus</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Make sure Wifi is connected</td>
+                <td>Did you try turning it on?</td>
+                <td>Try closing out with Task Manager</td>
+                <td>Download Antivirus</td>
+            </tr>
+            <tr>
+                <td>Connect To Ethernet cable </td>
+                <td>Did you try plugging it in?</td>
+                <td>Try downloading from direct website</td>
+                <td>Do a virus scan</td>
+            </tr>
+            <tr>
+                <td>Check to see if Airplane mode is on</td>
+                <td>Did you try turning on the monitor?</td>
+                <td>To uninstall, go to settings, applications, uninstall</td>
+                <td>If unable, download Bootable Antivirus</td>
+            </tr>
+            <tr>
+                <td>Make sure wifi antenna has device manager installed</td>
+                <td>Check to see if RAM is unseated</td>
+                <td>If application is running on startup: Task manager, disable startup</td>
+                <td>Try running in Safe Mode</td>
+            </tr>
+            <tr>
+                <td>Make sure your Wifi is not out of distance</td>
+                <td>Check for lose connection</td>
+                <td>Corrupt Application: Delete, download again</td>
+                <td>If still bad, get Professional help</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <center><img src="IT_Issue.png" class="centerImage"
+    width="500" height="500"/>
+    </center>
+
+
+  
+
+    <!-- Example of implementing a class to .clearfix { clear:both }
+    this will clear floats and allow box modeling as usual -->
+    <span class="clearfix"></span>
+</body>
+</html>
