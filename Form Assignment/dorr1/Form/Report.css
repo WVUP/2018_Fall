@@ -1,15 +1,8 @@
-label{
-    float: left;
-    padding-right: 0.5em;
-    text-align: right;
-    width: 8em;
-}
-input, select, textarea{
-    display: block;
-    margin-bottom: 1em;
-}
-label{
-    display: block;
+body{
+    font-family: fantasy;
+    color: white;
+    font-size: 14pt;
+    
 }
 form ul{
     list-style-type: none;
@@ -18,5 +11,22 @@ form li{
     list-style-type: none;
 }
 .damage{
+    display: inline-block;
+}
+label{
+    padding-right: 0.5em;
+    text-align: right;
+    width: 8em;
+    display: inline-block;
+    
+}
+div{
+    margin-bottom: 1em;
+    font-size: 18pt;
+}
+input, select, textarea{
+    margin-bottom: 1em;
+    background-color: lightgrey;
+    text-align: left;
     display: inline-block;
 }

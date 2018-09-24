@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="Report.css">
     <title>One-2-One Incident Report</title>
 </head>
-<body>
-<p>Student Device Incident Report</p>    
-<p>Please FILL in all blanks</p>
-<p>Make sure to provide as much detail as possible</p>
-    <div>*Student Information*</div>
+<body background="chalk.jpg" >
+<p><h1>Student Device Incident Report</h1></p>    
+<p><h1>Please FILL in all blanks</h1></p>
+<p><h1>Make sure to provide as much detail as possible</h1></p>
     <form>
+        <label for="date">Date of Incident:</label>
+        <input type="date" placeholder="01/01/2018" name="date" id="date">
+    <div>*Student Information*</div>
         <label for="FirstName">First Name:</label>
         <input type="text" name="FirstName" id="FirstName">
-
+        <br>
         <label for="LastName">Last Name:</label>
         <input type="text" name="LastName" id="FirstName">
-
+        <br>
         <label for="StudentID">Student ID#</label>
         <input type="text" name="StudentID" id="StudentID">
-
+        <br>
         <label for="SchoolLocation">School Location:</label>
         <select name="SchoolLocation" id="SchoolLocation">
             <option value="RCHS">RCHS</option>
@@ -29,6 +31,8 @@
             <option value="GEMS">GEMS</option>
             <option value="SES">SES</option>
         </select>
+        <br>
+    <div>*Device Information*</div>
         <label for="AssetTag">Asset Tag#</label>
         <input type="text" name="AssetTag" id="AssetTag">
         <ul>
@@ -36,17 +40,18 @@
             <li><input type = "checkbox" name="BS" id="BS" value="BS" class="damage">Broken Screen</li>
             <li><input type = "checkbox" name="MK" id="MK" value="MK" class="damage">Missing Key</li>
             <p>Can the device power on?</p>
-            <li><input type = "checkbox" name="power" id="power" value="power" class="damage">Yes</li>
-            <li><input type = "checkbox" name="power" id="power" value="power" class="damage">No</li>
+            <li><input type = "radio" name="power" id="power" value="power" class="damage">Yes</li>
+            <li><input type = "radio" name="power" id="power" value="power" class="damage">No</li>
 
         </ul>
         <p>Please describe the incident in as much detail as possible</p>
-        <label for="Details"></label>
         <textarea  id="Details" name="Details" rows="10" cols="100"></textarea>
         <p>Please upload supporting material</p>
-        <input type="file" name="pic" accept="image/*">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="file" name="pic" id="pic" accept="image/*">
+        <br>
+        <input type="reset" value="Start Over">
+        <br>
+        <input type="submit" value="submit">
 
         </form>
 </body>
