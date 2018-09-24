@@ -14,27 +14,61 @@
 		<h1>Easy Test</h1>
 	</header>
 	<hr>
-		<h3>Question 1</h3>
-		<p>Which object is a square?</p>
-			<form>
-				<input type="radio" name="object" value="circle" checked> <img src="images/circle.png" alt="Circle"/><br>
+	<form>
+	<div class="clearfix">
+		<div class="box">
+			<h3>Question 1</h3>
+			<p>Which object is a square?</p>
+				<input type="radio" name="object" value="circle"> <img src="images/circle.png" alt="Circle"/><br>
 				<input type="radio" name="object" value="square"> <img src="images/square.png" alt="Square"/><br>
 				<input type="radio" name="object" value="triangle"> <img src="images/triangle.png" alt="Triangle"/>
-			</form>
+		</div>
+		<div class="box">
+			<h3>Question 2</h3>
+			<p>What is today's date?</p>
+				<input type="date" required>
+		</div>
+	</div>
+	<input type="submit" value="Submit" style="margin-left: 5%; margin-bottom: 2.5%;">
+	</form>
 	<hr>
-		<h3>Question 2</h3>
+	<form>
+	<div class="clearfix">
+		<div class="box">
+			<h3>Question 3</h3>
 			<p>What is the answer to 2 + 2?</p>
-			<form>
-				<input type="radio" name="number" value="four" checked> 4 <br>
+				<input type="radio" name="number" value="four"> 4 <br>
 				<input type="radio" name="number" value="eight"> 8 <br>
 				<input type="radio" name="number" value="twelve"> 12
-			</form>
+		</div>
+		<div class="box">
+			<h3>Question 4</h3>
+			<p>What is your email?</p>
+			<input type="Email" id="Email" placeholder="example@example.com" style="width: 300px;" required>
+		</div>
+	</div>
+	<input type="submit" value="Submit" style="margin-left: 5%; margin-bottom: 2.5%;">
+	</form>
 	<hr>
-		<h3>Question 3</h3>
+	<form>
+	<div class="clearfix">
+		<div class="box">
+			<h3>Question 5</h3>
 			<p>Type a short sentence, about anything.</p>
-			<form>
-				<textarea rows="7" cols="70" placeholder="Type here..." required></textarea><br>
-				<input type="submit" value="Submit">
-			</form>
+				<textarea rows="5" cols="50" placeholder="Type here..." required></textarea><br>
+		</div>
+		<div class="box">
+			<h3>Question 6</h3>
+			<p>What color are the objects in Question 1?</p>
+				<select name="" id="">
+					<option value="black">Black</option>
+					<option value="red">Red</option>
+					<option value="blue">Blue</option>
+					<option value="orange">Orange</option>
+				</select>
+		</div>
+	</div>
+	<input type="submit" value="Submit" style="margin-left: 5%; margin-bottom: 2.5%;">
+	</form>
 </body>
 </html>

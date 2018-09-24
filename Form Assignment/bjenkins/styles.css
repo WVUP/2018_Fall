@@ -7,6 +7,10 @@ body {
 	hyphens: auto;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 header {
 	text-transform: uppercase;
 	margin-left: 2%;
@@ -24,14 +28,24 @@ hr {
 	border-style: solid;
 }
 
-form {
-	margin-top: 1%;
-	margin-left: 2%;
-	margin-bottom: 2%;
+.box {
+	float: left;
+	width: 49%;
+	padding: 50px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 p {
 	margin-left: 2%;
+}
+
+h1 {
+	text-align: center;
 }
 
 h3 {
