@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html lang="en-US">
+<head>
+	<title>Form Assignment</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="form assignment CS129">
+	<meta name="author" content="bjenkins">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body lang="en-US">
+	<header>
+		<h1>Easy Test</h1>
+	</header>
+	<hr>
+		<h3>Question 1</h3>
+		<p>Which object is a square?</p>
+			<form>
+				<input type="radio" name="object" value="circle" checked> <img src="images/circle.png" alt="Circle"/><br>
+				<input type="radio" name="object" value="square"> <img src="images/square.png" alt="Square"/><br>
+				<input type="radio" name="object" value="triangle"> <img src="images/triangle.png" alt="Triangle"/>
+			</form>
+	<hr>
+		<h3>Question 2</h3>
+			<p>What is the answer to 2 + 2?</p>
+			<form>
+				<input type="radio" name="number" value="four" checked> 4 <br>
+				<input type="radio" name="number" value="eight"> 8 <br>
+				<input type="radio" name="number" value="twelve"> 12
+			</form>
+	<hr>
+		<h3>Question 3</h3>
+			<p>Type a short sentence, about anything.</p>
+			<form>
+				<textarea rows="7" cols="70" placeholder="Type here..." required></textarea><br>
+				<input type="submit" value="Submit">
+			</form>
+</body>
+</html>
