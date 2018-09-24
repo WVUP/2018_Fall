@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-weight: 300;
+	background-color: #f9f9f7;
+	color: #444;
+	hyphens: auto;
+}
+
+header {
+	text-transform: uppercase;
+	margin-left: 2%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+hr { 
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-width: 3px;
+	border-style: solid;
+}
+
+form {
+	margin-top: 1%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+p {
+	margin-left: 2%;
+}
+
+h3 {
+	margin-left: 2.5%;
+}

@@ -1,12 +1,36 @@
 html, body{
-    color: rgb(238, 43, 76);
-    background: #ffffff;
+    background: #13043a;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 80%; margin: 0 auto;
     }
-#Experience {
-    color: green;
-    font-family: Arial, Helvetica, sans-serif;
+#Sections {
+    color: rgb(168, 168, 168);
 }
 ul.none {
     list-style-type: none;
+}
+span.header-title{
+    color:antiquewhite;
+    font-size: 50px;
+}
+p.header-body{
+    color:rgb(168, 168, 168);
+    font-size: 13px;
+}
+p.section-header{
+    color:antiquewhite;
+    font-size: 25px;   
+}
+ul.skills-list{
+    font-size: 17px;
+    margin-left: 1em;
+}
+li.header{
+    font-size: 20px;
+}
+li.body{
+    font-size: 17px;
+    list-style-type: none;
+    margin-left: 1em;
 }
