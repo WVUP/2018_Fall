@@ -5,7 +5,7 @@ Instructor: Aaron Freeland
 
 **Class Prerequisite**: Have a passion to learn a great skill set
 
-**Required Materials**: WVUP recommended materials.
+**Required Materials**: WVUP recommended materials (*Web Design with HTML5 & CSS3*).
 
 **Course Topics**: HTML, CSS, and JS
 
