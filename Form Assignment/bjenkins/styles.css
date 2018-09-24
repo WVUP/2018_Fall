@@ -51,3 +51,19 @@ h1 {
 h3 {
 	margin-left: 2.5%;
 }
+
+table {
+	font-family: arial;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	border: 2px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
