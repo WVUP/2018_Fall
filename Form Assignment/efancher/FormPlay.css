@@ -1,20 +1,12 @@
 html, body {
-    margin: 0 auto; 
-    padding: 0 auto;
+    margin: 0; 
+    padding: 0;
     background: silver; 
     color: rgb(4, 4, 63);
     font-family: -webkit-body;
     font-size: 17px;
 }
-#header{
-    background:rgb(2, 2, 59);
-    color:silver;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0 auto;
-    width: 46%;
-    height: 85px;
-}
+
 td, th, tr { 
     align-self: center;
     width:10%;
@@ -25,6 +17,12 @@ td, th, tr {
     font-size: 19px;
 }
 p.SignupForm{
+    text-indent: 1em;
+}
+p.Classes{
+    text-indent: 1em;
+}
+p.Home{
     text-indent: 1em;
 }
 textarea.message {

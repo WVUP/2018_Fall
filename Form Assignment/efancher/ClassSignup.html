@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dance Class Signup</title>
     <link rel="stylesheet" href="FormPlay.css"/>
+    
 </head>
 <style>
     a {
@@ -18,19 +19,25 @@
         text-decoration: none;
         color: rgb(5, 5, 54);
     }
-
 </style>
-<body link="">
-    <div style="display: inline-block; width: 7.7%; padding: 0 auto; margin: 0 auto;">
-            <img title="Logo" src="logo.jpg" alt="logo" style="width:110px; height: 85px;">
+
+<div style="margin: 0; padding: 0;"">
+    <div style="display: inline-block; background:rgb(2, 2, 59); color:silver; width: 7.7%">
+        <img title="Logo" src="logo.jpg" alt="logo" style="width:110px; height: 85px;">
     </div>
-    <div id="header" style="font-size: 30px; vertical-align: 20px; text-indent: 1em;">
-        <p style="font-family: jokerman;">Fancher's Dance School of Imagination</p>
+
+    <div style="height: 85px; display: inline-block; background:rgb(2, 2, 59); color:silver; font-size: 30px; width: 46%; vertical-align: 20px; text-align:center; font-family: jokerman;">
+        <p>Fancher's Dance School of Imagination</p>
     </div>
-    <div id="header" style="font-size: 17px; text-align: right; position: absolute;">
+
+    <div style="height: 85px; display: inline-block; background:rgb(2, 2, 59); color:silver; font-size: 17px; text-align: right; width: 46%; position: absolute; font-family: -webkit-body;">
         <br>
-        <p style="font-family: -webkit-body;"><a href="www.fancherdance.com/home">Home</a> | <a href="www.fancherdance.com/classes">Classes</a> | <a href="www.fancherdance.com/signup">Class Signup</a> | <a href= "www.fancherdance.com/mission">Our Mission</a> | <a href="www.fancherdance.com/contact">Contact Us</a> | <a href="www.fancherdance.com/search">Search</a> |</p>
+        <p><a href="Home.html">Home</a> | <a href="Classes.html">Classes</a> | <a href="ClassSignup.html">Class Signup</a> | <a href= "www.fancherdance.com/mission">Our Mission</a> | <a href="www.fancherdance.com/contact">Contact Us</a> | <a href="www.fancherdance.com/search">Search</a> |</p>
     </div>
+</div>
+
+<body class="body">
+    
     <p class="SignupForm">
             <br>
         <h2>Class Signup</h2>
@@ -83,7 +90,7 @@
                 <br>
                 <br>
                 <br>
-                <input type="submit" id="submit">
+                <input type="submit" id="submit" onclick="tyAlert () ">
                 <br>
         </form>
     </p>
@@ -161,7 +168,7 @@
                 </tr>     
             </table>
             <br>
-        <center>*Please see "Classes" page for more details on classes such as required materials, experience level and cost*</center>
+        <center>*Please see <button onclick="classes()">Classes</button> page for more details on classes such as required materials, experience level and cost*</center>
     </div>
         <br>
         <br>
@@ -170,5 +177,13 @@
     <div style="position:fixed; bottom:15px; right:15px; background: rgba(192, 192, 192, 0.26)">
         <a class="blue" href="#top">Back to Top</a>
     </div>
+
+    <script>
+        setTimeout(function delay(){
+        alert("Receive next class FREE when you sign up today!")}, 2000);
+    </script>
+
+    <script src="FormPlay.js"></script>
+
 </body>
 </html>
