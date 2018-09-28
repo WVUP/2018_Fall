@@ -1,5 +1,4 @@
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,8 +9,19 @@
         label {font-size: 18px}
         table {margin-left: auto; margin-right: auto}
         th, td {border: 1px solid black;}
-
     </style>
+
+<script>
+
+    window.writeValues = function(form) {
+    var Name = form.Name.value;
+    var Email = form.Email.value;
+    var Date1 = form.Date1.value;
+    var Movies = form.Movies.value;
+  
+    document.getElementById('results').innerHTML = Name + '<br/>' + Email + '<br/>' + Date1 + '<br/>'+ Movies;
+    }
+  </script>
 
 </head>
 <body>
@@ -21,22 +31,22 @@
     <form>
 
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Gordon Ellison"><br>
+        <input type="text" id="Name" name="Name" placeholder="Gordon Ellison"><br>
 
         <br>
 
         <label for="Email">Email</label>
-        <input type="email" id="Email" placeholder="gellison@wvup.edu" style="width: 350px;"><br>
+        <input type="email" id="Email" name="Email" placeholder="gellison@wvup.edu" style="width: 350px;"><br>
 
         <br>
         
-        <label for="">Date of Birth</label>
-        <input type="date"><br>
+        <label for="DoB">Date of Birth</label>
+        <input type="date" id="Date1" name="Date1"><br>
 
         <br>
 
-        <label for="">Select Favorite Horror Movie</label>
-        <select name="" id="">
+        <label for="Horror">Select Favorite Horror Movie</label>
+        <select name="movies" id="Movies">
             <option value="Alien">Alien</option>
             <option value="Psycho">Psycho (1960)</option>
             <option value="The Shining">The Shining</option>
@@ -49,25 +59,25 @@
 
         <h3>Communication Prefrences</h3>
 
-        <label for="">Would you like to receive general marketing communications?</label><br>
+        <label for="Communications">Would you like to receive general marketing communications?</label><br>
         <input type="radio" name="makeChanges" value="Yes"> Yes
         <input type="radio" name="makeChanges" value="No"> No<br>
 
         <br>
 
-        <label for="">Would you like to subscribe to our monthly newsletter?</label><br>
+        <label for="Newsletter">Would you like to subscribe to our monthly newsletter?</label><br>
         <input type="radio" name="makeChanges2" value="Yes"> Yes
         <input type="radio" name="makeChanges2" value="No"> No<br>
 
         <br>
 
-        <label for="">Would you like to receive third party communications regarding promotions?</label><br>
+        <label for="Promotions">Would you like to receive third party communications regarding promotions?</label><br>
         <input type="radio" name="makeChanges3" value="Yes"> Yes
         <input type="radio" name="makeChanges3" value="No"> No<br>
 
         <br>
         
-        <input type="submit" value="Submit">
+        <button type="submit" value="Submit" onclick="writeValues(form); return false;">Submit</button>
 
     </form>
 
@@ -121,6 +131,7 @@
             </tbody>
         </table>
 
-    </body>
+    <h3><u>Your Selctions:</u></h3>
+    <span id="results"></span><br>
 
-</html>
+</body></html>
