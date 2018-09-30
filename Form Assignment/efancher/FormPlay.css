@@ -21,9 +21,9 @@ td, th, tr {
     width:10%;
     border: 2px; 
     border-color: rgb(4, 4, 48);
-    box-sizing: border-box; 
     text-align: center;
     font-size: 19px;
+    background: rgb(216, 216, 216);
 }
 div.SignupForm{
     margin: 0 405px;
@@ -35,4 +35,13 @@ p.Home{
 textarea.message {
     width: 50%;
     height: 100px;
+}
+div.btn
+{
+    background: rgb(231, 231, 231);
+    color: rgb(4, 4, 63);
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 19px;
 }
