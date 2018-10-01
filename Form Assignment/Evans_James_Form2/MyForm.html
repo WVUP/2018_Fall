@@ -1,0 +1,103 @@
+<html>
+
+    <head>
+
+    <title> Make a request </title>
+
+    </head>
+    <body style = "background-color: rgb(254, 255, 187);">
+    
+
+
+
+    <div class = "banner"><p class = "mainHeading"><b> Employee Time Clock</b></p>
+        
+    <p class = "mainSubHeading"> Request for Leave  -  Requests must be made 30 days in advance</p></div>
+    <p class = "subHeading"><b>Please provide as much information as possible so we can process your request as soon as possible</b></p>
+    <hr>
+    
+    <div class = "body">
+
+    <p>* indicates required field</p>
+    <br>
+
+    <form name = "myForm" id = "myForm">
+        <label for = "firstName"><b>First Name*: </b></label>
+        <input name = "FirstName" firstName = "firstName" type = "text" id = "fName" required style = "width: 150px">
+
+        <label for = "LastName"><b>Last Name*: </b></label>
+        <input lastName = "lastName" type = "text" id = "lName" required style = "width: 150px">
+
+        <label for = "MiddleInitial"><b>Middle Initial: </b></label>
+        <input middleInitial = "middleInitial" type = "text" id = "mInitial" pattern = "[A-Z]{1}" style = "width: 25px;">
+        
+        <br>
+        <br>
+        <br>
+
+        <label for = "employeeID"><b>Employee ID*: </b></label>
+        <input type = "text" id = "employeeID" pattern="[0-9]{9}" required style = "width:150px">
+
+        <label for  = "employeeDepartment"><b>Select Department*: </b></label>
+        <select name = "" id = "employeeDepartment" required>
+            <option value="acc">Accounting</option>
+            <option value="hum">Human Resource</option>
+            <option value="mar">Marketing</option>
+            <option value="pro">Production</option>
+            <option value="pur">Purchasing</option>
+            <option value="rec">Recieving</option>
+            <option value="res">Research and Development</option>
+            <option value="shi">Shipping</option>
+        </select>
+
+        <br>
+        <br>
+        <br>
+
+        <label for = "requestStart"><b>Day(s) Requested Off*: </b> </label>
+        <input type = "date" id = "reqStart" required>
+
+        <label for = "requestEnd"><b> - </b> </label>
+        <input type = "date" id = "reqEnd">
+
+        <br>
+        <br>
+        <br>
+
+        <p><label for=""><b>Time off will be considered as: </b></label></p>
+        <p><input type="radio" name="requestType" value="paid" > Paid Vacation</p>
+        <p><input type="radio" name="requestType" value="unpaid"> Unpaid Vacation</p>
+        <p><input type="radio" name="requestType" value="paid"> Paid Sick</p>
+        <p><input type="radio" name="requestType" value="unpaid"> Unpaid Sick</p>
+
+        <br>
+        <br>
+
+        <input type = "submit" id = "submit">
+
+        <div id="sample"></div>
+
+
+        <p id = "verification"></p>
+    </div>
+
+    </p>
+    
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Administration">Administration</a></li>
+        <li><a href="#CompanyNews">Company News</a></li>
+        <li><a href="#MyPayStub">My Pay Stub</a></li>
+        <li><a href="#Benefits">Benefits</a></li>
+        <li><a href="#EmployeeAssistance">Employee Assistance</a></li>
+        <li><a href="#Handbook">Handbook</a></li>
+        <li><a href="#Questions">Questions</a></li>
+        <li><a href="#ContactUs">Contact Us</a></li>
+    </ul>
+
+    <link rel="stylesheet" href="MyForm.CSS">
+    <script src="MyFormScript.js"></script>
+
+    </body>
+    </html>
