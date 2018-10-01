@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Report.css">
+    <title>One-2-One Incident Report</title>
+</head>
+<div>
+<body background="chalk.jpg" >
+<p><h1>Student Device Incident Report</h1></p>    
+<p><h1>Please FILL in all blanks</h1></p>
+<p><h1>Make sure to provide as much detail as possible</h1></p>
+    <form>
+        <label for="SchoolLocation">School Location:</label>
+        <select name="SchoolLocation" id="SchoolLocation">
+            <option value="RCHS">RCHS</option>
+            <option value="SMS">SMS</option>
+            <option value="WEMS">WEMS</option>
+            <option value="GEMS">GEMS</option>
+            <option value="SES">SES</option>
+        </select>
+        <br>
+        <label for="date">Date of Incident:</label>
+        <input type="date" placeholder="mm/dd/yyyy" name="date" id="date">
+        <br>
+        <label for="StudentID">Student ID#</label>
+        <input type="text" name="StudentID" id="StudentID">
+        <br>
+        <label for="StaffFirstName">Staff First Name:</label>
+        <input type="text" name="StaffFirstName" id="StaffFirstName">
+        <br>
+        <label for="StaffLastName">Staff Last Name:</label>
+        <input type="text" name="StaffLastName" id="StaffLastName">
+        <br>
+        <label for="Email">Email:</label>
+        <input type="text" placeholder="john.doe@k12.wv.us" name="Email" id="Email">
+        <br>
+        <br>
+        <p>
+        <label for="DeviceModel">Device Model:</label>
+        <select name="DeviceModel" id="DeviceModel">
+            <option value="N22">N22</option>
+            <option value="L380">L380</option>
+        </select>
+        </p>
+        <label for="AssetTag">Asset Tag#</label>
+        <input type="text" name="AssetTag" id="AssetTag">
+        <br>
+        <p>
+            <ul>
+                <p>Choose all that apply</p>
+                <li><input type = "checkbox" name="BS" id="BS" value="BS" class="damage">Broken Screen</li>
+                <li><input type = "checkbox" name="MK" id="MK" value="MK" class="damage">Missing Keys</li>
+            </ul>
+        </form>
+        <form>
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <p>Can the device power on?</p>
+                    <li><input type = "radio" name="power" id="power" value="power" class="damage">Yes</li>                        
+                    <li><input type = "radio" name="power" id="power" value="power" class="damage">No</li>            
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                   <p>Is the power adapter missing?</p>
+                   <li><input type = "radio" name="power" id="power" value="power" class="damage">Yes</li>
+                   <li><input type = "radio" name="power" id="power" value="power" class="damage">No</li>
+                </ul>
+            </div>
+        </div>
+        <p>Please describe the incident in as much detail as possible</p>
+        <textarea  id="Details" name="Details" rows="10" cols="100"></textarea>
+        <p>Please upload supporting material</p>
+        <input type="file" name="pic" id="pic" accept="image/*">
+        <br>
+        <input type="reset" onclick="Reset()" value="Start Over">
+        <br>
+        <input type="submit" onclick="Submit()" value="Submit">
+        </form>
+        <script src="Form.js"></script>
+</body>
+</div>
+</html>
