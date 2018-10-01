@@ -62,6 +62,12 @@ function buildUI(){
 }
 
 function addPerson(fname, lname, age){
+
+    // var k = {};
+    // k['firstName'] = fname;
+    // k.lastName = lname
+
+
     people.push({
         firstName: fname,
         lastName: lname,
