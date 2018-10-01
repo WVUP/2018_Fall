@@ -1,0 +1,7 @@
+/* .jumbotron {
+    background: blue !important;
+} */
+
+div[class^="col-"] {
+    background: silver;
+}
