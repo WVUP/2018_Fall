@@ -1,6 +1,6 @@
 ### WVUP recreate
 
-Try to recreate the wvup.edu landing page. 
+Try to recreate the wvup.edu landing page. This doesnt mean an interpretation of the site...but imagine someone gave you that design and you had to build it.  
 
 
 #### Do's
@@ -10,6 +10,7 @@ Try to recreate the wvup.edu landing page.
 
 
 #### Dont's
-* Copy their CSS
+* Copy their CSS classes
+* Dont copy and paste their structure...its kind of funky anyhow
 * Dont worry about making a working calendar
 * Dont make 1 million sub menu items for each drop down. 
