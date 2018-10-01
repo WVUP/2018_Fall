@@ -19,13 +19,13 @@
     </div>
 
     <div style="width: 49%; display: inline-block">
-        <form>
+        <form id="infoForm">
             <!-- First Name -->
             <label for="name">First Name: </label>
             <br>
             <input type="text" id="Fname" placeholder="Ex: Mikael">
             <br>
-            <!-- Middle Name -->
+            <!-- Last Name -->
             <label for="name">Last Name: </label>
             <br>
             <input type="text" id="Lname" placeholder="Ex: Hinton">
@@ -33,20 +33,17 @@
             <!-- Phone Number -->
             <label for="phone">Phone Number: </label>
             <br>
-            <input type="tel" id="phone" placeholder="Ex: 123-456-7890"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required>
+            <!--  -->
+            <input type="tel" id="phone" placeholder="Ex: 123-456-7890">
             <br>
             <!-- Email Address -->
             <label for="email">Email Address: </label>
             <br>
             <input type="email" id="email" placeholder="Ex: mhinton4@wvup.edu">
             <br>
-        </form>
     </div>
 
     <div style="width: 39%; display: inline-block">
-        <form>
             <!-- street -->
             <label for="street">Street Address: </label>
             <br>
@@ -60,7 +57,7 @@
             <!-- State -->
             <label for="">State: </label>
             <br>
-            <select name="" id="">
+            <select name="" id="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -118,54 +115,57 @@
             <label for="zipCode">Zip Code: </label>
             <br>
             <input type="text" id="zipCode" placeholder="Ex: 26101">
-        </form>
     </div>
 
     <div>
-        <form>
             <!-- Gender -->
             <label for="">Gender: </label>
             <br>
-            <input type="radio" name="Gender" value="Male"> Male
-            <input type="radio" name="Gender" value="Female"> Female
-            <input type="radio" name="Gender" value="Prefer not to say"> Prefer not to say
+            <input type="radio" id="gender" value="Male"> Male
+            <input type="radio" id="gender" value="Female"> Female
+            <input type="radio" id="gender" value="Prefer not to say"> Prefer not to say
             <br>
             <!-- Date Submitted -->
             <label for="">Date: </label>
             <br>
-            <input type="date">
+            <input type="date" id="date">
             <!-- Submit Button -->
             <br>
-            <input type="submit" value="Submit">
+            <button id="submit">Submit</button>            
         </form>
     </div>
     <!-- Just making a table -->
-    <div>
-        <table style="width:100%">
-            <caption>Just making a table</caption>
-            <thead>
-                <th>Bob</th>
-                <th>Sally</th>
-                <th>Tom</th>
-            </thead>
-
-            <tbody>
-                <td>Son1</td>
-                <td>Son2</td>
-                <td>Son3</td>
-            </tbody>
-            <tbody>
-                <td>Son2</td>
-                <td>Son1</td>
-                <td>Son3</td>
-            </tbody>
-            <tbody>
-                <td>Son3</td>
-                <td>Son1</td>
-                <td>Son2</td>
-            </tbody>
-        </table>
+    <div align = "center">
+        First Name:
+        <span id="firstName"></span>
+        <br>
+        Last Name: 
+        <span id="lastName"></span>
+        <br>
+        Phone Number: 
+        <span id="phoneNumber"></span>
+        <br>
+        Email Address: 
+        <span id="emailAdd"></span>
+        <br>
+        Street Address: 
+        <span id="streetAdd"></span>
+        <br>
+        City:
+        <span id="cityName"></span>
+        <br>
+        State: 
+        <span id="stateName"></span>
+        <br>
+        ZipCode: 
+        <span id="zipCodeName"></span>
+        <br>
+        Gender:
+        <span id="genderName"></span>
+        <br>
+        Date: 
+        <span id="dateName"></span>
     </div>
-
+    <script src="Forms.js"></script>
 </body>
 </html>
