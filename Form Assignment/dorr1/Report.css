@@ -1,0 +1,43 @@
+body{
+    font-family: ink free;
+    color: white;
+    font-size: 14pt;  
+}
+form ul{
+    list-style-type: none;
+}
+form li{
+    list-style-type: none;
+}
+label{
+    padding-right: 0.5em;
+    text-align: right;
+    width: 8em;
+    display: inline-block;   
+}
+div{
+    margin-bottom: 1em;
+    font-size: 18pt;
+    margin: 0%;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row{
+    margin-right: 20%;
+    margin-left: 20%
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+ {
+
+}
