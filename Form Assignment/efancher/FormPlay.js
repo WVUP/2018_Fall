@@ -46,7 +46,7 @@ function formSubmit(event)
     let phone = getPhoneNumber();
     let day = getDayOfWeek();
     let username = getUserID();
-    person = [
+    person = 
         {dance,
         name,
         time,
@@ -57,7 +57,6 @@ function formSubmit(event)
         phone,
         day,
         username}
-    ]
 
     var item = {person, done: false};
     window.localStorage.setItem('student', JSON.stringify(person));
