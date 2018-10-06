@@ -12,18 +12,24 @@
 <style>
     a{
         display: inline-block; 
-        background-color: #e3b11f; 
+        background-color: #efaf30; 
+        color: #141a8f; 
+        text-decoration: none;
+    }
+    a:active{
+        display: inline-block; 
+        background-color: #efaf30; 
         color: #141a8f; 
         text-decoration: none;
     }
     a:hover{
-        background-color: #2c308d;
+        background-color: #32359b !important;
         color: white;
         text-decoration: none;
     }
     a.header{
-        background-color: #141a8f; 
-        color: #e3b11f;
+        background-image: linear-gradient(#3a3fac, #141a8f); 
+        color: #efaf30;
 
     }
     a.header:hover{
@@ -31,59 +37,73 @@
         color: white;
         text-decoration: none;
     }
+    a.announcement{
+        color: #141a8f;
+        background-color: white;
+    }
+    a.announcement:hover{
+        color:rgb(54, 54, 54) !important;
+        background-color: white !important;
+    }
+    .grad{
+        background-image: linear-gradient(#3a3fac, #141a8f)
+    }
+    .grad2{
+
+    }
 
 </style>
 
 <body class="wvupark" style="border-radius: 25">
-    <div style="font: bold; background-color: #141a8f; text-align: center; font-weight: 500; font-family: Arial, Helvetica, sans-serif; font-size: 11pt;">
+    <div class="shadow p-0 mb-5 rounded">
+    <div class="grad" style="font: bold; text-align: center; justify-content: center; font-weight: 500; height:50px; font-family: Arial, Helvetica, sans-serif; font-size: 0pt;">
 
-        <a href="#" style="display: inline-block; width: 60px; height: 40px;">
+        <a href="#" style="display: inline-block; width: 60px; line-height: 50px; font-size: 11pt;">
             Home
         </a>
 
-        <a href="wvup.edu/about/" class="header" style="display: inline-block;  width: 64px; height: 40px;">
+        <a href="wvup.edu/about/" class="header" style="display: inline-block; width: 64px; line-height: 50px; font-size: 11pt;">
             About
         </a>
 
-        <a href="wvup.edu/academics" class="header" style="display: inline-block; width: 79px; height: 40px;">
+        <a href="wvup.edu/academics" class="header" style="display: inline-block; width: 83px; line-height: 50px; font-size: 11pt;">
             Academics
         </a>
 
-        <a href="wvup.edu/current-students" class="header" style="display: inline-block; width: 124px; height: 40px;">
+        <a href="wvup.edu/current-students" class="header" style="display: inline-block; width: 124px; line-height: 50px; font-size: 11pt;">
             Current Students
         </a>
 
-        <a href="wvup.edu/future-students/" class="header" style="display: inline-block; width: 124px; height: 40px;">
+        <a href="wvup.edu/future-students/" class="header" style="display: inline-block; width: 124px; line-height: 50px; font-size: 11pt;">
             Future Students
         </a>
 
-        <a href="wvup.edu/high-school-students" class="header" style="display: inline-block; width: 159px; height: 40px;">
+        <a href="wvup.edu/high-school-students" class="header" style="display: inline-block; width: 159px; line-height: 50px; font-size: 11pt;">
             High School Students
         </a>
 
-        <a href="wvup.edu/faculty-staff/" class="header" style="display: inline-block; width: 104px; height: 40px;">
+        <a href="wvup.edu/faculty-staff/" class="header" style="display: inline-block; width: 110px; line-height: 50px; font-size: 11pt;">
             Faculty & Staff
         </a>
 
-        <a href="wvup.edu/alumni-giving" class="header" style="display: inline-block; width: 124px; height: 40px;">
+        <a href="wvup.edu/alumni-giving" class="header" style="display: inline-block; width: 125px; line-height: 50px; font-size: 11pt;">
             Alumni & Giving
         </a>
 
-        <a href="wvup.edu/economic-development" class="header" style="display: inline-block; width: 174px; height: 40px;">
+        <a href="wvup.edu/economic-development" class="header" style="display: inline-block; width: 175px; line-height: 50px; font-size: 11pt;">
             Economic Development
         </a>
 
-        <div style="display: inline-block; width: 5px;"></div>
+        <div class="grad" style="display: inline-block; width: 20px;"></div>
 
-        <a href="wvup.edu/search" class="header" style="display: inline-block; width: 40px; vertical-align: center;">
+        <a href="wvup.edu/search" class="header" style="display: inline-block; width: 65px; vertical-align: center; line-height:50px; font-size: 11pt;">
             Search
         </a>
     </div>
-    <div class="rounded-bottom">
     <div style="display: inline-block; width: 20%; height: 1500px; background-image: url(sidebar.png); background-attachment: fixed; background-position-x: 80pt; font-size: 10pt;">
         <div style="display: inline-block; width: 100%; height: 250px;"></div>
         <div style="display: inline-block; width: 12%; height:150px; align-self: initial"></div>
-        <div style="display:inline-block; text-align: right; width: 82%;">
+        <div style="display:inline-block; align-content: center; text-align: right; width: 82%;">
         <a href="#" style="display: block; background-color: #ffffff00;">
             Directions to Campus
         </a>
@@ -127,29 +147,83 @@
         <button type="button" class="btn btn-primary" style="background-color: rgb(16, 2, 78); font-size: 20pt; width: 98%; word-wrap: break-all;">Student<br>Newspaper</button>
         <br>
         <br>
-        <img src="Handicap.jpg" style="width: 25%; align-content: left;">
+        </div>
+        <div style="display: inline-block; width: 30%; text-align: left; text-indent: 1em">
+            <a href="#"><img src="Handicap.jpg" style="width: 80%"></a>
+        </div> 
+        
+    </div>
+    <div style="display: inline-block; background:white; width: 65.7%; height: 1500px; position: absolute;">
+        <img class="shadow p-3 mb-5 bg-white rounded" src="headerimage.PNG" style="width:100%">
+        <div style="display: inline-block; width:64%; text-indent: 1em;">
+
+            <div style="display:inline-block; height: 250px; border:grey;">
+                <p><a class="announcement" href="#" style="font-weight: bold; font-size: 16pt;">The world's cutest puppy, don't @ me</a></p>
+                
+                <img src="HunBun.jpg" alt="HunBun" class="rounded float-left" style="height: 50%; display: inline-block; align-self: flex-start">
+                <div style="display: inline-block; color: gray; font-style: italic; width: 70%; height:15%; text-indent: 1em;">My name is Hunnie Fancher</div>
+                <div style="display: inline-block; color: gray; width: 70%; height: auto; text-indent: inherit">I am 12 years young and the happiest puppy in the whole world. I go by Hunnie, Hunnie Bunnie, HunBun(most common), and HunBun-BunBun-LoveBun. I don't believe I'm spoiled at all although everyone likes to claim it...<a href="#" class="announcement">Read More »</a></div>
+                <hr>
+            </div>
+            <div style="display:inline-block; height: 250px; border:grey;">
+                <p><a class="announcement" href="#" style="font-weight: bold; font-size: 16pt;">My favorite human</a></p>
+            
+                <img src="HunBun2.jpg" alt="HunBunBunBun" class="rounded float-left" style="height: 50%; display: inline-block;">
+                <div style="display: inline-block; color: gray; font-style: italic; width: 70%; text-indent: 1em;">I call her my MumMum (HunBun and MumMum)</div>
+                <div style="display: inline-block; color: gray; width: 70%; height: auto; text-indent: inherit">We've been together for 4 years...<a href="#" class="announcement">Read More »</a></div>
+                <hr>
+            </div>
+            <div style="display:inline-block; height: 250px; border:grey;">
+                <p><a class="announcement" href="#" style="font-weight: bold; font-size: 16pt;">I like to do wierd things sometimes</a></p>
+                
+                <img src="HunBun3.jpg" alt="HunBunBunBunLuvBun" class="rounded float-left" style="height: 50%; display: inline-block;">
+                <div style="display: inline-block; color: gray; font-style: italic; width: 70%; text-indent: 1em;">Don't judge me, I'm adorable</div>
+                <div style="display: inline-block; color: gray; width: 70%; height: auto; text-indent: inherit">Ruff, ruff ruff ruff, ruff, ruff ruff ruff ruff; ruff ruff, ruff ruff ruff...<a href="#" class="announcement">Read More »</a></div>
+                <hr>
+            </div>
+            <div><a href="#" class="announcement">Older Entries »</a></div>
+        </div>
+        <div class="shadow p-3 mb-5 rounded" style="display: inline-block; background-image: linear-gradient(rgb(76, 124, 226), rgb(135, 164, 226)) !important; width: 33%; position: absolute; margin-top: -90px; text-align: center; color: #141a8f; font-weight: bold">
+            <br>
+            Calender
+            <br><br>
+            <!-- Embedded Google Holiday Calendar -->
+            <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 95%; height: 200px;" frameborder="0" scrolling="no"></iframe>
+            <br>
+            <br><br>
+            Events
+            <br><br>
+            <div style="background-color: #ffffff00; font-weight: normal; text-align: left; width: 90%; align-content: center; border-left-width: 15px; border-left-color: #141a8f">
+                Oct. 8, 2018 <br>
+                <a href="#" style="display: block; font-weight: 450; text-indent: 1em; background-color: #ffffff00;">Columbus Day</a>
+                Most of the United States
+                <br><br>
+
+                Oct. 30, 2018<br>
+                <a href="#" style="display: block; font-weight: 450; text-indent: 1em;  background-color: #ffffff00;">Devil's Night</a>
+                Mid-west United States
+                <br><br>
+
+                Oct. 31, 2018<br>
+                <a href="#" style="display: block; font-weight: 450; text-indent: 1em;  background-color: #ffffff00;">Halloween</a>
+                United States<br>
+                <br><br>
+                <a href="#" style="display: block; font-weight: 450; text-indent: 1em;  background-color: #ffffff00;">all Events</a>
+                <br>
+                <br>
+            </div>
+            Visit us
+            <br>
+            <div style="background-color: #ffffff00; display: inline-block; align-content: center;">
+                <a href="#" style="display: inline-block; background-color: #ffffff00; width: 17%"><img class="rounded corners" src="LinkedIn.jpg" style="display: inline-block; width:80%"></a>
+                <a href="#" style="display: inline-block; background-color: #ffffff00; width: 17%"><img class="rounded corners" src="Facebook.jpg" style="display: inline-block; width: 80%"></a>
+                <a href="#" style="display: inline-block; background-color: #ffffff00; width: 17%"><img class="rounded corners" src="Twitter.jpg" style="display: inline-block; width: 80%"></a>
+                <br><br>
+                <a href="#" style="display: inline-block; background-color: #ffffff00; width: 17%"><img class="rounded corners" src="YouTube.jpg" style="display: inline-block; width: 80%"></a>
+                
+            </div>
         </div>
         
-
-
-    </div>
-    <div style="display: inline-block; background:white; width: 65%; height: 1500px; position: absolute;">
-        <img src="headerimage.PNG" style="width:79%;">
-        <div style="width:39%; text-indent: 1em;">
-            <div style="display:inline-block; height: 250px; border:grey;">
-                <p>title</p>
-                <hr>
-                <h4>some text</h4>
-            </div>
-            <div style="display:inline-block; height: 250px;">
-    
-            </div>
-            <div style="display:inline-block; height: 250px;">
-    
-            </div>
-        </div>
-        <div></div>
-
     </div>
 </div>
 </body>
