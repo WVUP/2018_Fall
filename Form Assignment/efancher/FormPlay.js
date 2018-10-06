@@ -61,7 +61,9 @@ function formSubmit(event)
     var item = {person, done: false};
     window.localStorage.setItem('student', JSON.stringify(person));
     personList.push(person);
-    printSuccess(name, date, dance, contactVia, time)
+    printSuccess(name, date, dance, contactVia, time);
+
+    document.getElementById('successPrint').interHTML='Congratulations '+ person.name +'! You have successfully signed up for the '+ person.dance +' class on '+ person.date +' at '+ person.time +'! Your instructor will contact you soon by '+ person.contactVia +'. Have a good day!';
     console.log(person);
 }
 function printSuccess(name, date, dance, contactVia, time)
