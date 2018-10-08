@@ -88,3 +88,8 @@ html {
     margin-right: -8.5px;
     margin-left: -8.5px;
 }
+
+.left-col-top {
+    text-align: right;
+    -webkit-text-fill-color: black;
+}
