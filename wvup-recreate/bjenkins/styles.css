@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	background-color: #9CBCDA;
+	color: #444;
+	hyphens: auto;
+}
+
+.navbar {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+hr {
+	margin-left: 2%;
+	margin-right: 55%;
+}
+
+a:active {
+	display: inline-block; 
+	background-color: #efaf30; 
+	color: #141a8f; 
+	text-decoration: none;
+}
+
+a.navbar {
+	background-image: linear-gradient(#3a3fac, #141a8f); 
+	color: #efaf30;
+}
+
+a:hover {
+	background-color: #32359b !important;
+	color: white;
+	text-decoration: none;
+}
+
+a.navbar:hover {
+	background-color: #32359b;
+	color: white;
+	text-decoration: none;
+}

@@ -19,6 +19,11 @@ html {
     z-index: 999;
 }
 
+.dropdown-menu {
+    width: 3in;
+    background-color: goldenrod !important;
+    align-self: auto;
+}
 .btn1 {
     background-color: red !important;
 }
