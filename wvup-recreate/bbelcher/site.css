@@ -1,0 +1,23 @@
+.header {
+    padding: 10px 16px;
+    
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  body
+  {    
+    height: 100%;
+    background-color: #9CBCDA; 
+  }
+
+
+
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
