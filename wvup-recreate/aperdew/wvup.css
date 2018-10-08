@@ -1,0 +1,59 @@
+.nav {
+
+    background-color: #111683;
+    position: fixed;
+    font-weight: bold;
+    width: 1300px;
+    height: 45px;
+
+}
+
+.nav-tab {
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.nav-item {
+
+    -webkit-text-fill-color: #E3B11F; 
+    
+    
+
+}
+
+.nav-item:hover {
+
+    background-color: lightblue;
+    -webkit-text-fill-color: white;
+
+}
+
+.left-col {
+
+    background-color: #E3B11F;
+  
+
+}
+
+.mid-col {
+
+    background-color: white;
+    
+
+}
+
+.right-col {
+
+    background-color: blue;
+  
+
+}
+
+.btn{
+
+    width: 180px;
+    text-align: center;
+
+}
