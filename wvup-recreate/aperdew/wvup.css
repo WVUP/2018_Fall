@@ -1,35 +1,30 @@
-.nav ul{
+html a, button{
 
-    list-style-type: none;
-    margin-left: 15px;
-    padding: 0;
+    cursor: pointer !important;
+
+}
+.nav {
+
     position: fixed;
-    width:1100px;
-    height: 45px;
-    z-index: 999;
+    z-index: 999999;
 
 }
 
-.nav li{
-
-    float: left;
-
-}
-
-.nav li a {
+.nav a {
 
     display: block;
+    float: left;
     background: linear-gradient(rgb(70,81,201) 0%, rgb(17,22,131) 90%);
     font-weight: bold;
-    font-size: .8em;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
     width: auto;
     height: 45px;
     line-height: 45px;
-    padding-left: 11.9999px;
-    padding-right: 11.9999px;
+    padding-left: 10.7px;
+    padding-right: 10.7px;
     text-align: center;
     -webkit-text-fill-color: #E3B11F;
-
 
 }
 
@@ -42,19 +37,120 @@
 
 }
 
+.subdir {
+
+    float: left;
+    overflow: hidden;
+    
+
+}
+
+.subdir .subdirbtn {
+
+    border: none;
+    outline: none;
+    display: block;
+    background: linear-gradient(rgb(70,81,201) 0%, rgb(17,22,131) 90%);
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10.7px;
+    padding-right: 10.7px;
+    text-align: center;
+    -webkit-text-fill-color: #E3B11F;
 
 
-.nav li a:hover {
+}
+
+.nav a:hover:not(.subdir-box-title), .subdir:hover .subdirbtn {
 
     background-image: none;
     background-color: lightblue !important;
     -webkit-text-fill-color: white;
     text-decoration: none;
     
+}
+
+.subdir-box {
+
+    float: left;
+    width: 353.33333px;
+    height: auto;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    margin: 5px;
     
-   
 
 }
+
+.subdir-box-title {
+
+    text-decoration: none !important;
+    background-color: white !important; 
+    color:#111683 !important; 
+    border-top-left-radius: 15px !important; 
+    border-top-right-radius: 15px !important;
+
+}
+
+.subdir-box-title:hover {
+
+    color: #e3b11f !important;
+
+}
+
+.subdir-content{
+
+    display: none;
+    position: absolute;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3b11f), color-stop(100%,#e0ce9d));
+    width: 1100px;
+    padding: 20px 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.subdir-content a {
+    
+    all: initial;
+    float: left;
+    color: #111683;
+    height: 20px;
+    width: 343.3333;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.subdir-content a:hover:not(.subdir-box-title){
+
+    -webkit-text-fill-color: #E3B11F;
+    background-color: #111683 !important;
+
+}
+
+.subdir:hover .subdir-content, .subdir-box {
+    
+    display: block;
+
+}
+
+.subdir-content input {
+
+    align-content: right;
+
+}
+
+
+
+
 
 .left-col {
 
@@ -118,11 +214,13 @@
 
 table {
 
-    border-collapse: collapse;
     border-radius: 10px;
-    border: 1px solid black;
     
-    
+}
+
+tbody {
+
+    background-color: #B7D1EB;
 
 }
 
