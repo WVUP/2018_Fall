@@ -1,48 +1,84 @@
 body.wvupark
 {
     background: rgb(190, 190, 250);
-    margin: 0 120px;
+    width: 1109px;
+    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    height: 1500px;
 }
 a.social-media{
     display: inline-block; 
     background-color: #ffffff00; 
     width: 17%;
 }
-a{
+a.header{
+    display: inline-block;
+    background-color: #ffffff00; 
+    color: #efaf30;
+    line-height:50px; 
+    font-size: 11pt;
+
+}
+a.header:hover{
+    background: #32359b;
+    color: white;
+    text-decoration: none;
+
+}
+a.home{
     display: inline-block; 
     background-color: #efaf30; 
     color: #141a8f; 
     text-decoration: none;
-    }
-    a:hover{
-        background: #32359b !important;
-        color: white;
-        text-decoration: none;
-    }
-    a.header{
-        background-image: linear-gradient(#3a3fac, #141a8f); 
-        color: #efaf30;
+}
+a.announcement{
+    color: #141a8f;
+    background-color: white;
+}
+a.announcement:hover{
+    color:rgb(54, 54, 54) !important;
+    background-color: white !important;
+}
+.grad{
+    background-image: linear-gradient(#3a3fac, #141a8f);
+}
+a.bottom-links{
+    color: #141a8f;
+    font-size: 14pt;
+    background-color: #ffffff00;
+    text-align: center;
+    text-decoration-line: underline
+}
+a.bottom-links:hover{
+    color: #141a8f;
+    font-size: 14pt;
+    background-color: #ffffff00 !important;
+    text-align: center;
+    text-decoration-line: underline
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    min-width: 1109px;
+    z-index: 5;
+    overflow: hidden;
+    background-image: linear-gradient(#efaf30, #f7d592);
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+a.header:hover .dropdown{
+    display: block;
+}
+.dropdown-content-header{
+    border-radius: 12px;
+    background-color: #fffefd;
+    display: inline-block;
+    color: blue;
+    font-size: 12pt;
+}
+.content{
+    background: #f7d592;
 
-    }
-    a.header:hover{
-        background: #32359b;
-        color: white;
-        text-decoration: none;
-    }
-    a.header:active{
-        display: inline-block; 
-        background-color: #efaf30; 
-        color: #141a8f; 
-        text-decoration: none;
-    }
-    a.announcement{
-        color: #141a8f;
-        background-color: white;
-    }
-    a.announcement:hover{
-        color:rgb(54, 54, 54) !important;
-        background-color: white !important;
-    }
-    .grad{
-        background-image: linear-gradient(#3a3fac, #141a8f)
-    }
+}
