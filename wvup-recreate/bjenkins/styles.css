@@ -6,12 +6,26 @@ body {
 }
 
 .navbar {
+	margin-left:18.9%;
+	margin-right:14.2%;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+.right-column {
+    background: linear-gradient(to bottom, #5392ce 0%, #dde9f5 100%);
+    width: 15%;
+    height: 70%;
+	padding-left: 20px;
+	padding-right: 20px;
+    position: absolute;
+    margin-left: 50%;
+	margin-top: 20%;
+    top:200;
 }
 
 hr {
@@ -41,6 +55,10 @@ a.navbar:hover {
 	background-color: #32359b;
 	color: white;
 	text-decoration: none;
+}
+
+.dropdown {
+	z-index: 99;
 }
 
 .dropdown:hover>.dropdown-menu {
