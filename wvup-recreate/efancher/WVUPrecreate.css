@@ -12,20 +12,6 @@ a.social-media{
     background-color: #ffffff00; 
     width: 17%;
 }
-a.header{
-    display: inline-block;
-    background-color: #ffffff00; 
-    color: #efaf30;
-    line-height:50px; 
-    font-size: 11pt;
-
-}
-a.header:hover{
-    background: #32359b;
-    color: white;
-    text-decoration: none;
-
-}
 a.home{
     display: inline-block; 
     background-color: #efaf30; 
@@ -62,7 +48,7 @@ a.bottom-links:hover{
     position: absolute;
     min-width: 1109px;
     z-index: 5;
-    overflow: hidden;
+    
     background-image: linear-gradient(#efaf30, #f7d592);
     width: 100%;
     border-bottom-left-radius: 25px;
@@ -70,15 +56,25 @@ a.bottom-links:hover{
 }
 a.header:hover .dropdown{
     display: block;
+    height: 250px;
 }
 .dropdown-content-header{
+    
     border-radius: 12px;
     background-color: #fffefd;
     display: inline-block;
     color: blue;
     font-size: 12pt;
+    width: 25%;
+    height: 50px;
+    margin-inline-start: 1em;
 }
 .content{
+    display: block;
     background: #f7d592;
+    height: 150px;
+    white-space: nowrap;
+    overflow-x: auto;
+    text-align: left;
 
 }
