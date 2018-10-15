@@ -42,3 +42,7 @@ a.navbar:hover {
 	color: white;
 	text-decoration: none;
 }
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+}
