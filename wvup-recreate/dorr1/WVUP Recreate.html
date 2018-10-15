@@ -16,9 +16,29 @@
 
     <body>
         <div class="container">
-            <div class="navbar">
+            <div class="navbar" style="position:fixed; z-index:999999">
                 <a href="#home" style="background-color: yellow; color:royalblue">Home</a>
-                <a href="#news">About</a>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About
+                    </a>
+                  <div class="dropdown-menu" style="width:fit-content; height: fit-content" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">About</a>
+                        <li>Board of Governors</li>
+                        <li>Business & Economics Division</li>
+                        <li>College Administration</li>
+                        <li>Education</li>
+                        <li>Faculty/Staff</li>
+                        <li>Jackson County Center</li>
+                        <li>Health Sciences Division</li>
+                        <li>Offices</li>
+                        <li>Science, Technology, Engineering & Math Division</li>
+                        <li>Humanities, Fine Arts, & Social Sciences</li>
+                        <li>Workforce & Community</li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 <a href="#academics">Academics</a>
                 <a href="#cstudent">Current Students</a>
                 <a href="#fstudent">Future Students</a>
