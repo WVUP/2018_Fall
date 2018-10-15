@@ -1,23 +1,45 @@
-.header {
+.header 
+{
     padding: 10px 16px;
-    
-  }
+}
 
-  .sticky {
+.sticky 
+{
     position: fixed;
     top: 0;
     width: 100%
-  }
+ }
 
-  body
-  {    
+body
+{    
     height: 100%;
     background-color: #9CBCDA; 
-  }
+}
 
+.container 
+{
+    margin-top: 50px;
+}
 
+.left-col 
+{
+   background-color: #E2B329;
+   margin-left: -10.0%    
+}
 
+.mid-col 
+{
+   background-color:#ffffff;
+}
 
-  .sticky + .content {
+.right-col 
+{
+    background-color: #9CBCDA;
+    margin-right: -10.0%
+}
+
+/*
+.sticky + .content 
+{
     padding-top: 102px;
-  }
+}*/
