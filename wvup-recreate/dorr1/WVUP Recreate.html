@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Website Example</title>
+    <title>WVUP Recreate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="WVUP Recreate.css">
+    <link rel="stylesheet" href="WVUP.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,29 +16,24 @@
 
     <body>
         <div class="container">
-            <div class="navbar" style="position:fixed; z-index:999999">
+            <div class="navbar" style="position:fixed">
                 <a href="#home" style="background-color: yellow; color:royalblue">Home</a>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      About
-                    </a>
-                  <div class="dropdown-menu" style="width:fit-content; height: fit-content" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">About</a>
-                        <li>Board of Governors</li>
-                        <li>Business & Economics Division</li>
-                        <li>College Administration</li>
-                        <li>Education</li>
-                        <li>Faculty/Staff</li>
-                        <li>Jackson County Center</li>
-                        <li>Health Sciences Division</li>
-                        <li>Offices</li>
-                        <li>Science, Technology, Engineering & Math Division</li>
-                        <li>Humanities, Fine Arts, & Social Sciences</li>
-                        <li>Workforce & Community</li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Board of Governors</a>
+                        <a href="#">Business & Economics Division</a>
+                        <a href="#">College Administration</a>
+                        <a href="#">Education</a>
+                        <a href="#">Faculty/Staff</a>
+                        <a href="#">Health Sciences Divsion</a>
+                        <a href="#">Jackson County Center</a>
+                        <a href="#">Science, Technology, Engineering & Math Division</a>
+                        <a href="#">Humanities, Fine Arts, & Social Sciences</a>
+                        <a href="#">Workforce & Community</a>
                     </div>
-                  </div>
+                </div>
                 <a href="#academics">Academics</a>
                 <a href="#cstudent">Current Students</a>
                 <a href="#fstudent">Future Students</a>
@@ -62,14 +57,14 @@
                     </ul>
                 </div>
                 <br>
-                <div class="col-xs-9" style="margin-top:-40px; margin-left:-15px">
+                <div class="col-xs-9" style="margin-top:-40px; margin-left:-15px;">
                     <img src="edu.jpg" height="446" width="946">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-xs-2" style=" background-color:yellow; color: royalblue; text-align: left; margin-left: 1.3%; padding-bottom: 920px ">
-                    <ul>
+                    <ul style="padding-left:0">
                         <li><button type="button" class="btn" style="color:white;   background-color:red">Degree
                                 Programs</button></li>
                         <br>
@@ -90,21 +85,37 @@
                 </div>
                 <div class="col-xs-7" style="background-color: white; padding-bottom: 53%">
                     <ul>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt, magnam. Neque possimus et enim est numquam?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione
+                            excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt,
+                            magnam. Neque possimus et enim est numquam?</li>
                         <br>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo asperiores suscipit autem quia velit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit
+                            id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo
+                            asperiores suscipit autem quia velit.</li>
                         <br>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt, magnam. Neque possimus et enim est numquam?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione
+                            excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt,
+                            magnam. Neque possimus et enim est numquam?</li>
                         <br>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo asperiores suscipit autem quia velit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit
+                            id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo
+                            asperiores suscipit autem quia velit.</li>
                         <br>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt, magnam. Neque possimus et enim est numquam?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione
+                            excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt,
+                            magnam. Neque possimus et enim est numquam?</li>
                         <br>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo asperiores suscipit autem quia velit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit
+                            id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo
+                            asperiores suscipit autem quia velit.</li>
                         <br>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt, magnam. Neque possimus et enim est numquam?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis sint odit ratione
+                            excepturi. Perferendis voluptatibus minima sequi suscipit porro ducimus corporis. Nesciunt,
+                            magnam. Neque possimus et enim est numquam?</li>
                         <br>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo asperiores suscipit autem quia velit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae magnam, impedit
+                            id nobis ad minus iste. Odit odio pariatur deleniti voluptatum voluptas, sint explicabo
+                            asperiores suscipit autem quia velit.</li>
                     </ul>
                 </div>
                 <div class="col-xs-2" style="background-color:skyblue; text-align: center;padding-bottom: 105%; width: 263px; margin-top: -30px">
@@ -115,13 +126,13 @@
                     </ul>
 
                 </div>
-            <div class="row">
-                <div class="col-xs-12" style="background-color: white;">
-                    <ul>
-                        <li style="text-align: center">300 Campus Drive, Parkersburg, WV 26104-8647</li>
-                    </ul>
+                <div class="row">
+                    <div class="col-xs-12" style="background-color: white;">
+                        <ul>
+                            <li style="text-align: center">300 Campus Drive, Parkersburg, WV 26104-8647</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
 
 
