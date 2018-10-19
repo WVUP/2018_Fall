@@ -58,6 +58,10 @@ a.navbar:hover {
 	text-decoration: none;
 }
 
+.dropdown-menu {
+  margin: -0.125rem 0 0;
+}
+
 .dropdown {
 	z-index: 99;
 }

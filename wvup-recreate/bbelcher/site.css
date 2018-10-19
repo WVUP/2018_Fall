@@ -13,7 +13,7 @@
 body
 {    
     height: 100%;
-    background-color: #9CBCDA; 
+    background-color: #9CBCDA !important; 
 }
 
 .container 
