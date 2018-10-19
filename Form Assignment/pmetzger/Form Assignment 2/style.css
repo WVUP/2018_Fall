@@ -1,0 +1,19 @@
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+body {
+  background: rgba(0, 162, 255, 0.7);
+}
+label {
+  font-size: 18px;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+th,
+td {
+  border: 1px solid black;
+}
