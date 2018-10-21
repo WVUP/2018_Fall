@@ -17,6 +17,7 @@ ul li{
 ul li{
     list-style: none;
     text-align: center;
+    display: inline-block;
 }
 
 p{
@@ -25,3 +26,15 @@ p{
     margin: 0;
     line-height: 12px;
 }
+
+.btn{
+    background:    #cc6c08;
+    border-radius: 9px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          italic 700 24px/1 "Calibri", sans-serif;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+}
+
