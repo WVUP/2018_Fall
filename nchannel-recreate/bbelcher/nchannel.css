@@ -19,7 +19,6 @@
   .column1 {
     
     float: left;
-    padding: 5px;  
     width: 49%;
     text-align: right;
     }
@@ -31,9 +30,22 @@
 
 }
 
-/*div {
+div {
     border: 1px solid black;
-}*/
+}
+
+#shopify{
+    width: 25%; 
+    display: inline-block; 
+    margin-left: 25%;     
+}
+
+#netsuite{
+    width: 25%; 
+    display: inline-block; 
+   /* margin-right: 25%; */
+    
+}
 
   /* Navbar links */
   #navbar a {
