@@ -51,8 +51,9 @@ div.nchannel-1{
     height: 650px;    
 
 }
-div.nchannel-1-interior{
+div.nchannel-interior{
     height: 65px;
+    background-color: rgba(255, 68, 0, 0);
     width: 70%;
     margin: auto;
 }
@@ -84,7 +85,7 @@ div.nchannel-1-body{
     font-weight: 700;
     text-shadow: -1px 1px 8px #585858;
 }
-a.button{
+a.nc-button{
     text-decoration: none;
     display: inline-block;
     border-top-right-radius: 12px;
@@ -99,7 +100,7 @@ a.button{
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a.button:hover{
+a.nc-button:hover{
     text-decoration: none;
     color: white;
     background-color: rgb(63,63,63);
@@ -115,8 +116,209 @@ div.nchannel-2{
     font-weight: bolder;
 }
 div.nchannel-3{
-    width: 70%;
     margin: auto;
+    height: 1000px;
+    text-align: center;
+    padding-top: 100px;
+}
+div.nc-3-logo{
+    display: inline-block;
+    width: 12%;
+    height: auto;
+    position: inherit;
+    vertical-align: top;
+
+}
+div.nc-3-logo-right{
+    display: inline-block;
+    width: 12%;
+    height: auto;
+    padding-left: 50px;
+    position: inherit;
+    vertical-align: top;
+}
+div.nc-3-blocks-left{
+    display: inline-block;
+    width: 33%;
+    height: 240px;
+    padding-right: 50px;
+}
+div.nc-3-blocks-right{
+    display: inline-block;
+    width: 33%;
+    height: 240px;
+    padding-left: 50px;
+    vertical-align: top;
+}
+div.nc-header{
+    display: block;
+    font-size: 16pt;
+    font-family: serif;
+    color: rgb(104, 104, 104);
+    text-align: left;
+    font-weight: bold;
+}
+div.nc-header-2{
+    display: block;
+    font-size: 10pt;
+    font-family: serif;
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+    text-align: left;
+}
+div.nc-body{
+    display: block;
+    font-size: 12pt;
+    color:gray;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+div.nchannel-4{
+    display: block;
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+    height: 600px;
+}
+div.nc-slidebuttons{
+    display: block;
+    text-align: center;
+    height: 400px;
+    width: 300px;
+}
+.buttonNC{
+    display: block;
+    font-size: 12pt;
+    text-align: center;
+    height: 40px;
+    width: 280px;
+    line-height: 40px;
+    border-radius: 4pt;
+    background-color: white;
+    font-family: serif;
+    font-weight: bold;
+    color: rgb(63,63,63);
+}
+.buttonNC:hover{
+    color: rgb(58, 160, 255);
+}
+.buttonNC:active{
+    color:rgb(58, 160, 255);
+}
+.hide{
+    display: none;
+}
+div.nchannel-5{
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: white;
+    height: 400px;
+}
+div.nc-5-col{
+    display: inline-block;
+    width: 33%;
+    color: rgb(63,63,63);
+    text-align: left;
+    background-color: white;
+    padding-top: 60px;
+    vertical-align: top;
+}
+div.nchannel-6{
+    display: block;
+    background-color: orangered;
     height: 750px;
+}
+div.nc-6-interior{
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: rgba(255, 68, 0, 0);
+    font-size: 32px; 
+    font-family: serif; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center;
+    padding-top: 200px;
+}
+div.nc-6-col{
+    display: inline-block;
+    border-color: white;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-style: solid;
+    border-width: 3px;
+    width: 40%;
+    margin: auto;
+    height: 120px;
+    font-size: 20;
+}
+div.nc-6-col2{
+    display: inline-block;
+    width: 49%;
+    height: 60px;
+    align-content: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    text-align: left;
+    vertical-align: top;
+}
+div.nchannel-7{
+    display: block;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    align-items: center;
+    padding-top: 60px;
+}
+div.nc-7-col1{
+    display: inline-block;
+    width: 25%;
+    font-size: 24pt;
+    font-family: serif;
+    color: rgb(104, 104, 104);
+    text-align: left;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    margin-left: 12%;
+
+}
+div.nc-7-col2{
+    display: inline-block;
+    width: 50%;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(104, 104, 104);
+    padding-left: 40px;
+    margin-right: 12%;
+}
+div.nc-7-col3{
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+div.nc-7-col4{
+    display: inline-block;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: rgb(58, 160, 255);
+    width: 49%;
+    height: 200px;
+}
+div.nc-quotes{
+    display: inline-block;
+    z-index: 5;
+    color: rgba(128, 128, 128, 0.274);
+}
+div.nc-7-text{
+    display: inline-block;
+    z-index: 10;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
     text-align: center;
 }

@@ -1,9 +1,24 @@
+#header {
+	background-color:#3B3E4B;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:fixed;
+}
+
 .header-link a {
 	color: #7F8291;
 	text-decoration: underline;
 }
 
 .header-link a:hover {
+	color: white;
+}
+
+.nav-link {
+	color: #7F8291;
+}
+
+.nav-item a:hover {
 	color: white;
 }
 
@@ -73,4 +88,10 @@ a.fill-div {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+#right-button {
+	position: fixed;
+	bottom: 0px;
+	right: 10rem;
 }
