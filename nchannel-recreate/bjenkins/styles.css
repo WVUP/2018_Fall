@@ -11,6 +11,10 @@
 	color: #7F8291;
 }
 
+.nav-item a:hover {
+	color: white;
+}
+
 /* Section 1 CSS */
 
 .section-1 {
