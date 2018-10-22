@@ -1,0 +1,1120 @@
+.header{
+
+    width: 100%;
+    position: fixed;
+    background-color: #3b3e4b;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    
+}
+
+ul{
+
+    list-style: none;
+}
+
+.header-scroll{
+
+    width: 100%;
+    background-color: #3b3e4b;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000000;
+
+}
+
+.contact-support{
+
+    width: 100%;
+    height: 35px;
+    position: relative;
+
+}
+
+.contact-support a{
+
+    color:#7f8291;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 12px;
+    float: right;
+    margin-left: 30px;
+    line-height: 25pt;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+}
+
+.contact-support a:hover{
+
+    color: #FFF;
+
+}
+
+.navbar{
+
+    width: 100%;
+    height: 85px;
+    position: relative;
+
+}
+
+.header-scroll .navbar{
+
+    height: 56px;
+
+}
+
+.header-scroll .contact-support{
+
+    height: 0px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.header .contact-support{
+
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-scroll .logo{
+
+    width:110px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.header .logo{
+
+    width: 155px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.header-scroll .nav div{
+
+    height: 56px;
+    padding: 0px 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.header-scroll .nav a{
+
+    vertical-align: bottom;
+    padding-bottom: 8px;
+
+}
+
+
+.contain{
+
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 20px;
+    position: relative;
+    
+    
+    
+}
+
+.logo{
+
+    z-index: 100000;
+    width: 155px;
+    height: inherit;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.nav{
+
+    height: inherit;
+    position: absolute;
+    width: 60%;
+    float: right;
+    right: -10px;
+    
+
+}
+
+.nav div {
+
+    height: 100%;
+    background-color: #3b3e4b;
+    display: table;
+    float: right;
+    padding: 20px 5px;
+    z-index: 500;
+
+}
+
+.nav a{
+
+    color:#7f8291;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Kreon", "Times New Roman", serif;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    transition: all 0.2s ease-in-out;
+    
+
+}
+
+.nav a:hover{
+
+    color: #FFF;
+
+}
+
+.bubbles{
+
+    position: absolute;
+    height: 36px;
+    z-index: 1000000;
+    left: 0;
+    right: 0;
+    
+    
+
+}
+
+.bubbles div{
+
+    height: 36px;
+    float: right;
+    margin: 0 0 0 5px;
+    padding: 0 11px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 24pt;
+    position: relative;
+
+}
+
+.bubbles div a{
+
+    text-decoration: none;
+    color: #FFF;
+    float: right;
+    position: relative;
+    
+}
+
+input {
+
+    border: none;
+    border: 0;
+    appearance: none;
+    height: 36px;
+    background-color: #3b3e4b;
+    color: #7f8291;
+    font-size: 15px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    line-height: 16pt;
+    float: left;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+
+}
+
+input:focus {
+
+    outline: none;
+}
+
+.body-area{
+
+    width: 100%;
+
+}
+
+.body-area a:hover{
+    background-color: #6b6b6b !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.body-area #cyan{
+
+    width: 100%;
+    background-color: #9cdcf2;
+    padding-top: 120px;
+
+}
+
+.sellmore-learnmore{
+
+    text-align: center;
+    font-weight: 700;
+    margin: 0 140px;
+    position: relative;
+    padding: 80px 0 130px 0;
+    width: auto;
+
+}
+
+.body-area #cyan h1{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 34px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 30pt;
+    margin: 0;
+
+}
+
+.body-area #cyan p{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 22pt;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 15px 0 0 0;
+
+}
+
+.body-area #cyan a{
+
+    background-color: #ee7541;
+    font-size: 18px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    color: #FFF;
+    margin: 20px 0 0 0;
+    padding: 10px 20px 12px 20px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+
+}
+
+.dots{
+
+    height: 200px;
+    width: 100%;
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/dot-pat.png);
+    background-repeat: repeat;
+    background-position: center center;
+    box-sizing: border-box;
+
+}
+
+.dots-nav{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+
+}
+
+.cyan-img{
+
+    width: 100%;
+    background-image:url(https://www.nchannel.com/wp-content/themes/nchannel/images/connect.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.body-area #explore-integrations{
+
+    background-color:#ee7541; 
+    padding: 1px 0 1px 0;
+    text-align:center;
+    
+}
+
+.body-area #explore-integrations h2{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 30pt;
+    
+}
+
+.body-area #features{
+
+    margin: 50px 0;
+}
+
+.row{
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.col{
+
+    width: 40%;
+    overflow: hidden;
+    float: left;
+    margin: 45px 6% 0 4%;
+    color: #6b6b6b;
+    position: relative;
+    padding: 0 0 0 130px;
+    box-sizing: border-box;
+
+}
+
+.col img{
+
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.col h2{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19pt;
+    margin: 0 0 3px 0;
+}
+
+.col h3{
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    color: #ee7541;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.col p{
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.features-integrations{
+
+    text-align: center;
+    padding: 5px 0;
+    margin: 40px 0 0 0;
+}
+
+.features-integrations a{
+
+    text-decoration: none;
+    background-color: #22b0e6;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px 20px 12px 20px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.body-area #explore{
+
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 75px 0 0 0;
+    overflow: hidden;
+}
+
+.body-area #explore .explore-header{
+
+    text-align: center;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #6b6b6b;
+    margin: 0 0 35px 0;
+}
+
+.body-area #explore #left-pane{
+
+    float: left;
+    padding: 0 90px 0 0;
+    width: 40%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.body-area #explore #left-pane li{
+
+    cursor: pointer;
+    border: 2px solid #e8e8e8;
+    background-color: #FFF;
+    text-align: center;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16pt;
+    color: #6b6b6b;
+    padding: 13px 5px 14px 5px;
+    margin: 21px 0 0 0;
+    position: relative;
+    z-index: 100;
+    border-radius: 5px;
+
+}
+
+.body-area #explore #left-pane li:hover{
+
+    color: #22b0e6 !important;
+}
+
+.body-area #explore #left-pane li.active{
+
+    color: #22b0e6;
+
+}
+
+.body-area #explore #imac-wrap{
+
+    width: 60%;
+    float: left;
+    position: relative;
+    z-index: 10;
+
+}
+
+.device-mockup.imac {
+
+    padding-bottom: 81.230769%;
+
+}
+
+.device-mockup {
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 61.775701%;
+
+}
+
+.device-mockup.imac > .device {
+
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/imac.png);
+
+}
+
+.device-mockup > .device {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.device-mockup.imac > .device > .screen{
+
+    top: 8.20707071%;
+    bottom: 31.6919192%;
+    left: 6.61538462%;
+    right: 6.61538462%;
+}
+
+.device-mockup > .device > .screen{
+
+    position: absolute;
+    overflow: hidden;
+}
+
+.explore-slides div{
+
+    float: left;
+    left: 100%;
+    width: 0;
+    transition: all 1s ease-in-out;
+}
+
+div.active-div{
+
+    left: 0;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.body-area #explore .explore-slides div img{
+
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.fa-play-circle:before{
+    content: '';
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+
+}
+
+.fa-play-circle:hover{
+
+    cursor: pointer;
+    color: #9cdcf2 !important;
+}
+
+.body-area #how-works{
+
+    z-index: 100;
+    overflow: hidden;
+}
+
+.body-area .how-works-margin{
+
+    margin: 24px auto 30px auto;
+    overflow: hidden;
+    min-height: 350px;
+}
+
+.body-area #how-works .thirds{
+
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: block;
+
+}
+
+.body-area #how-works .thirds .one-third{
+
+    width: 30%;
+    float: left;
+    margin: 0 1.5%;
+    
+}
+
+.body-area #how-works .thirds .one-third p.special{
+
+    padding: 0 8% 0 35px;
+    position: relative;
+    margin: 0 0 25px 0;
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.body-area #how-works .thirds .one-third h3{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #6b6b6b;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19pt;
+    margin: 0 0 3px 0;
+}
+
+.body-area #how-works .thirds .one-third p{
+
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    margin: 0;
+}
+
+.body-area #how-works .thirds .one-third a{
+
+    text-decoration: none;
+    background-color: #22b0e6;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 12px 20px;
+    margin: 20px 0 0 0;
+    color: #FFF;
+    border-radius: 0px 10px 0px 10px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.body-area #support{
+
+    min-height: 500px;
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/orange-back.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ee7541;
+    padding: 115px 0 0 0;
+}
+
+.body-area #support .text{
+
+    font-weight: 700;
+    max-width: 645px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.body-area #support h2{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 30pt;
+    margin: 0;
+}
+
+.body-area #support p{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    line-height: 22pt;
+    font-weight: 400;
+}
+
+.body-area #support h3{
+
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 38px;
+    line-height: 30pt;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.body-area #support .contact{
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 35px 0 0 0;
+    max-width: 700px;
+}
+
+.body-area #support .contact .col{
+
+    width: 47%;
+    float: left;
+    border: 3px solid #FFF;
+    text-align: left;
+    margin: 0 1.5%;
+    padding: 15px 20px 16px 20px;
+    min-height: 120px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.body-area #support .contact .col h4{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19pt;
+    margin: 0 0 10px 0;
+}
+
+.body-area #support .contact .col a{
+
+    text-decoration: none;
+    background-color: #22b0e6;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 20px 12px 20px;
+    border-radius: 0px 10px 0px 10px;
+    display: inline-block;
+    color: #FFF;
+    text-shadow: none;
+    margin: 0 20px 0 0;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    line-height: 14pt;
+}
+
+.body-area #support .contact .col span{
+
+    color: #FFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    line-height: 18pt;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 0 0 120px;
+    box-sizing: border-box;
+}
+
+.body-area #sales{
+
+    padding: 70px 0;
+}
+
+.body-area #sales h2{
+
+    color: #6b6b6b;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 39pt;
+    font-size: 34px;
+    text-align: right;
+    width: 34%;
+    float: left;
+    margin: 0;
+
+}
+
+.body-area #sales p{
+
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    width: 66%;
+    float: left;
+    padding: 7px 0 0 40px;
+    max-width: 525px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body-area #sales img{
+
+    margin: 0 35px;
+}
+
+.body-area #sales .testimonials{
+
+    overflow: hidden;
+    margin: 0 -3%;
+}
+
+.body-area #sales .testimonials .col{
+
+    width: 44%;
+    margin: 0 3%;
+    padding: 0;
+    float: left;
+}
+
+.body-area #sales .testimonials .col .word-bubble{
+
+    position: relative;
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/quote.png);
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #22b0e6;
+    padding: 28px 30px 31px 35px;
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 20px;
+    overflow: hidden;
+}
+
+.body-area #sales .testimonials .col .word-bubble p{
+
+    font-weight: 700;
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #FFF;
+    line-height: 22pt;
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+.body-area #sales .testimonials .col .triangle{
+
+    content: '';
+    height: 0;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    display: block;
+    z-index: 1000;
+    border-right: 45px solid #22b0e6;
+}
+
+.body-area #sales .testimonials .col .person{
+
+    overflow: hidden;
+    text-align: right;
+    margin: 25px 0 0 0;
+}
+
+.body-area #sales .testimonials .col .person img{
+
+    all: initial;
+    margin: 0 30px 0 20px;
+    float: right;
+}
+
+.body-area #sales .testimonials .col .person .info{
+
+    float: right;
+}
+
+.body-area #sales .testimonials .col .person .info h5{
+
+    all: initial;
+    text-align: right;
+    display: block;
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #6b6b6b;
+    font-size: 20px;
+    line-height: 19pt;
+    font-weight: 700;
+    margin: 0;
+}
+
+.body-area #sales .testimonials .col .person .info p{
+
+    all: initial;
+    text-align: right;
+    display: block;
+    color: #6b6b6b;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    padding: 0;
+}
+
+.body-area #sales .testimonials .col .person .info a{
+
+    all: initial;
+    cursor: pointer;
+    text-align: right;
+    display: block;
+    color: #22b0e6;
+    text-decoration: underline;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.body-area #sales .testimonials .col .person .info a:hover{
+    
+    background-color: #FFF !important;
+}
+
+.body-area #logos{
+
+    text-align: center;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.body-area #logos .logo-wrap{
+
+    margin: 0 -25px;
+    overflow: hidden;
+}
+
+.body-area #logos .logo-wrap div{
+
+    width: 24%;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.body-area #logos .logo-wrap div img{
+
+    width: 100%;
+    display: block;
+    height: auto;
+    max-width: 198px;
+    max-height: 107px
+}
+
+.footer{
+
+    background-color: #3b3e4b;
+    overflow: hidden;
+    padding: 35px 0 0 0;
+}
+
+.footer .contain{
+
+    overflow: hidden;
+}
+
+.footer .third{
+
+    width: 33.33%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.footer .third.padding{
+
+    padding: 0 20px 2px 0;
+}
+
+.footer .third h3{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 19pt;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.footer .third span{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #6b6e7c;
+}
+
+.footer .third a.social:hover i.fa-circle{
+
+    color: #6b6b6b !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer .third p{
+
+    margin: -4px 0 0 0;
+    color: #FFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+    max-width: 240px;
+}
+
+.footer .third a.regular{
+
+    color: #22b0e6;
+    text-decoration: underline;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+    display: inline-block;
+}
+
+.footer .third ul{
+
+    overflow: hidden;
+    padding: 0;
+}
+
+.footer .third ul li{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+    width: 50%;
+    line-height: 14pt;
+    margin: 0 0 18px 0;
+    box-sizing: border-box;
+}
+
+.footer .third ul li a{
+
+    text-decoration: none;
+    color: #6b6e7c;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer .third ul li a:hover{
+
+    color: #FFF;
+}
+
+.footer .copyright{
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-color: #333643;
+    padding: 20px 0;
+    margin: 35px 0 0 0;
+
+
+}
+
+.footer .copyright span{
+
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16pt;
+}
+
+.questions-btn{
+
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 75%;
+    z-index: 10000000000000;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    outline: none;
+    font-size: 0px;
+    line-height: 0px;
+}
