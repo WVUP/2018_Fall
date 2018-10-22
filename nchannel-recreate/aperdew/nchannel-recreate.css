@@ -557,14 +557,26 @@ input:focus {
 
 .explore-slides div{
 
-    float: left;
-    left: 100%;
+    position: relative;
+    z-index: 95;
+    display: inline-block;
     width: 0;
     transition: all 1s ease-in-out;
 }
 
-div.active-div{
+.explore-slides div i{
 
+    font-size:65px; 
+    color: #22b0e6; 
+    position: absolute; 
+    background-size: 25px; 
+    bottom:110px; 
+    left: 215px;
+}
+
+div.active-div{
+    
+    top: 0;
     left: 0;
     width: 100%;
     transition: all 1s ease-in-out;
