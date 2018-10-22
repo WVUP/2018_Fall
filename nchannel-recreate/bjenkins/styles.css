@@ -1,0 +1,97 @@
+#header {
+	background-color:#3B3E4B;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:fixed;
+}
+
+.header-link a {
+	color: #7F8291;
+	text-decoration: underline;
+}
+
+.header-link a:hover {
+	color: white;
+}
+
+.nav-link {
+	color: #7F8291;
+}
+
+.nav-item a:hover {
+	color: white;
+}
+
+/* Section 1 CSS */
+
+.section-1 {
+	display: block;
+	width: 100%;
+	height: 580px;
+	background-color: #9CDCF2;
+}
+
+.divider-1 {
+	display: block;
+	width: 100%;
+	height: 100px;
+	background-color: #EE7541;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+	color: #FFFFFF;
+	font-size: 30px;
+}
+
+/* Section 2 CSS */
+
+.section-2 {
+	display: block;
+	width: 100%;
+	height: 920px;
+	background-color: #FFFFFF;
+}
+
+/* Section 3 CSS */
+
+.section-3 {
+	display: block;
+	width: 100%;
+	height: 600px;
+	background-color: #F4F4F4;
+}
+
+/* Section 4 CSS */
+
+.section-4 {
+	display: block;
+	width: 100%;
+	height: 400px;
+	background-color: #FFFFFF;
+}
+
+/* Section 5 CSS */
+
+.section-5 {
+	display: block;
+	width: 100%;
+	height: 580px;
+}
+
+.background-picture {
+	background: url(images/orange-back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#right-button {
+	position: fixed;
+	bottom: 0px;
+	right: 10rem;
+}

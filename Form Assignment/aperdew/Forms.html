@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Krusty Krab Job Application</title>
 </head>
+
 <body>
 
     <h1>Krusty Krab Job Application</h1>
@@ -13,85 +15,87 @@
     <br>
     <h3>Basic Information</h3>
 
-    <form style="float: left; text-align: right">
+    <div style="width:600px; height: 1300px">
+    <form id="basic-info" action="/action_page.php" style="float: left; text-align: right">
 
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Anthony Perdew" required style="width: 350px">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Anthony Perdew" required style="width: 350px">
 
-    <br>
-    <label for="phone">Phone number</label>
-    <input type="tel" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width: 350px">
+        <br>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width: 350px">
 
-    <br>
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="ssquarepants@bbottom.com" required style="width:350px">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="ssquarepants@bbottom.com" required style="width:350px">
 
-    <br>
-    <label for="address">Address</label>
-    <input type="text" id="address" placeholder="124 Conch Street, Bikini Bottom, Marshall Islands 96970" required style="width: 350px">
+        <br>
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="124 Conch Street, Bikini Bottom, Marshall Islands 96970" required
+            style="width: 350px">
 
-    <br>
+        <br>
 
-    <h3>Education</h3>
+        <h3>Education</h3>
 
-    <label for="">Highest Level Of Schooling</label>
+        <label for="">Highest Level Of Schooling</label>
         <select name="" id="" style="width: 350px">
-            <option value="1">Some High School</option>
-            <option value="2">High School Degree</option>
-            <option value="3">Certificate</option>
-            <option value="4">Associate's Degree</option>
-            <option value="5">Bachelor's Degree</option>
-            <option value="6">Master's Degree</option>
-            <option value="7">Doctorate</option>
+            <option value="Some High School">Some High School</option>
+            <option value="High School Degree">High School Degree</option>
+            <option value="Certificate">Certificate</option>
+            <option value="Associate's Degree">Associate's Degree</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="Doctorate">Doctorate</option>
         </select>
 
-    <br>
-    <label for="education">Education Field</label>
-    <input type="text" id="education" placeholder="Computer Science" required style="width:350px">
-    <br>
+        <br>
+        <label for="education">Education Field</label>
+        <input type="text" id="education" placeholder="Computer Science" required style="width:350px">
+        <br>
 
-    <p style="text-align:center; margin-top:0">(Type N/A if not applicable)</p>
-    
-    <label for="highschool">High School Name</label>
-    <input type="text" id="highschool" style="width:350px">
+        <p style="text-align:center; margin-top:0">(Type N/A if not applicable)</p>
 
-    <br>
-    <label for="college">College Name</label>
-    <input type="text" id="college" style="width:350px">
+        <label for="highschool">High School Name</label>
+        <input type="text" id="highschool" style="width:350px">
 
-    <br>
+        <br>
+        <label for="college">College Name</label>
+        <input type="text" id="college" style="width:350px">
 
-    <h3>Work History</h3>
+        <br>
 
-    <p>
-    <label for="">Are you currently employed?</label>
-    <input type="radio" name="employed" value="y"> Yes
-    <input type="radio" name="employed" value="n"> No
+        <h3>Work History</h3>
 
-</p>
+        <p>
+            <label for="">Are you currently employed?</label>
+            <input type="radio" name="employed" value=""> Yes
+            <input type="radio" name="employed" value=""> No
 
-    <label for="Current">If so, where?</label>
-    <input type="text" id="Current" style="width:350px">
-    <br>
-    <label for="Work Number">Contact Number</label>
-    <input type="tel" id="Work Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:350px">
-    <br>
+        </p>
 
-    <p><label for="Previous">Please list your previous work experience</label></p>
-    <br>
-    <input type="text" id="Previous" style="width:350px; height:100px">
-    <br>
-        
+        <label for="Current">If so, where?</label>
+        <input type="text" id="Current" style="width:350px">
+        <br>
+        <label for="Work Number">Contact Number</label>
+        <input type="tel" id="Work Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:350px">
+        <br>
+
+        <p><label for="Previous">Please list your previous work experience</label></p>
+        <br>
+        <input type="text" id="Previous" style="width:350px; height:100px">
+        <br>
+
         <h3>Availability</h3>
 
         <p><label for="">Please select your availability:</label></p>
-        <p><input type="radio" value="m">Monday</p>
-        <p><input type="radio" value="t">Tuesday</p>
-        <p><input type="radio" value="w">Wednesday</p>
-        <p><input type="radio" value="tr">Thursday</p>
-        <p><input type="radio" value="r">Friday</p>
-        <p><input type="radio" value="sa">Saturday</p>
-        <p><input type="radio" value="su">Sunday</p>
+        <p><input type="radio" value="">Monday</p>
+        <p><input type="radio" value="">Tuesday</p>
+        <p><input type="radio" value="">Wednesday</p>
+        <p><input type="radio" value="">Thursday</p>
+        <p><input type="radio" value="">Friday</p>
+        <p><input type="radio" value="">Saturday</p>
+        <p><input type="radio" value="">Sunday</p>
 
         <h3>Supporting Documentation</h3>
 
@@ -100,20 +104,40 @@
 
         <p>Please upload your references</p>
         <p><input type="file" name="references"> </p>
-    
-       
 
-    <p style="text-align:center">
-    <input type="submit" value="submit">
-    <input type="reset" value="reset">
-
-</p>
     </form>
+</div>
+    <br>
 
+    <div style="text-align:center; width:600px">
+        <button onclick="printInfo()">Submit</button>
+        <button onclick="window.location.reload()">Reset</button>
+
+    </div>
+
+    <p id="space"></p>
+
+    <script>
     
+        function printInfo() {
+            
+            var x = document.getElementById("basic-info");
+            var text = "";
+            var i;
+            for (i = 0; i < x.length; i++){
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("space").innerHTML = text;
 
-  
+        }
+    
+    </script>
+
+
+
+
 
 
 </body>
+
 </html>
