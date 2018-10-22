@@ -30,17 +30,17 @@
 
 }
 
-/* div {
+div {
     border: 1px solid black;
-} */
+}
 
-#shopify, #bigCommerce{
+#shopify, #bigCommerce, #magento{
     width: 30%; 
     display: inline-block; 
     margin-left: 20%;     
 }
 
-#netSuite, #msDynamics{
+#netSuite, #msDynamics, #lightSpeed{
     width: 30%; 
     display: inline-block; 
    /* margin-right: 25%; */
@@ -60,6 +60,7 @@
   /* Page content */
   .content {
     padding: 0px;
+    margin: 0px; 
   }
   
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */
