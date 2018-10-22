@@ -1,3 +1,10 @@
+#header {
+	background-color:#3B3E4B;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:fixed;
+}
+
 .header-link a {
 	color: #7F8291;
 	text-decoration: underline;
