@@ -82,3 +82,9 @@ a.fill-div {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+#right-button {
+	position: fixed;
+	bottom: 0px;
+	right: 10rem;
+}
