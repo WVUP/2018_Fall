@@ -34,13 +34,13 @@
     border: 1px solid black;
 } */
 
-#shopify{
+#shopify, #bigCommerce{
     width: 25%; 
     display: inline-block; 
     margin-left: 25%;     
 }
 
-#netsuite{
+#netSuite, #msDynamics{
     width: 25%; 
     display: inline-block; 
    /* margin-right: 25%; */
