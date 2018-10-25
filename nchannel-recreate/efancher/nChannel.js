@@ -1,26 +1,43 @@
 let compScreen = document.getElementById('slideshow');
 console.dir(compScreen);
 
-let buttonClick = document.querySelector('buttonNC');
-buttonClick.addEventListener('click', submitButton);
+let buttonClick = document.querySelector('.buttonNC');
+buttonClick.addEventListener('click', slideshow);
 
-let pic1 = src="sales1.png";
-let pic2 = src="sales2.png"
+var nav = document.getElementById('nav-whole');
+let body = document.querySelector('body');
 
-function slideShow (compScreen){
-    if(value=="Support Multichannel Operations"){
-        document.getElementById('slideshow').style.display="block" = pic1.replace('90x90', '225x225');
-    }
-    else if(value=="Push Orders to Fulfillment Systems"){
-        document.getElementById('slideshow').style.display="block" = pic2.replace('90x90', '225x225');
-    }
-    else if(value=="Publish Item Catalog to Online Stores"){
-        document.getElementById('slideshow').style.display="block" = pic3.replace('90x90', '225x225');
-    }
-    else if(value=="Synchronize Inventory in Real-time"){
-        document.getElementById('slideshow').style.display="block" = pic4.replace('90x90', '225x225');
+var imageChoice = []; // empty array for image selected by button press
+
+//images
+imageChoice[1] = 'https://www.nchannel.com/wp-content/uploads/2014/02/nchannel-intro-vid-screen.png';
+imageChoice[2] = 'https://www.nchannel.com/wp-content/uploads/2014/02/mac-slide1.jpg';
+imageChoice[3] = 'https://www.nchannel.com/wp-content/uploads/2014/02/mac-slide1.jpg';
+imageChoice[4] = 'https://www.nchannel.com/wp-content/uploads/2014/02/mac-slide1.jpg';
+imageChoice[5] = 'https://www.nchannel.com/wp-content/uploads/2014/02/mac-slide1.jpg';
+
+document.addEventListener('scroll', scrollToHide);
+
+function scrollToHide () {
+    console.log("Hello world");
+    let navTop = nav.querySelector('.nav-top');
+    let navBottom = nav.querySelector('.nav-bottom');
+    if (window.pageYOffset > 100){
+        navTop.classList += ' hide';
+        nav.classList.add('nav-whole-shrunk');
+
     }
     else{
-        document.getElementById('slideshow').style.display="block" = pic5.replace('90x90', '225x225');
+        navTop.classList = 'nav-top';
+        nav.classList.remove('nav-whole-shrunk');
     }
+}
+
+
+
+function slideShow (img){
+    // console.log(img);
+    let slideShow = document.getElementById('slideshow');
+    slideShow.src = imageChoice[img];
+
 }
