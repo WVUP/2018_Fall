@@ -314,14 +314,39 @@ ul#side{
 }
 
 .container-fluid#customer{
-    min-height: 500px;
+    height: 650px;
     background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/orange-back.jpg);
-    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #ee7541;
-    padding: 115px 0 0 0;
 
 }
 
+h2#customer{
+    font-size: 22pt;
+}
+
+p#customer{
+    margin-left: 22%;
+    margin-right: 22%;
+    font-size: 13pt;
+    line-height: 30px;
+}
+
+.customer{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+}
+
+.half#contact{
+    border: 3px solid white;
+    height: 120px;
+    width:400px;
+    text-align: left;
+    border-radius: 0 20px 0 20px;
+    margin-left: 100px;
+    color: white;
+}
 
