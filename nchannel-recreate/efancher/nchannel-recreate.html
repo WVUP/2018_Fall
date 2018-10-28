@@ -12,8 +12,8 @@
 </head>
 <body data-spy="scroll" data-target="nchannel-navbar" class="nchannel">
     <div style="background-color: rgb(67, 64, 78);">
-        <div id="nav-whole">
-            <div class="nav-top">
+        <nav id="nav-whole" class="nav-whole">
+            <div id="navTop" class="nav-top">
                 <a href="#" class="nav-top" style="text-decoration: underline; padding-right: 1em;">contact</a>
                 |    
                 <a href="#" class="nav-top" style="text-decoration: underline; padding-left: 1em;">support</a>
@@ -37,29 +37,29 @@
                         <a href="#" class="nav-links"><b>insights</b></a>
                     </div>
                 </a>
+                <div class="nav-buttons">
+                    <a class="chat" href="#" style="width: 85px; background-color: rgb(255, 196, 0);">
+                        chat now
+                    </a>
+                    
+                    <a class="chat" href="#" style="width: 105px; background-color: rgb(58, 160, 255);">
+                        get a quote
+                    </a>
+                    
+                    <a class="chat" href="#" style="width: 145px; background-color: rgb(255, 102, 0);">
+                        1-800-714-0882
+                    </a>
+    
+                    <a class="chat" href="#" style="width: 35px; background-color: rgb(67, 64, 78); vertical-align: 4px;">
+                        <i class="fa fa-search chat" style="color: gray">
+                        </i>
+                    </a>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
     <div class="nchannel-1">
         <div class="nchannel-interior">
-            <div style="float:right">
-                <a class="chat" href="#" style="width: 85px; background-color: rgb(255, 196, 0);">
-                    chat now
-                </a>
-                
-                <a class="chat" href="#" style="width: 105px; background-color: rgb(58, 160, 255);">
-                    get a quote
-                </a>
-                
-                <a class="chat" href="#" style="width: 145px; background-color: rgb(255, 102, 0);">
-                    1-800-714-0882
-                </a>
-
-                <a class="chat" href="#" style="width: 35px; background-color: rgb(67, 64, 78);">
-                    <i class="fa fa-search chat" style="color: gray">
-                    </i>
-                </a>
-            </div>
             <div class="nchannel-1-body">
                 <p style="font-size: 32px">Sell more...online and in store.</p>
                 Increase revenue by selling more products in more channels like eCommerce
@@ -68,6 +68,9 @@
                 <a class="nc-button" href="#" style="width: 120px; background-color: rgb(255, 102, 0); text-shadow: none;">
                     learn more
                 </a>
+            </div>
+            <div class="nchannel-1-body">
+                <img  src="https://www.nchannel.com/wp-content/themes/nchannel/images/connect.png">
             </div>
         </div>
     </div>
@@ -169,6 +172,7 @@
                     </div>
                 </div>
             </div>
+            <br>
             <a class="nc-button" href="#" style="width: 200px;">
                 See All Integrations
             </a>
@@ -180,15 +184,21 @@
             <div class="nc-header" style="font-size: 24pt; text-align: center; padding-bottom: 40px;">
                 Explore the App
             </div>
-            <div class="nc-slidebuttons">
-                <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideshow()" value="Support Multichannel Operations"><br>
-                <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideshow()" value="Push Orders to Fulfillment Systems"><br>
-                <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideshow()" value="Publish Item Catalog to Online Stores"><br>
-                <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideshow()" value="Synchronize Inventory in Real-time"><br>
-                <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideshow()" value="Push Shipping Data to Customers">
-            </div>
-            <div id="slideshow" class="hide" onchange="">
-                <!-- <img id="slideshow" class="hide" onchange=""> -->
+            <div class="nc-4-body">
+                <div class="nc-slidebuttons">
+                    <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideShow('1')" value="Support Multichannel Operations"><br>
+                    <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideShow('2')" value="Push Orders to Fulfillment Systems"><br>
+                    <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideShow('3')" value="Publish Item Catalog to Online Stores"><br>
+                    <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideShow('4')" value="Synchronize Inventory in Real-time"><br>
+                    <input href="#" type="submit" id="buttonNC" class="buttonNC" onclick="slideShow('5')" value="Push Shipping Data to Customers">
+                </div>
+                <div class="nc-4-between">
+                    <img src="https://www.nchannel.com/wp-content/themes/nchannel/images/wires.png">
+                </div>
+                <div class="nc-4-slideshow">
+                    <img style="position: absolute; width: 40%; right: 9%; margin-top: -30px;" src="https://www.nchannel.com/wp-content/themes/nchannel/images/imac.png">
+                    <img style="position: absolute; z-index: 5; right: 11.5%; width: 35%; margin-top: 1px;" class="slideshow" id="slideshow" src="https://www.nchannel.com/wp-content/uploads/2014/02/mac-slide1.jpg">
+                </div>
             </div>
         </div>
     </div>
@@ -256,7 +266,7 @@
         <div class="nc-7-col2">
             We've definitely done this before! We've helped a multitude of customers in a multitude of industries grow their businesses. Check out some of the case studies below to get an idea of what kind of solution we can provide for you.
         </div>
-        <div style="width: 50%; margin: auto;">
+        <div style="width: 50%; margin: auto; display: flex;">
             <div class="nc-7-col3">
                 <img src="sales1.png">
             </div>
@@ -267,22 +277,156 @@
                 <img src="sales2.png">
             </div>
         </div>
-        <div class="nc-7-col4">
-            <div class="nc-quotes">
-                "
+        <br><br>
+        <div style="width: 100%; margin: auto; display: flex;">
+            <div class="nc-7-col4">
+                <div class="nc-quotes">
+                    <span>"</span>
+                </div>
+                <div class="nc-7-text">
+                    Generating reports no longer takes hours, but minutes. nChannel provides our team with ready access to the data we need to better react to events happening with our customers.
+                </div>
             </div>
-            <div class="nc-7-text">
-                Generating reports no longer takes hours, but minutes. nChannel provides our team with ready access to the data we need to better react to events happening with our customers.
+            
+            <div class="nc-7-col4">
+                <div class="nc-quotes">
+                    "
+                </div>
+                <div class="nc-7-text">
+                    nChannel has made our staff 10x more productive. Instead of dedicating three staffers to mundane tasks, we can now focus their time and skills on getting more products sold & shipped.
+                </div>
             </div>
         </div>
-        <div class="nc-7-col4">
-            <div class="nc-quotes">
-                "
+        <div class="nc-7-col5">
+            <div class="nc-7-bottom" style="padding-left: .5%;">
+                <div class="nc-7-people">
+                        <p class="nc-people-name">Homage</p>
+
+                        VP of Finance, Steve Werman<br>
+                        
+                        <a href="#">Download Case Study</a>
+                </div>
+                <div class="nc-picture">   
+                    <img class="nc-picture" src="https://www.nchannel.com/wp-content/uploads/2018/07/steve-werman-headshot-small.png">
+                </div> 
+                <div class="nc-triangle">&#9701;</div>
             </div>
-            <div class="nc-7-text">
-                nChannel has made our staff 10x more productive. Instead of dedicating three staffers to mundane tasks, we can now focus their time and skills on getting more products sold & shipped.
+
+            <div class="nc-7-bottom" style="padding-left: 14%;">
+                <div class="nc-7-people">
+                        <p class="nc-people-name">Q-See</p>
+                        
+                        General Manager, Rishi Sharma<br>
+                        
+                        <a href="#">Download Case Study</a>
+                </div>
+                <div class="nc-picture">
+                    <img src="https://www.nchannel.com/wp-content/uploads/2018/07/Q-See-Headshot-small.png">
+                </div>
+                <div class="nc-triangle">&#9701;</div>
             </div>
         </div>
+    </div>
+    <div class="nchannel-8">
+        <div class="nc-8-interior">
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2015/08/shopify-partner-logo_onwhite.png">
+            </div>
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2015/02/netsuite-suitecloud-partner.png">
+            </div>
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2014/03/microsoft-partner.png">
+            </div>
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2014/03/ebay-compatible-app.png">
+            </div>
+        </div>
+        <br>
+        <div class="nc-8-interior">
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2018/06/BigCommerce-Partner-Badge-dark-.png">
+            </div>
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2016/07/LS-Final-2.png">
+            </div>
+            <div class="ad-image-size">
+                <img class="nc-ad-image" src="https://www.nchannel.com/wp-content/uploads/2016/09/2017.TopCommerceSeal-3.png">
+            </div>
+        </div>
+    </div>
+    <div class="nchannel-9">
+        <div class="nc-9-interior">
+            <div class="nc-9-col">
+                <p class="nc-9-header">Connect</p>
+                <a href="#">
+                    <span class="fa-stack fa-1.5x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: rgb(255, 125, 78);"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x" style="color: rgb(67, 64, 78);"></i>
+                    </span>
+                </a>
+                &nbsp;
+                <a href="#">
+                        <span class="fa-stack fa-1.5x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: rgb(255, 125, 78);"></i>
+                        <i class="fab fa-twitter fa-stack-1x" style="color: rgb(67, 64, 78);"></i>
+                    </span>
+                </a>
+                &nbsp;
+                <a href="#">
+                        <span class="fa-stack fa-1.5x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: rgb(255, 125, 78);"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x" style="color: rgb(67, 64, 78);"></i>
+                    </span>
+                </a>
+                &nbsp;
+                <a href="#">
+                    <span class="fa-stack fa-1.5x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: rgb(255, 125, 78);"></i>
+                        <i class="fab fa-youtube fa-stack-1x" style="color: rgb(67, 64, 78);"></i>
+                    </span>
+                </a>
+                &nbsp;
+                <a href="#">
+                    <span class="fa-stack fa-1.5x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: rgb(255, 125, 78);"></i>
+                        <i class="fab fa-google-plus-g fa-stack-1x" style="color: rgb(67, 64, 78);"></i>
+                    </span>
+                </a>
+                
+                
+            </div>
+            <div class="nc-9-col">
+                <p class="nc-9-header">Multichannel Insights</p>
+                <p style="color: white; font-size: 13pt;">
+                    <span class="nc-9-text">October 19, 2018</span>
+                    <br>
+                    What We’re Reading: 3PL, Customer Relationships & Content Strategy
+                </p>
+                <a class="nc-9-link" href="#">View Article</a>
+            </div>
+            <div class="nc-9-col">
+                <p class="nc-9-header">Explore More</p>
+                <div class="nc-9-col2">
+                    <a class="nc-9-text" href="#">about</a><br><br>
+                    <a class="nc-9-text" href="#">security</a><br><br>
+                    <a class="nc-9-text" href="#">privacy policy</a><br><br>
+                    <a class="nc-9-text" href="#">for investors</a><br><br>
+                    <a class="nc-9-text" href="#">press releases</a><br><br>
+                    <a class="nc-9-text" href="#">case studies</a><br><br>
+                </div>
+                <div class="nc-9-col2">
+                    <a class="nc-9-text" href="#">careers</a><br><br>
+                    <a class="nc-9-text" href="#">pci compliance</a><br><br>
+                    <a class="nc-9-text" href="#">industries</a><br><br>
+                    <a class="nc-9-text" href="#">contact</a><br><br>
+                    <a class="nc-9-text" href="#">become a partner</a><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nchannel-10">
+        Copyright © 2018 | All Rights Reserved, nChannel
     </div>
     
     <script src="nChannel.js"></script>

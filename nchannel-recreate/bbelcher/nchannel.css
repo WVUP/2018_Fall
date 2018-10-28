@@ -1,51 +1,75 @@
 #navbar {
-    overflow: hidden;
-    background-color: #3b3e4b;    
-  }
+  overflow: hidden;
+  background-color: #3b3e4b;    
+}
   
-  #bluebar {
-    /*overflow: hidden;*/
-    background-color: #9cdcf2;
-    color: white; 
-  }
-
-    #orangebar{
-        background-color:  #ee7541; 
-        color: white;        
-    }
-
-  
-
-  .column1 {
-    
-    float: left;
-    width: 49%;
-    text-align: right;
-    }
-
-  .column2 {
-    float: right; 
-    width: 49%;
-    text-align: left;
-
+#bluebar {
+  /*overflow: hidden;*/
+  background-color: #9cdcf2;
+  color: white; 
 }
 
-/* div {
-    border: 1px solid black;
+#orangebar{
+  background-color:  #ee7541; 
+  color: white;        
+} 
+
+/* .column1 {
+  float: left;
+  width: 49%;
+  text-align: right;
+}
+
+.column2 {
+  float: right; 
+  width: 49%;
+  text-align: left;
 } */
 
-#shopify, #bigCommerce{
-    width: 30%; 
-    display: inline-block; 
-    margin-left: 20%;     
+/* div {
+  border: 1px solid black;
+} */
+
+/* #shopify, #bigCommerce, #magento {
+  width: 30%; 
+  display: inline-block; 
+  margin-left: 20%;     
 }
 
-#netSuite, #msDynamics{
-    width: 30%; 
-    display: inline-block; 
-   /* margin-right: 25%; */
-    
+#netSuite, #msDynamics, #lightSpeed {
+  width: 30%; 
+  display: inline-block; 
+  margin-right: 25%;
+} */
+
+/* #shopify img, #netSuite img, #bigCommerce img, #msDynamics img, #magneto img, #lightSpeed img {
+  float: left;
 }
+
+#shopify p, #netSuite p, #bigCommerce p, #msDynamics p, #magneto p, #lightSpeed p {
+  float: right;
+} */
+
+#shopify, #netSuite, #bigCommerce, #msDynamics, #magneto, #lightSpeed {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* #msDynamics > img {
+  justify-content: flex-start;
+}
+
+#msDynamics > p {
+  justify-content: flex-end;
+} */
+
+/* #shopify img {
+  display: inline-block;
+}
+
+#shopify p {
+  display: inline-block;
+} */
 
   /* Navbar links */
   #navbar a {
@@ -60,6 +84,7 @@
   /* Page content */
   .content {
     padding: 0px;
+    margin: 0px; 
   }
   
   /* The sticky class is added to the navbar with JS when it reaches its scroll position */

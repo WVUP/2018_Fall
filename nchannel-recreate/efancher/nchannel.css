@@ -1,110 +1,131 @@
+* {box-sizing: border-box};
+html, body{
+    margin: 0;
+}
 body.nchannel{
     position: relative;
     
 }
-div.nav-whole{
+.nav-whole{
+    position: fixed;
     background-color: rgb(67, 64, 78);
     color: gray;
-    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 135px;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
 }
-div.nav-top{
-    text-align: right;
-    height: 50px;
-    font-size: 12px;
-    margin: auto;
-    width: 70%;
-}
-a.nav-top{
-    color: gray;
-}
-a.nav-top:hover{
-    color: white;
-}
-div.nav-bottom{
-    margin: auto;
-    width: 70%;
-    height: 65px;
-}
-i.nchannel-logo{
-    color: rgb(61, 165, 250);
-}
-p.n{
-    color: white
-}
-div.nav-links{
-    display: block;
-    float: right;
-    font-family: serif;
-}
-a.nav-links{
-    text-decoration: none;
-    color: gray;
-    padding: 0 1em;
-}
-a.nav-links:hover{
-    color: white;
-    text-decoration: none;
-}
+    .nav-whole-shrunk {
+        height: 65px;
+    }
+    .hide {
+        display: none;
+    }
+    .nav-top{
+        text-align: right;
+        height: 50px;
+        font-size: 12px;
+        margin: auto;
+        width: 70%;
+    }
+        a.nav-top{
+            color: gray;
+        }
+        a.nav-top:hover{
+            color: white;
+        }
+    div.nav-bottom{
+        margin: auto;
+        width: 70%;
+        height: 65px;
+    }
+    i.nchannel-logo{
+        color: rgb(61, 165, 250);
+    }
+    p.n{
+        color: white
+    }
+    div.nav-links{
+        display: block;
+        float: right;
+        font-family: serif;
+    }
+        a.nav-links{
+            text-decoration: none;
+            color: gray;
+            padding: 0 1em;
+        }
+        a.nav-links:hover{
+            color: white;
+            text-decoration: none;
+        }
+    .nav-buttons { 
+        position: absolute;
+        bottom: -35px;
+        right: 10%;
+    }
+        a.chat{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            font-size: 17px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            height: 35px;  
+        }
+            a.chat:hover{
+                text-decoration: none;
+                color: white;
+            }
 div.nchannel-1{
     display: block;
     background-color: rgb(151, 215, 245);
-    height: 650px;    
+    height: 800px;   
+    padding-top: 135px; 
 
 }
-div.nchannel-interior{
-    height: 65px;
-    background-color: rgba(255, 68, 0, 0);
-    width: 70%;
-    margin: auto;
-}
-a.chat{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    font-size: 17px;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    height: 35px;  
-}
-a.chat:hover{
-    text-decoration: none;
-    color: white;
-}
-div.nchannel-1-body{
-    padding-top: 50px;
-    display: block;
-    color: white;
-    font-size: 19px;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
-    text-shadow: -1px 1px 8px #585858;
-}
-a.nc-button{
-    text-decoration: none;
-    display: inline-block;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    color: white;
-    font-size: 20px;
-    height: 40px;
-    line-height: 40px;
-    background-color: rgb(58, 160, 255);
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-a.nc-button:hover{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(63,63,63);
-}
+    div.nchannel-interior{
+        height: 65px;
+        background-color: rgba(255, 68, 0, 0);
+        width: 70%;
+        margin: auto;
+    }
+    div.nchannel-1-body{
+        padding-top: 75px;
+        display: block;
+        color: white;
+        font-size: 19px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        text-shadow: -1px 1px 8px #585858;
+    }
+    a.nc-button{
+        text-decoration: none;
+        display: inline-block;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        color: white;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        background-color: rgb(58, 160, 255);
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    a.nc-button:hover{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(63,63,63);
+    }
 div.nchannel-2{
     display: block;
     background-color: rgb(255, 102, 0);
@@ -121,35 +142,35 @@ div.nchannel-3{
     text-align: center;
     padding-top: 100px;
 }
-div.nc-3-logo{
-    display: inline-block;
-    width: 12%;
-    height: auto;
-    position: inherit;
-    vertical-align: top;
+    div.nc-3-logo{
+        display: inline-block;
+        width: 12%;
+        height: auto;
+        position: inherit;
+        vertical-align: top;
 
-}
-div.nc-3-logo-right{
-    display: inline-block;
-    width: 12%;
-    height: auto;
-    padding-left: 50px;
-    position: inherit;
-    vertical-align: top;
-}
-div.nc-3-blocks-left{
-    display: inline-block;
-    width: 33%;
-    height: 240px;
-    padding-right: 50px;
-}
-div.nc-3-blocks-right{
-    display: inline-block;
-    width: 33%;
-    height: 240px;
-    padding-left: 50px;
-    vertical-align: top;
-}
+    }
+    div.nc-3-logo-right{
+        display: inline-block;
+        width: 12%;
+        height: auto;
+        padding-left: 50px;
+        position: inherit;
+        vertical-align: top;
+    }
+    div.nc-3-blocks-left{
+        display: inline-block;
+        width: 33%;
+        height: 240px;
+        padding-right: 50px;
+    }
+    div.nc-3-blocks-right{
+        display: inline-block;
+        width: 33%;
+        height: 240px;
+        padding-left: 50px;
+        vertical-align: top;
+    }
 div.nc-header{
     display: block;
     font-size: 16pt;
@@ -179,34 +200,53 @@ div.nchannel-4{
     text-align: center;
     height: 600px;
 }
-div.nc-slidebuttons{
-    display: block;
-    text-align: center;
-    height: 400px;
-    width: 300px;
-}
-.buttonNC{
-    display: block;
-    font-size: 12pt;
-    text-align: center;
-    height: 40px;
-    width: 280px;
-    line-height: 40px;
-    border-radius: 4pt;
-    background-color: white;
-    font-family: serif;
-    font-weight: bold;
-    color: rgb(63,63,63);
-}
-.buttonNC:hover{
-    color: rgb(58, 160, 255);
-}
-.buttonNC:active{
-    color:rgb(58, 160, 255);
-}
-.hide{
-    display: none;
-}
+    div.nc-4-body{
+        width: 80%;
+        margin: 0 auto;
+        height: 400px;
+    }
+    div.nc-slidebuttons{
+        display: inline-block;
+        text-align: center;
+        width: 35%;
+        vertical-align: top;
+        z-index: 5;
+    }
+    div.nc-4-between{
+        display: inline-block;
+        width: 19%;
+        vertical-align: top;
+        z-index: -5;
+    }
+    div.nc-4-slideshow{
+        display: inline-block;
+        /* background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/imac.png); */
+        width: 44%;
+        vertical-align: top;
+        
+    }
+    /* img.slideshow{
+        transition: all 300ms step-end;
+    } */
+    .buttonNC{
+        display: block;
+        font-size: 12pt;
+        text-align: center;
+        height: 40px;
+        width: 280px;
+        line-height: 40px;
+        border-radius: 4pt;
+        background-color: white;
+        font-family: serif;
+        font-weight: bold;
+        color: rgb(63,63,63);
+    }
+    .buttonNC:hover{
+        color: rgb(58, 160, 255);
+    }
+    .buttonNC::selection{
+        color:rgb(58, 160, 255);
+    }
 div.nchannel-5{
     display: block;
     margin: auto;
@@ -214,111 +254,243 @@ div.nchannel-5{
     background-color: white;
     height: 400px;
 }
-div.nc-5-col{
-    display: inline-block;
-    width: 33%;
-    color: rgb(63,63,63);
-    text-align: left;
-    background-color: white;
-    padding-top: 60px;
-    vertical-align: top;
-}
+    div.nc-5-col{
+        display: inline-block;
+        width: 33%;
+        color: rgb(63,63,63);
+        text-align: left;
+        background-color: white;
+        padding-top: 60px;
+        vertical-align: top;
+    }
 div.nchannel-6{
     display: block;
-    background-color: orangered;
+    background-image: url("orange-back.jpg");
+    background-size: cover;
+    background-position: center;
     height: 750px;
 }
-div.nc-6-interior{
-    display: block;
-    margin: auto;
-    width: 70%;
-    background-color: rgba(255, 68, 0, 0);
-    font-size: 32px; 
-    font-family: serif; 
-    color: white; 
-    font-weight: bold; 
-    text-align: center;
-    padding-top: 200px;
-}
-div.nc-6-col{
-    display: inline-block;
-    border-color: white;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-style: solid;
-    border-width: 3px;
-    width: 40%;
-    margin: auto;
-    height: 120px;
-    font-size: 20;
-}
-div.nc-6-col2{
-    display: inline-block;
-    width: 49%;
-    height: 60px;
-    align-content: center;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 12pt;
-    text-align: left;
-    vertical-align: top;
-}
+    div.nc-6-interior{
+        display: block;
+        margin: auto;
+        width: 70%;
+        background-color: rgba(255, 68, 0, 0);
+        font-size: 32px; 
+        font-family: serif; 
+        color: white; 
+        font-weight: bold; 
+        text-align: center;
+        padding-top: 200px;
+    }
+    div.nc-6-col{
+        display: inline-block;
+        border-color: white;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-style: solid;
+        border-width: 3px;
+        width: 40%;
+        margin: auto;
+        height: 120px;
+        font-size: 20;
+    }
+    div.nc-6-col2{
+        display: inline-block;
+        width: 49%;
+        height: 60px;
+        align-content: center;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 12pt;
+        text-align: left;
+        vertical-align: top;
+    }
 div.nchannel-7{
     display: block;
     width: 80%;
-    height: 450px;
+    height: 750px;
     margin: auto;
-    align-items: center;
     padding-top: 60px;
 }
-div.nc-7-col1{
-    display: inline-block;
-    width: 25%;
-    font-size: 24pt;
-    font-family: serif;
-    color: rgb(104, 104, 104);
-    text-align: left;
-    font-weight: bold;
-    text-align: right;
-    vertical-align: top;
-    margin-left: 12%;
+    div.nc-7-col1{
+        display: inline-block;
+        width: 25%;
+        font-size: 24pt;
+        font-family: serif;
+        color: rgb(104, 104, 104);
+        text-align: left;
+        font-weight: bold;
+        text-align: right;
+        vertical-align: top;
+        margin-left: 12%;
 
+    }
+    div.nc-7-col2{
+        display: inline-block;
+        width: 50%;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: rgb(104, 104, 104);
+        padding-left: 40px;
+        margin-right: 12%;
+    }
+    div.nc-7-col3{
+        display: inline-block;
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding-top: 60px;
+    }
+    div.nc-7-col4{
+        display: inline-flex;
+        width: 35%;
+        margin: auto;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        background-color: rgb(58, 160, 255);
+        height: 200px;
+    }
+    .nc-7-col5{
+        position: relative;
+        width:80%;
+        margin: auto; 
+        display: flex;
+        margin-top: -5px;
+    }
+    div.nc-quotes{
+        display: block;
+        z-index: 5;
+        color: rgba(128, 128, 128, 0.548);
+        font-size: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        line-height: 1;
+        
+
+    }
+    div.nc-7-text{
+        display: inline-block;
+        width: 75%;
+        margin: auto;
+        z-index: 10;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+    div.nc-7-bottom{
+        display: -webkit-inline-box;
+        position: relative;
+        width:80%;
+        margin: auto;
+        
+    }
+    div.nc-7-people{
+        font-family: sans-serif;
+        font-size: 12pt;
+        color: gray;
+        text-align: right;
+    }
+    p.nc-people-name{
+        font-weight: bold;
+        font-size: 16pt;
+        font-family: serif;
+    }
+    div.nc-triangle{
+        position: relative;
+        color: rgb(58, 160, 255); 
+        font-size: 75px;
+        margin-top: -35px;
+        /* margin-left: 94.5%; */
+        
+    }
+    div.nc-picture{
+        position: relative;
+        margin-top: 20px;
+        /* margin-left: 35%; */
+
+    }
+div.nchannel-8{
+    display: block;
+    background-color: rgb(235, 235, 235);
+    height: 300px;
+    clear: both;
+    justify-content: center;
+    align-items: center;
 }
-div.nc-7-col2{
-    display: inline-block;
-    width: 50%;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgb(104, 104, 104);
-    padding-left: 40px;
-    margin-right: 12%;
+    div.nc-8-interior{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    div.ad-image-size{
+        display: inline-block;
+        width: 24%;
+    }
+    img.nc-ad-image{
+        height: 100px;
+    }
+div.nchannel-9{
+    display: block;
+    background-color: rgb(67, 64, 78);
+    height: 400px;
 }
-div.nc-7-col3{
-    display: inline-block;
-    width: 30%;
-    margin: auto;
-    text-align: center;
-    padding-top: 60px;
-}
-div.nc-7-col4{
-    display: inline-block;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    color: rgb(58, 160, 255);
-    width: 49%;
-    height: 200px;
-}
-div.nc-quotes{
-    display: inline-block;
-    z-index: 5;
-    color: rgba(128, 128, 128, 0.274);
-}
-div.nc-7-text{
-    display: inline-block;
-    z-index: 10;
+    div.nc-9-interior{
+        display: flex;
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+        vertical-align: text-top;
+        padding-top: 35px;
+
+    }
+    div.nc-9-col{
+        vertical-align: top;
+        display: inline-block;
+        width: 25%;
+        margin: 0 auto;
+        
+    }
+    div.nc-9-col2{
+        display: inline-block;
+        width:49%;
+        vertical-align: top;
+    }
+    p.nc-9-header{
+        color: white;
+        font-size: 16pt;
+        font-weight: bold;
+        font-family: serif;
+    }
+    a.nc-9-link{
+        text-decoration: underline;
+        color: rgb(151, 215, 245);
+    }
+        a.nc-9-link:hover{
+            text-decoration: underline;
+            color: rgb(151, 215, 245);
+        }
+    .nc-9-text{
+        color: gray;
+        font-size: 12pt;
+        text-decoration: none;
+        font-family: serif;
+        font-weight: bold;
+    }
+        a.nc-9-text:hover{
+            color: gray;
+            text-decoration: none;
+        }
+div.nchannel-10{
+    display: flex;
+    background-color: rgb(63,63,63);
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    text-align: center;
+    font-size: 12pt;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }

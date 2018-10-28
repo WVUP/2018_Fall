@@ -1,3 +1,10 @@
+#header {
+	background-color:#3B3E4B;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:fixed;
+}
+
 .header-link a {
 	color: #7F8291;
 	text-decoration: underline;
@@ -44,7 +51,6 @@ a.fill-div {
 
 .section-2 {
 	display: block;
-	width: 100%;
 	height: 920px;
 	background-color: #FFFFFF;
 }
