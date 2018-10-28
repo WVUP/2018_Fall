@@ -1,0 +1,5 @@
+<div class="container-fluid" id="logos">
+    <div class="container">
+      <img src="logos.png">
+    </div>
+  </div>
