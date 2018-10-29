@@ -23,7 +23,7 @@
     top: 50px;
     font-size: 15px;
 }
-.tabs :hover {
+.tabs:hover {
     -webkit-text-fill-color: white;
     text-decoration: none;
 }
@@ -48,7 +48,7 @@
     font-weight: bold;
     -webkit-text-fill-color: white;
 }
-.bar-below :hover {
+.bar-below:hover {
     text-decoration: none;
 }
 
@@ -113,7 +113,7 @@
     padding-right: 20px !important;
     -webkit-text-fill-color: white !important;
 }
-.learn-more-btn :hover {
+.learn-more-btn:hover {
     text-decoration: none;
     background-color: #3B3F4B;
     -webkit-text-fill-color: white !important;
@@ -204,7 +204,7 @@ padding-right: 49%;
     -webkit-text-fill-color: white !important;
 }
 
-.see-all-int :hover {
+.see-all-int:hover {
     background-color: #3B3F4B;
     -webkit-text-fill-color: white;
     text-decoration: none;
@@ -444,7 +444,7 @@ padding-left: 80px;
     font-size: 15px;
 }
 
-.explore :hover {
+.explore:hover {
     -webkit-text-fill-color: white;
     text-decoration: none;
 }
@@ -468,7 +468,7 @@ padding-left: 80px;
     border-color: #ebad06;
     font-weight: bold;
   }
-.question-box :hover {
+.question-box:hover {
     z-index: 999 !important;
     background-color: #ebad06;
     color: white;
