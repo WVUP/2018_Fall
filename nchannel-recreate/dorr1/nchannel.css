@@ -1,0 +1,508 @@
+.top-nav{
+    width:100%;
+    position: fixed;
+    background-color: #3b3e4b;
+    height: 120px;
+    z-index: 999999;
+
+}
+
+a#logo{
+    background-image:   url(logo.png);
+    height: 100%;
+    width: 155px;
+    z-index: 100000000;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999999px;
+    margin-top:-30px;
+}
+
+.first{
+    height:35px;
+    position: relative;
+
+}
+
+.support{
+    padding:0 20px;
+    color:#7f8291;
+    font-size: 12px;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.second{
+    height:85px;
+    position: relative;
+    padding-top: 25px;
+}
+
+div#links{
+    height: 100%;
+}
+
+.links{
+    font-size: 15px;
+    padding:0 20px;
+    color:#7f8291;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.container#under{
+    height: 36px;
+    text-align: right;
+}
+
+a#chat{
+    background-color: #ebad06;
+    color: white;
+    font-weight: 700;
+    border-radius: 0px 0px 5px 5px;
+    padding: 8px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+a#quote{
+    background-color:#00b2ee;
+    color: white;
+    font-weight: 700;
+    border-radius: 0px 0px 5px 5px;
+    padding: 8px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+a#call{
+    background-color:#ee7541;
+    color: white;
+    font-weight: 700;
+    border-radius: 0px 0px 5px 5px;
+    padding:8px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container-fluid#main{
+    background-color: #9cdcf2;
+    padding-top: 120px;
+
+}
+
+.container#main1{
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+.sell{
+    font-weight: 700;
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.sell h1{
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 34px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 30pt;
+    font-weight: 700;
+}
+
+.sell p{
+    color: white;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 22pt;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+img#connect{
+    margin-left:-100px;
+}
+
+.learn {
+	background-color:#ee7541;
+	border-top-left-radius:0px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:10px;
+    text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	font-style:italic;
+    height:43px;
+	line-height:43px;
+    width:134px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.learn:hover {
+	background-color:#524c52;
+}
+
+.learn:active {
+	position:relative;
+    top:1px;
+}
+
+.container#main2{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url(dot-pat.png);
+    background-repeat: repeat;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+div#connect{
+    text-align: center;
+    padding-left: 100px;
+}
+
+.container-fluid#bar{
+    background-color: #ee7541;
+    height:98px;
+}
+
+.container#bartext{
+    text-align:center;
+    color:white;
+    padding-top:25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+
+}
+
+.container#integrations{
+    padding-left: 50px;
+}
+
+.half{
+    width: 40%;
+    overflow: hidden;
+    float: left;
+    margin-left: 70px;
+    margin-top: 90px;
+    color: #6b6b6b;
+    position: relative;
+    padding: 0 0 0 130px;
+    display: inline;
+}
+
+.half#left{
+    margin-right:-40px;
+}
+
+
+
+img#integrate{
+    height: 108px;
+    width: 108px;
+    float: left;
+    position: absolute;
+    top:5px;
+    margin-left: -100px;
+
+}
+
+.text{
+    width: 260px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h3#int{
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    color: #ee7541;
+    font-size: 12px;
+}
+
+h2#int{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+div#all{
+    text-align: center;
+    padding-top:60px;
+    padding-bottom:50px;
+    margin-left: -45px;
+}
+
+.seeall {
+	background-color:#22afe6;
+	border-top-left-radius:0px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:10px;
+    text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	font-style:italic;
+    height:43px;
+	line-height:43px;
+    width:199px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.seeall:hover {
+	background-color:#524c52;
+}
+
+.seeall:active {
+	position:relative;
+	top:1px;
+}
+
+.container-fluid#Explore{
+    background-color: #f4f4f4;
+    padding-top: 75px;
+    text-align: center;
+}
+
+
+h3#explore{
+    font-weight: 400;
+    font-size: 30px;
+    color: #6b6b6b;
+}
+
+ul#side{
+    list-style: none;
+    text-align: left;
+    width: 40%;
+}
+
+#side li{
+    border: 2px solid #e8e8e8;
+    background-color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16pt;
+    color: #6b6b6b;
+    padding: 13px 5px 14px 5px;
+    margin: 21px 0 0 0;
+    position: relative;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.container-fluid#how{
+    height: 380px;
+}
+
+.container-fluid#customer{
+    height: 650px;
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/orange-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ee7541;
+
+}
+
+h2#customer{
+    font-size: 22pt;
+}
+
+p#customer{
+    margin-left: 22%;
+    margin-right: 22%;
+    font-size: 13pt;
+    line-height: 30px;
+}
+
+.customer{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+}
+
+.contact{
+    margin-left: 140px;
+}
+
+.half#contact1{
+    border: 3px solid white;
+    height: 120px;
+    width:350px;
+    text-align:left;
+    border-radius: 0 20px 0 20px;
+    color: white;
+    align-content: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.half#contact2{
+    border: 3px solid white;
+    height: 120px;
+    width:350px;
+    text-align: left;
+    border-radius: 0 20px 0 20px;
+    color: white;
+    padding: 12px;
+    margin-left: 20px;
+    margin-top: 20px ;
+}
+
+h4#contact{
+    font-size: 20px;
+}
+
+
+.conbtn {
+	background-color:#22afe6;
+	border-top-left-radius:0px;
+	border-top-right-radius:14px;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:14px;
+    text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+    height:44px;
+	line-height:44px;
+    width:107px;
+	text-decoration:none;
+    text-align:center;
+}
+.conbtn:hover {
+	background-color:#595759;
+}
+.conbtn:active {
+	position:relative;
+	top:1px;
+}
+
+p#contact{
+    display: inline-block;
+    width: 180px;
+    padding-left: 10px;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons#sales{
+    text-align: center;
+}
+
+li#left{
+    width: 300px;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+}
+
+li#right{
+    width: 500px;
+    float: left;
+    padding-left: 20px;
+}
+
+img#icons{
+    padding:40px;
+}
+
+ul.icontext{
+    display: inline-block;
+    list-style: none;
+    width:1100px;
+    float: left;
+    padding-left: 150px;
+    padding-top:70px;
+    color: grey;
+}
+
+.container-fluid#sales{
+    background-color: white;
+}
+
+.testimony{
+    margin-top:-40px;
+}
+
+.talk1{
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/quote.png);
+    position: relative;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #22b0e6;
+    padding: 28px 30px 31px 35px;
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 20px;
+    color: white;
+    width:400px;
+    margin-left:-90px;
+}
+
+.talk2{
+    background-image: url(https://www.nchannel.com/wp-content/themes/nchannel/images/quote.png);
+    position: relative;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #22b0e6;
+    padding: 28px 30px 31px 35px;
+    box-sizing: border-box;
+    border-radius: 0px 20px 0px 20px;
+    color: white;
+    width:400px;
+    margin-left:-90px;
+}
+
+.personal{
+    float: left;
+    display: inline;
+    margin-left:-90px;
+    padding-top:20px;
+}
+
+ul.info{
+    text-align:right;
+    list-style: none;
+    float: left;
+}
+
+ul.pic{
+    list-style: none;
+    float: left;
+}
+
+.container-fluid#logos{
+    background-color: #f4f4f4;
+}
+
+.container-fluid#end{
+    background-color: #3b3e4b;
+}
