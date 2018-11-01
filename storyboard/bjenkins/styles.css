@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	background-color: #272727;
+	color: #444;
+	hyphens: auto;
+}
+
+.navbar {
+	background: #423c3e; /* Old Browsers */
+	background: -webkit-linear-gradient(top, #423c3e 0%,#1c1a1b 50%,#423c3e 100%); /* Chrome, etc */
+	font-family: 'OCRAExtendedRegular'; /* Import OCRAExtended Font-face for this to work */
+}
+
+.navbar img {
+     display: block;
+     margin: -15px auto -15px -50px;
+}
