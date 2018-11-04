@@ -1,0 +1,200 @@
+div.ussf-header{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(rgb(56, 56, 56), rgb(17, 17, 17), rgb(48, 48, 48));
+    border-bottom: 1pt solid black;
+    color: gray;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15pt;
+    z-index: 10;
+}
+div.ussf-header-buttons-left{
+    display: inline-block;
+    background: transparent;
+    height: 50px;
+    width: auto; /*Set with inline style*/
+    padding-right: 5%;
+}
+.ussf-header-link{
+    line-height: 50px;
+    color: gray;
+    text-decoration: none;
+}
+a.ussf-header-link:hover{
+    color: white;
+    text-decoration: none;
+}
+div.ussf-header-logo{
+    display: inline-flex;
+    position: absolute;
+    top: 5px;
+    right: 47%;
+    left: 47%;
+    height: auto;
+}
+a.ussf-logo{
+    height: 100px;
+    width: auto;
+}
+a.ussf-logo:hover{
+    height: 120px;
+    width: auto;
+    transition: ease-in-out 350ms;
+}
+div.ussf-header-bottons-right{
+    display: block;
+    background: transparent;
+    height: 100px;
+    width: auto; /*Set with inline style*/
+    padding-left: 5%;
+}
+.ussf-search{
+    float: right;
+}
+.ussf-search:hover{
+    color:white;
+}
+div.ussf-body{
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    padding-top: 50px;
+    color: gray;
+    font-weight: 100;
+}
+div.ussf-body-contents{
+    width: 70%;
+    margin: auto;
+}
+div.ussf-carousel{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    z-index: 0;
+    align-content: inherit;
+}
+div.ussf-body-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24pt;
+}
+div.ussf-body-text{
+    display: block;
+    width: 100%;
+    text-align: justify;
+    font-size: 16pt;
+}
+div.ussf-body-contents-stretched{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+div.ussf-discover-1{
+    display: inline-flex;
+    width: 39.6%;
+    padding: 0;
+}
+div.ussf-discover-2{
+    display: inline-block;
+    padding: 0;
+    width: 60%;
+    height: 337px;
+    background-image: url("https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/stars-background.png");
+    background-size: cover;
+    vertical-align: top;
+}
+a.ussf-discover-links{
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 24pt;
+    background-position-x: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 5;
+}
+a.ussf-discover-links:hover{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    background-position-x: 16%;
+    transition: ease-in-out 200ms;
+}
+div.ussf-discover-2-text{
+    display: block;
+    text-decoration: none;
+    font-size: 24pt;
+    text-align: center;
+}
+div.ussf-journey-1{
+    display: inline-block;
+    width: 49%;
+    height: auto;
+}
+div.ussf-journey-2{
+    display: inline-block;
+    font-size: 12.95pt;
+    font-weight: 400;
+    width: 45%;
+    height: 347.27px;
+    background-color: rgb(71, 71, 71); 
+    border: 8pt solid rgb(71, 71, 71);
+    border-bottom: none;
+    color: rgb(158, 158, 158);
+    text-align: justify;
+    vertical-align: top;
+}
+div.ussf-defense{
+    background-image: url("https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/missile.png");
+    background-size: cover;
+    height: 600px;
+}
+img.ussf-defense-badge{
+    width: 20%;
+    height: auto;
+}
+p.ussf-defense-text{
+    position: absolute;
+    right: 25%;
+    font-size: 32pt;
+}
+div.ussf-footer{
+    background-image: linear-gradient(rgb(56, 56, 56), rgb(17, 17, 17), rgb(48, 48, 48));
+    height: 100px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15pt;
+}
+div.ussf-footer-1{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+
+}
+div.ussf-footer-bottom-links{
+    display: block;
+    font-size: 12pt;
+}
+a.ussf-footer-links{
+    color: gray;
+    text-decoration: none;
+}
+a.ussf-footer-links:hover{
+    color: white;
+    text-decoration: none;
+}
+div.ussf-footer-2{
+    display: inline-block;
+    line-height: 100px;
+    width: 50%
+}
+.hide{
+    display: none;
+}
