@@ -26,7 +26,7 @@ html, body {
     margin: 0;
 	padding: 0;
 	top: 5px;
-	left: 55rem;
+	left: 50rem;
 	z-index: 999999;
 }
 
@@ -140,7 +140,7 @@ html, body {
 	position: relative;
 	color: #716F6B;
 	top: -10rem;
-	left: 60rem;
+	left: 55rem;
 }
 
 #footer {
