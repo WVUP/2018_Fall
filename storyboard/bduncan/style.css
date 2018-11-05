@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    
+
+
+}
+
+.topBar{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#363636+0,0c0c0c+40,0c0c0c+60,3e3e3e+100 */
+    background: #363636; /* Old browsers */
+    background: -moz-linear-gradient(top, #363636 0%, #0c0c0c 35%, #0c0c0c 65%, #3e3e3e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #363636 0%,#0c0c0c 35%,#0c0c0c 65%,#3e3e3e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #363636 0%,#0c0c0c 35%,#0c0c0c 65%,#3e3e3e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#3e3e3e',GradientType=0 ); /* IE6-9 */
+    height: 6rem;    
+    position: fixed;
+    display: block;
+    z-index:20;
+    width: 100%;
+    margin-left: 17%;
+
+}
+.content1{
+    display: block;
+    padding: 35px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+.content1 a{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #767070;
+
+}
+.search{
+    float: right;
+    text-decoration: none;
+    color: #767070;
+
+    
+}
+.homeImage{
+
+    margin-right: auto;
+    margin-left: 45%;
+    margin-top: -5rem;
+    padding: 0%;
+    border: 0%;
+
+}
+.homeImage img{
+    height: 7rem;
+    width: 7rem;
+    margin: auto;
+    padding-top: -3rem;
+
+}
+.pageContent{
+    background: #252525;
+    height: 110%;
+    padding-top:  6rem;
+    display: block;
+
+}
+
+.carousel { 
+    width: 66%;
+    margin: auto;
+}
+
+.textField{
+    color: #767070;
+    display: block;
+    
+}
+
+/*##########################*/
+/*        MOBILE CSS        */
+/*##########################*/
+@media screen and (max-width: 800px) {
+
+
+}
