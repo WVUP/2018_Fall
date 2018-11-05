@@ -54,13 +54,13 @@ div.ussf-header-buttons-right{
     height: 40px;
     float: right;
     /* width: 90%; */
-    margin: 5px;
+    margin: 7px;
 }
 .ussf-search-box{
     display: inline-block;
     width: auto;
     border-radius: 6px;
-    background-color: rgb(17, 17, 17);
+    background-color: transparent;
     color: gray;
 }
 /* .ussf-search:hover{
@@ -119,7 +119,7 @@ div.ussf-discover-2{
     padding: 0;
     width: 60%;
     height: 337px;
-    background-image: url("https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/stars-background.png");
+    background-image: url("stars-background.png");
     background-size: cover;
     vertical-align: top;
 }
@@ -163,15 +163,21 @@ div.ussf-journey-1{
 div.ussf-journey-2{
     display: inline-block;
     font-optical-sizing: auto;
-    font-weight: 400;
     width: 45%;
     height: 100%;
     background-color: rgb(71, 71, 71); 
-    border: 8pt solid rgb(71, 71, 71);
-    border-bottom: none;
+    vertical-align: top;
+    overflow: hidden;
+}
+div.ussf-journey-2-text{
+    display: inline-flex;
+    font-size: 21px;
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
     color: rgb(158, 158, 158);
     text-align: justify;
-    vertical-align: top;
+    border: 8pt solid rgb(71, 71, 71);
 }
 div.ussf-defense{
     background-image: url("missile.png");
