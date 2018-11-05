@@ -1,0 +1,73 @@
+/* 
+div {
+  border: 1px solid black;  
+} */
+
+body {
+    background-color: #262626;
+    color: gray; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #000000;     
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  /* padding: 5px;  */
+  /* margin-top: 0px;  */
+  z-index: 20;
+}
+
+.header ul {
+  list-style-type: none;
+  padding: -5px;
+  margin: 5px;    
+  /* width: 100%;  */
+  display: inline;
+}
+  
+li {
+  display: inline-block; 
+  padding: 00px 10px; /*what do these #s do?*/
+}
+
+.clmLft {
+  /* display: inline-block;   */
+  width: 25%;
+  text-align: left;
+  float: left;    
+}
+
+.clmMid {
+  width: 25%;
+  position: fixed;
+  /* top: 50px; */
+  z-index: 999;
+  padding: 10px;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clmRgt {
+  /* display: inline-block;     */
+  width: 25%;
+  text-align: right;  
+  float: right;  
+} 
+
+.rocketRgt {
+  width: 66%;
+  /* padding: 0 10px 0 0; */
+  background-size: cover; 
+  float: right;
+}
+
+.rocketLft {
+  width: 33%;
+  /* padding: 0 10px 0 0; */
+  float: left;
+}
