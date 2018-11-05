@@ -1,0 +1,197 @@
+body{
+    margin:0;
+    background-color: #262626;
+}
+
+.header{
+    height: 0.5in;
+    background-image: linear-gradient(rgb(100, 100, 100) 0%, black 35%, black 65%, rgb(100, 100, 100) 100%);
+    line-height: 2.8;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.header-left{
+    float:left;
+    color: gray;
+    height: 0.5in;
+    margin-left: 0.5in;
+}
+
+.header-right{
+    float: right;
+    color: gray;
+    height: 0.5in;
+    margin-right: 0.5in;
+}
+
+.header-center{
+    float: right;
+    transform: translateX(-895px);
+    width: 1in;
+
+}
+
+.inner{
+    background-color: none;
+    text-align: justify;
+    max-width: 9in;
+    margin: 0 auto;
+    
+}
+
+.body1{
+    background-color: none;
+}
+
+.body2{
+    background-color: none;
+    color: gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.body3{
+    background-color: none;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.body4{
+    background-color: none;
+    color: gray;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.body5{
+    height:501px;
+    background-image: url("images/stars-background.png");
+    background-size: cover;
+}
+
+.body5-left{
+    width: 40%;
+    float: left;
+    background-image: url("images/rocket.png");
+    background-size: cover;
+    height: 501px;
+}
+
+.body5-right{
+    width: 60%;
+    float: right;
+    background-color: none;
+    height: 501px;
+    padding-left: 300px;
+    padding-top: 100px;
+}
+
+.discover-link{
+    background-color: none;
+    color: gray;
+    font-size: 18pt;
+}
+
+.discover-link:hover{
+    transform: translateX(100px);
+    color: white;
+    font-weight: bold;
+}
+
+.body6{
+    background-color: none;
+    color: gray;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.body7{
+    background-color: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 500px;
+}
+
+.body7-left{
+    width: 48%;
+    float: left;
+    height: 311px;
+    background-image: url("images/astronauts.png");
+    background-size: cover;
+}
+
+.body7-right{
+    width: 48%;
+    float: right;
+    height: 311px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.body8{
+    background-image: url("images/missile.png");
+    background-size: cover;
+    height: 1000px;
+}
+
+.body8-text{
+    text-align: right;
+    transform: translateY(150px);
+    color: gray;
+    font-size: 32pt;
+}
+
+.footer{
+    height: 1.0in;
+    background-image: linear-gradient(rgb(100, 100, 100) 0%, black 35%, black 65%, rgb(100, 100, 100) 100%);
+}
+
+.footer-links-left{
+    transform: translateY(0.35in);
+    float:left;
+    color: gray;
+    font-size: 14pt;
+    margin-left: 0.5in;
+}
+
+.footer-links-right{
+    transform: translateY(0.35in);
+    float:right;
+    color: gray;
+    font-size: 14pt;
+    margin-right: 0.5in;
+}
+
+.header-left:hover{
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out, all, .3s;
+}
+
+.header-center:hover{
+    cursor: pointer;
+}
+
+.header-right:hover{
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out, all, .3s;
+}
+
+.footer-links-left:hover{
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out, all, .3s;
+}
+
+.footer-links-right:hover{
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out, all, .3s;
+}
