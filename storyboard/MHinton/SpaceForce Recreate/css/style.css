@@ -1,0 +1,131 @@
+body {
+    background-color: #282b2d;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 8%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#525252+0,070707+25,010101+50,060606+75,060606+75,525252+100 */
+    background: #525252; /* Old browsers */
+    background: -moz-linear-gradient(top, #525252 0%, #070707 25%, #010101 50%, #060606 75%, #060606 75%, #525252 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #525252 0%,#070707 25%,#010101 50%,#060606 75%,#060606 75%,#525252 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #525252 0%,#070707 25%,#010101 50%,#060606 75%,#060606 75%,#525252 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#525252',GradientType=0 ); /* IE6-9 */
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.header ul a {
+    color: #46484c;
+    font-weight: bold;
+    display: inline;
+    padding-right: 0%;
+    text-align: left;
+    width: 10%;
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    color: darkgray;
+}
+
+.nav-pic {
+    margin-left: 10%;
+}
+
+.nav-pic img:hover {
+    transform: scale(1.05);
+    transition: 200ms ease-in;
+}
+
+.search {
+    padding-left: 30%;
+}
+
+.caro-pic img {
+    margin-top: 5%;
+    transform: scale(1.2);
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.welcome {
+    color: #525252;
+    padding-right: 25%;
+    padding-left: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.discover-pics {
+    display: inline-flex;
+}
+
+.arrows {
+    display:flow-root;
+    padding-left: 50%;
+    margin-top: -21.75%;
+}
+
+.arrows-titles {
+    padding-left: 65%;
+    display: flow-root;
+    margin-top: -21.75%;    
+}
+
+.arrows-titles ul {
+    padding-bottom: 5%;
+}
+
+.arrows-titles a {
+    color: #525252;
+    text-decoration: none;
+}
+
+.arrows-titles a:hover {
+    color: white;
+}
+
+.startjourney {
+    padding-top: 2%;
+    width: 100%;
+    color: #525252;
+    text-align: center;
+}
+
+.pic {
+    width: 100%;
+    padding-left: 20%;
+    display: inline-block;
+    text-align: justify;
+    color: #525252;
+    padding-right: 23%;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#525252+0,070707+25,010101+50,060606+75,060606+75,525252+100 */
+    background: #525252; /* Old browsers */
+    background: -moz-linear-gradient(top, #525252 0%, #070707 25%, #010101 50%, #060606 75%, #060606 75%, #525252 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #525252 0%,#070707 25%,#010101 50%,#060606 75%,#060606 75%,#525252 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #525252 0%,#070707 25%,#010101 50%,#060606 75%,#060606 75%,#525252 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#525252',GradientType=0 ); /* IE6-9 */
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.footer-pic {
+    padding-left: 100%;
+    margin-top: -53px;
+}
