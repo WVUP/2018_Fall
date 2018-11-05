@@ -62,7 +62,7 @@ li {
 .rocketRgt {
   width: 66%;
   /* padding: 0 10px 0 0; */
-  background-size: cover; 
+  /* background-size: cover;  */
   float: right;
 }
 
@@ -70,4 +70,15 @@ li {
   width: 33%;
   /* padding: 0 10px 0 0; */
   float: left;
+}
+
+footer{
+  overflow: hidden;
+  background-color: #000000;     
+  /* position: fixed;  */
+  top: 0; 
+  width: 100%; 
+  /* padding: 5px;  */
+  /* margin-top: 0px;  */
+  z-index: 20;
 }

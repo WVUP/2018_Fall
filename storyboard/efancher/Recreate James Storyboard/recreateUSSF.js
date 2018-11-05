@@ -1,14 +1,18 @@
-let searchInput = document.getElementById('ussf-search');
+let searchInput = document.getElementById('ussfSearchBox');
 console.dir(searchInput);
-searchInput.addEventListener('submit', googleSearch);
 
-let displaySearch = document.getElementById('ussf-search-box');
-displaySearch.addEventListener('hover', searchBoxDisplay);
+let submitButton = document.getElementById('ussfSearchSubmit');
+searchButton.addEventListener('submit', googleSearch);
 
-function searchBoxDisplay(){
-    let button = getElementById('ussfSearchButton');
-    let box = getElementById('ussfSearchBox');
-    button.classList.add('hide');
-    box.classList.remove('.hide');
+let searchValue;
 
+function googleSearch(){
+
+    event.preventDefault();
+
+    searchValue = document.getElementById("ussfSearchInput").value;
+
+    console.log(searchValue);
+    
+    return;
 }

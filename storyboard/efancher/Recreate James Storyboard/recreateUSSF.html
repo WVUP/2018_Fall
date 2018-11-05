@@ -43,18 +43,19 @@
         </div>
         <div class="ussf-header-logo">
             <a class="ussf-logo" href="#">
-                <img class="ussf-logo" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/spaceforce-logo.png">
+                <img class="ussf-logo" src="spaceforce-logo.png">
             </a>
         </div>
-        <div style="padding-right: 5%; width: 50%">
-            <a id="ussf-search" class="ussf-header-link ussf-search">
-                <div id="ussfSearchButton" class="ussf-header-buttons-right" style="width: 16%">
+        <div class="ussf-header-buttons-right">
+            <!-- <a id="ussf-search" class="ussf-header-link ussf-search"> -->
+                <!-- <div id="ussfSearchButton" class="ussf-header-buttons-right hide" style="width: 16%">
                     SEARCH
-                </div>
-                <form id="ussfSearchBox" class="ussf-search-box hide" style="width: 25%">
-                    <input id="ussfSearchInput" type="text" placeholder="Search">
+                </div> -->
+                <form id="ussfSearchBox" name="ussfSearchBox" class="ussf-search-position">
+                    <input id="ussfSearchInput" class="ussf-search-box" type="search" placeholder="">
+                    <button id="ussfSearchSubmit" class="ussfSearchSubmit" type="submit">Search</button>
                 </form>
-            </a>
+            <!-- </a> -->
         </div>
     </div>
 
@@ -64,18 +65,20 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="z-index: 0;">
                     <div class="carousel-inner" style="z-index: 0;">
                         <div class="carousel-item active" style="z-index: 0;">
-                        <img class="d-block w-100" style="z-index: 0;" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/starship.png" alt="First slide">
+                        <img class="d-block w-100" style="z-index: 0;" src="starship.png" alt="First slide">
                         </div>
                         <div class="carousel-item" style="z-index: 0;">
-                        <img class="d-block w-100" style="z-index: 0;" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/satellite.png" alt="Second slide">
+                        <img class="d-block w-100" style="z-index: 0;" src="satellite.png" alt="Second slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="transform: scale(3); position: absolute; left: 10%;"></span>
+                        <!-- <img src="arrow-carousel2.png" style="transform: scale(-1, 1); position: absolute; left: 5%; opacity: 1; filter: flipH; color: rgb(255, 255, 255);"> -->
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="transform: scale(3); position: absolute; right: 10%;"></span>
+                        <!-- <img src="arrow-carousel2.png" style="transform: scale(1); position: absolute; right: 5%; opacity: 1; color: rgb(255, 255, 255);"> -->
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -102,36 +105,36 @@
         <br>
         <div class="ussf-body-contents-stretched">
             <div class="ussf-discover-1">
-                <img style="width: 100%; height: auto;" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/rocket.png">
+                <img style="width: 100%; height: auto;" src="rocket.png">
             </div>
             <div class="ussf-discover-2">
                 <br>
                 <br>
-                <a class="ussf-discover-links" href="#" style="background-image: url(https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/arrow-yellow.png);">
+                <a class="ussf-discover-links" href="#" style="background-image: url(arrow-yellow.png);">
                     
                     <div class="ussf-discover-2-text">
                         Mission
                     </div>
                 </a>
-                <a class="ussf-discover-links" href="#" style="background-image: url(https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/arrow-white.png);">
+                <a class="ussf-discover-links" href="#" style="background-image: url(arrow-white.png);">
                     
                     <div class="ussf-discover-2-text">
                         Education
                     </div>
                 </a>
-                <a class="ussf-discover-links" href="#" style="background-image: url(https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/arrow-green.png);">
+                <a class="ussf-discover-links" href="#" style="background-image: url(arrow-green.png);">
                     
                     <div class="ussf-discover-2-text">
                         Careers
                     </div>
                 </a>
-                <a class="ussf-discover-links" href="#" style="background-image: url(https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/arrow-blue.png);">
+                <a class="ussf-discover-links" href="#" style="background-image: url(arrow-blue.png);">
                     
                     <div class="ussf-discover-2-text">
                         Lifestyle
                     </div>
                 </a>
-                <a class="ussf-discover-links" href="#" style="background-image: url(https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/arrow-orange.png);">
+                <a class="ussf-discover-links" href="#" style="background-image: url(arrow-orange.png);">
                     
                     <div class="ussf-discover-2-text">
                         How to Join
@@ -149,27 +152,29 @@
             </div>
             <br>
             <br>
-            <div style="width: 100%; margin: auto;">
+            <div class="ussf-journey">
                 <div class="ussf-journey-1">
-                    <img style="width: 100%; height: auto;" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/astronauts.png">
+                    <img style="width: 100%; height: auto;" src="astronauts.png">
                 </div>
                 <div style="display: inline-block; width: 1%;"></div>
                 <div class="ussf-journey-2">
-                        <p>Recruitment begins now. Visit out recruitment
+                    <div class="ussf-journey-2-text">
+                        Recruitment begins now. Visit out recruitment
                         page to learn how to apply today. Or visit one of
                         hundreds of recruitment facilities across the
-                        United States.</p>
-                        
-                        <p>You can contact the our recruitment officers if
+                        United States.
+                        <br><br>
+                        You can contact the our recruitment officers if
                         you have any questions about joining the USSF.
-                        Visit our contact us page for more information.</p>
-        
-                        <p>We need you. Do you think you have what it
+                        Visit our contact us page for more information.
+                        <br><br>
+                        We need you. Do you think you have what it
                         takes to protect our nation using the latest
                         advances in technology? We are looking for
                         technically skilled and physically skilled people
                         that are willing to go beyond their horizons and
-                        are up for new challenges.</p>
+                        are up for new challenges.
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,37 +182,37 @@
             <div class="ussf-defense">
                 <img class="ussf-defense-badge" src="SpaceForceLogo2.png">
                 <p class="ussf-defense-text">
-                    Your First Line of Defense
+                    Your First Line of Defense.
                 </p>
             </div>
-            <div class="ussf-footer">
-                <div class="ussf-footer-1">
-                    <p></p>
-                    <p>
-                        ©2018 United States Space Force
-                    </p>
-                    <div class="ussf-footer-bottom-links">
-                        <a class="ussf-footer-links" href="#">
-                            Privacy Policy
-                        </a>
-                        <a class="ussf-footer-links" href="#">
-                            About Our Ads 
-                        </a>
-                        <a class="ussf-footer-links" href="#">
-                            Sitemap 
-                        </a>
-                        <a class="ussf-footer-links" href="#">
-                            Terms of Use
-                        </a>
-                    </div>
-                </div>
-                <div class="ussf-footer-2">
-                    <img style="float: right;" src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/storyboard/images/spaceforce-logo.png">
-                    <p style="float: right;">
-                        www.SpaceForce.gov
-                    </p>
-                </div>
+        </div>
+    </div>
+    <div class="ussf-footer">
+        <div class="ussf-footer-1">
+            <p></p>
+            <p>
+                ©2018 United States Space Force
+            </p>
+            <div class="ussf-footer-bottom-links">
+                <a class="ussf-footer-links" href="#">
+                    Privacy Policy
+                </a>
+                <a class="ussf-footer-links" href="#">
+                    About Our Ads 
+                </a>
+                <a class="ussf-footer-links" href="#">
+                    Sitemap 
+                </a>
+                <a class="ussf-footer-links" href="#">
+                    Terms of Use
+                </a>
             </div>
+        </div>
+        <div class="ussf-footer-2">
+            <img style="float: right;" src="spaceforce-logo.png">
+            <p style="float: right; margin-bottom: 0">
+                www.SpaceForce.gov
+            </p>
         </div>
     </div>
 
