@@ -1,0 +1,302 @@
+@font-face{
+
+    font-family: 'OCRAExtended';
+    src: url('OCRAEXT.ttf');
+
+}
+
+@font-face{
+
+    font-family: 'GrotesqueLight';
+    src: url('GrotesqueLight.otf');
+
+}
+
+html, body{
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+
+    width: 80%;
+    height: 50px;
+    background-image: linear-gradient(#3C3D40 0%, black 33%, black 66%, #3C3D40 100%);
+    padding: 0 10%;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.navbar a{
+
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    line-height: 50px;
+    font-family: 'OCRAExtended';
+    font-size: 20px;
+    padding: 0 20px;
+
+}
+
+.navbar a:hover{
+
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.search{
+
+    display: none;
+    float: right;
+    padding-left: 10px;
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+    transition: display 2s;
+}
+.search-bar{
+
+    display: inline-block;
+}
+
+.search-a{
+    display: none !important;
+}
+
+.center{
+
+    left: 50%;
+}
+
+.space-logo{
+
+    width: 88px;
+    height: 95px;
+    position:fixed; 
+    margin-left: -44px;
+    transition: all .3s;
+
+}
+
+.space-logo:hover{
+
+    width: 132px;
+    height: 142.5px;
+    margin-left: -71.25px;
+    margin-top: -18px;
+    cursor: pointer;
+}
+
+.main{
+
+    padding: 50px 20% 0 20%;
+    height: auto;
+    background-color:#262626;
+    font-family: 'GrotesqueLight';
+
+}
+
+.carousel{
+
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-holder{
+
+    width: 2300px;
+    height: inherit;
+    position: absolute;
+    
+}
+
+.carousel img{
+
+    width: 1141px;
+    height: 100%;
+    position: relative;
+    float: left;
+    transition: all 1s;
+}
+
+.prev, .next{
+
+    cursor: pointer;
+    font-size:100px; 
+    position: absolute; 
+    top:35%; 
+    font-weight: bold;
+    color: gray;
+}
+
+.next{
+
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+
+    color: white;
+}
+
+.main h3{
+
+    padding-top: 20px;
+    color: gray;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 100;
+}
+
+.main p{
+
+    margin: 0;
+    color: gray;
+    font-size: 25px; 
+    text-align: justify;
+    font-weight: 100;   
+}
+
+.side-by-side{
+
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0;
+    right: 0;
+
+}
+
+.side-by-side img{
+
+    float: left;
+    height: 400px;
+}
+
+.side-by-side .arrows{
+
+    width: 10%;
+    position: absolute;
+    right: 30%;
+    margin: 0;
+    padding: 30px 0;
+    top: 0;
+}
+
+.side-by-side .arrows img{
+
+    float: none;
+    display: block;
+    height: 68px;
+    line-height: 68px;
+    transition: all .5s;
+
+}
+
+.side-by-side .arrows img.active{
+
+    margin-left: 25%;
+}
+
+.side-by-side ul{
+
+    margin: 0;
+    padding: 30px 0;
+    position: absolute;
+    left: 70%;
+    top: 0%;
+    height: 340px;
+}
+.side-by-side ul li{
+
+    text-decoration: none;
+    color: gray;
+    display: block;
+    height: 68px;
+    line-height: 68px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.side-by-side ul li:hover{
+
+    color: white;
+    cursor: pointer;
+}
+
+.two-panes{
+    width: 100%;
+    height: 500px;
+}
+
+.right-pane{
+ 
+    padding: 10px;
+    background-color:#3C3D40; 
+    color: gray;
+    width: 48%;
+    float: right;
+}
+
+.right-pane p{
+
+    font-size: 26px;
+    line-height: 27px;
+}
+
+.first-line{
+
+    margin-left: -33.33333%;
+    margin-right: -33.33333%;
+    position: relative;
+}
+
+.footer{
+
+    margin-top: -20px;
+    width: 90%;
+    height: 100px;
+    background-image: linear-gradient(#3C3D40 0%, black 33%, black 66%, #3C3D40 100%);
+    padding: 0 5%;
+}
+
+.footer p{
+    color: gray;
+    font-family: 'OCRAExtended';
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.footer a{
+
+    text-decoration: none;
+    padding: 0 10px;
+    color: gray;
+    font-family: 'OCRAExtended';
+    display: inline-block;
+    font-size: 15px;
+}
+
+.footer a:hover{
+
+    color: white;
+}
+
+.footer h3{
+
+    margin: -60px 10px 0 0;
+    color: gray;
+    font-family: 'OCRAExtended';
+    font-size: 20px;
+    line-height: 100px;
+    height: 100px;
+    float: right;
+}
