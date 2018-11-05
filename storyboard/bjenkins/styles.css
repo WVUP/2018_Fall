@@ -1,17 +1,171 @@
-body {
+@font-face{
+    font-family: 'OCRAExtended';
+    src: url('OCRAExtended.ttf');
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	padding: 0;
 	margin: 0;
-	background-color: #272727;
+	background-color: #262626;
 	color: #444;
 	hyphens: auto;
 }
 
 .navbar {
-	background: #423c3e; /* Old Browsers */
-	background: -webkit-linear-gradient(top, #423c3e 0%,#1c1a1b 50%,#423c3e 100%); /* Chrome, etc */
-	font-family: 'OCRAExtendedRegular'; /* Import OCRAExtended Font-face for this to work */
+	background: #3B3B3B; /* Old Browsers */
+	background: -webkit-linear-gradient(top, #3B3B3B 0%, #0D0D0D 40%, #0D0D0D 60%, #3B3B3B 100%); /* Chrome, etc */
+	font-family: 'OCRAExtended'; /* Import OCRAExtended font-face for this to work */
+	font-size: 22px;
+	height: 55px;
 }
 
-.navbar img {
-     display: block;
-     margin: -15px auto -15px -50px;
+#navbar-img {
+    position: fixed;
+    margin: 0;
+	padding: 0;
+	top: 5px;
+	left: 55rem;
+	z-index: 999999;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+#welcometext > h2 {
+	text-align: center;
+	font-size: 36px;
+	color: #716F6B;
+}
+
+#welcometext > p {
+	padding-top: 2rem;
+	font-size: 22px;
+	color: #716F6B;
+}
+
+#dividertext > h2 {
+	padding-top: 2rem;
+	text-align: center;
+	font-size: 36px;
+	color: #716F6B;
+}
+
+#recruit-text {
+	position: relative;
+	padding-top: 1rem;
+	background-color: #404040;
+	max-width: 470px;
+}
+
+#recruit-text > p {
+	color: #A4A09F;
+	font-size: 20px;
+}
+
+#img-container > img {
+    width: 45rem;
+    height: 450px;
+    position: relative;
+    display: inline-block;
+}
+
+#img-links {
+    width: 74.75rem;
+    height: 450px;
+	margin-left: 45rem;
+	float: left;
+	position: absolute;
+	background-image: url(images/stars-background.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+#p-links {
+	font-size: 30px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+#p-links > img {
+	padding-top: 20px;
+	padding-right: 3rem;
+	height: 45%;
+	width: 45%;
+}
+
+#p-links > a {
+	color: #716F6B;
+	text-decoration: none;
+}
+
+#p-links > a:hover {
+	color: white;
+}
+
+#img-bottom {
+	height: 676px;
+	background-image: url(images/missile.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#img-bottom > img {
+	width: 300px;
+	height: auto;
+}
+
+.img-bottom-text {
+	font-size: 36px;
+	margin: 0;
+	position: relative;
+	color: #716F6B;
+	top: -10rem;
+	left: 60rem;
+}
+
+#footer {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 125px;
+	background: #3B3B3B; /* Old Browsers */
+	background: -webkit-linear-gradient(top, #3B3B3B 0%, #0D0D0D 40%, #0D0D0D 60%, #3B3B3B 100%); /* Chrome, etc */
+	font-family: 'OCRAExtended'; /* Import OCRAExtended font-face for this to work */
+	font-size: 22px;
+    color: #716F6B;
+}
+
+#footer > p > a {
+	color: #716F6B;
+	text-decoration: none;
+}
+
+.img-footer {
+	position: relative;
+	top: -3rem;
+	right: 3rem;
+	margin: 0;
+	text-align: right;
 }
