@@ -88,11 +88,7 @@ li {
   color: #ffffffd7;
 }
 
-
-
-
-
-#missle{
+.missle{
   width: 100%;
   /* height: auto; */
   /* display: flex; */
@@ -100,9 +96,6 @@ li {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-
 
 footer{
   overflow: hidden;
