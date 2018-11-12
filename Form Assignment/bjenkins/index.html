@@ -9,10 +9,31 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body lang="en-US">
+<body lang="en-US" onload="myFunction()">
+
+<script>
+function myFunction() {
+	alert("Page loaded successfully.");
+}
+
+function nameFunction() {
+	var txt;
+	var person = prompt("Please enter your name:", "name");
+	
+	if (person == null || person == "") {
+		txt = "You didn't enter your name!";
+	} else {
+		txt = "Hello " + person + "! Please complete the test below.";
+	}
+	document.getElementById("test").innerHTML = txt;
+}
+</script>
+
 	<header>
 		<h1>Easy Test</h1>
 	</header>
+	<p>Click <button onclick="nameFunction()">here</button> to enter your name.</p>
+	<p id="test"></p>
 	<hr>
 	<form>
 	<div class="clearfix">

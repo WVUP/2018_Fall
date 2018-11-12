@@ -12,7 +12,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #000000;     
+  background: #000000;     
   position: fixed; 
   top: 0; 
   width: 100%; 
@@ -31,7 +31,7 @@ body {
   
 li {
   display: inline-block; 
-  padding: 00px 10px; /*what do these #s do?*/
+  padding: 0px 10px; /*what do these #s do?*/
 }
 
 .clmLft {
@@ -59,18 +59,50 @@ li {
   float: right;  
 } 
 
-.rocketRgt {
-  width: 66%;
+/* .rckLft {
+  display: block; */
+  /* width: 33%; */
   /* padding: 0 10px 0 0; */
-  /* background-size: cover;  */
-  float: right;
+  /* float: left;
 }
 
-.rocketLft {
-  width: 33%;
+.rckRgt {
+  display: block;
+  width: 66%; */
+  /* background-image: url("images/stars-background.png"); */
   /* padding: 0 10px 0 0; */
-  float: left;
+  /* background-size: cover;  */
+  /* border: 1px solid black;   */
+  /* float: right; */
+/* } */
+
+/* #rckLft, #rckRgt{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+#recruitText{
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #404040;
+  color: #ffffffd7;
 }
+
+
+
+
+
+#missle{
+  width: 100%;
+  /* height: auto; */
+  /* display: flex; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
 
 footer{
   overflow: hidden;
