@@ -234,3 +234,24 @@ div#footer.row{
 p#web{
     padding-top: 40px;
 }
+
+input[type=text] {
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color:white;
+    background-image: url(https://us.123rf.com/450wm/imagecatalogue/imagecatalogue1610/imagecatalogue161015127/64159470-search-tool-interface-toolbar-button-vector-icon-style-is-a-flat-symbol-in-a-rounded-square-button-w.jpg?ver=6);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    color:gray;
+    transition: width 0.4s ease-in-out;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
