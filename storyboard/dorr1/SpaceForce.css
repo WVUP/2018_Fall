@@ -1,0 +1,236 @@
+.navbar{
+    background-color: black;
+    height:50px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #545454 0%,#000000 15%, #000000 25%, #000000 75%,#000000 85%, #545454 100%);
+    position: fixed;
+    z-index: 999999;
+}
+
+ul.navbar-nav{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav.navbar.navbar-expand-md{
+    position: fixed;
+}
+
+a.nav-link{
+    color: gray;
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+li.nav-item{
+    padding-right:20px;
+}
+
+img#logo{
+    padding-top: 52px;
+    transition: transform .2s;
+
+}
+
+img#logo:hover{
+    transform: scale(1.5);
+}
+
+img#carousel{
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+}
+
+span.carousel-control-prev-icon{
+    height: 70px;
+    width: 70px;
+}
+
+span.carousel-control-next-icon{
+    height: 70px;
+    width: 70px;
+}
+
+a.carousel-control-prev{
+    width: 5%;
+}
+
+a.carousel-control-next{
+    width: 5%;
+}
+
+p{
+    color: white;
+
+}
+
+p#large{
+    text-align: center;
+    font-size: 23pt;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: gray;
+    word-spacing: -10px;
+}
+
+p#main{
+    font-size: 15pt;
+    color: gray;
+    word-spacing: -5px;
+    line-height: 2rem;
+
+}
+
+p#last{
+    font-size: 23pt;
+    text-align:center;
+    color: gray;
+    padding-top: 50px;
+    word-spacing: -10px;
+    padding-bottom: 25px;
+
+}
+
+.container-fluid#images{
+    height: 400px;
+    padding: 0%;
+    display: inline;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column#rocket {
+    flex: 40%;
+}
+
+.column#stars{
+    flex: 60%;
+    background-image: url(images/stars-background.png);
+}
+
+
+img#arrows{
+    padding-right: 60px;
+}
+
+img#arrows:hover{
+    padding-right: 10px;
+}
+
+div#stars1.row{
+    padding-top: 20px;
+    margin-left: 20%;
+}
+
+div#stars.row{
+    margin-left: 20%;
+}
+
+p#label{
+    font-size: 20pt;
+    padding-top: 2px;
+    color: gray;
+}
+
+img#rocket{
+    height: 335px;
+}
+
+div#arrows{
+    display: inline-grid;
+    padding-top: 20px;
+    padding-left: 250px
+}
+
+img#arrows{
+    width: 150px;
+}
+
+p#astronaut{
+    width: 100%;
+    font-size: 20px;
+    color:white;
+    padding-left: 15px;
+}
+
+.astrotitle p{
+    font-size: 25pt;
+    text-align:center;
+    padding-top: 40px;
+    color: gray;
+    word-spacing: -10px;
+}
+
+.astronaut{
+    display: flex;
+    padding-top: 40px;
+}
+
+div#astropic.column{
+    flex: 40%;
+}
+div#astrotext.column{
+    flex: 60%;
+    background-color: #545454;
+    margin-left: 20px;
+}
+
+.department{
+    background-image: url(images/missile.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img#badge{
+    height: 200px;
+    width: 200px;
+}
+
+p#badge{
+    float: right;
+    margin-top: 20%;
+    margin-right: 15%;
+    font-size: 30pt;
+    word-spacing: -10px;
+}
+
+.container-fluid#footer{
+    background-color: black;
+    height:100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #545454 0%,#000000 15%, #000000 25%, #000000 75%,#000000 85%, #545454 100%);
+    z-index: 999999;
+    display: flex;
+}
+
+.column#footer1{
+    flex: 50%;
+}
+
+.column#footer2{
+    flex: 50%;
+
+}
+
+a{
+    padding-left: 10px;
+    color: gray;
+}
+
+p{
+    padding-left: 10px;
+    color: gray;
+    padding-top: 20px;
+}
+
+div#footer.row{
+    float: right
+}
+
+p#web{
+    padding-top: 40px;
+}
