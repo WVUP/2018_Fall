@@ -1,166 +1,312 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* NAVBAR */
 header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-image: linear-gradient(#63646b, #3b3e4b 20%, #3b3e4b 80%, #63646b 95%);
 }
 
 .my-nav {
-  background-color: #3b3e4b;
+    font-family: 'Space Mono', monospace;
 }
 
-.my-nav-container {
-  max-width: 1000px;
+.align-right {
+    text-align: right;
+    padding-right: 40px;
 }
 
 nav * {
-  color: #7f8291;
+    color: #7f8291;
 }
 
 nav div {
-  margin: 0 left;
-}
-
-.support-links {
-  background-color: transparent;
-  text-align: center;
-  max-width: 1000px;
-}
-
-.support-links .chat {
-  background-color: #ebad06;
-  color: white !important;
-}
-
-.support-links .email {
-  background-color: #00b2ee;
-  color: white !important;
-}
-
-.support-links .number {
-  background-color: #ee7541;
-  color: white !important;
+    margin: 0 left;
 }
 
 .fa-search {
-  background-color: #3b3e4b;
-  margin-top: -15px;
-  font-size: 1.5em;
-  padding-top: 18px;
+    background-color: #3b3e4b;
+    margin-top: -15px;
+    font-size: 1.5em;
+    padding-top: 18px;
 }
 
 .my-navbar-right {
-  text-align: left;
+    text-align: left;
 }
 
 .my-navbar-right * {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 .my-navbar-main {
-  padding: 30px;
+    padding: 15px;
 }
 
 .my-navbar-main a {
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.5s all;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s all;
 }
 
 .my-navbar-main a:hover {
-  color: white;
+    color: white;
 }
 
 .nav-logo {
-  width: 95px;
-  height: 95px;
-  float: left;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    left: 47%;
+    top: 2px;
+    transition: 0.5s all;
+}
+
+.nav-logo:hover {
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
 }
 
 .my-navbar-nav {
-  float: left;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav ul {
-  list-style: none;
+    list-style: none;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-left: 15px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search input {
+  width: 30%;
+}
+
+/* CAROUSEL */
+
+.cars-slide,
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 75px;
 }
 
 /* BODY */
-.rocket-pic {
-  margin-left: 15px;
-
+.float-left {
+    float: left;
 }
+
+.float-right {
+    float: right;
+}
+
+.justify {
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.lighten {
+    font-weight: lighter !important;
+}
+
+.heading {
+    margin: 50px 0;
+}
+
+.bump-font {
+    font-size: 19px;
+}
+
+.main {
+    padding-top: 54px;
+}
+
+.space {
+    margin-bottom: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.rocket-pic {
+    width: 40%;
+    background-image: url("Pictures/rocket.png");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .stars-pic {
-  width: 1100px;
-  height: 338px;
-  
+    position: relative;
+    width: 60%;
+    background-image: url("Pictures/stars-background.png");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+.stars-pic > div {
+  position: absolute;
+  left: 30%;
+}
+
+.stars-pic > div img {
+  position: relative;
+  left: -40px;
+  transition: 1s all;
+}
+
+.stars-pic > div span {
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.stars-pic > div span:hover {
+  color: white;
+}
+
+#education {
+  top: 90px;
+}
+
+#careers {
+  top: 160px;
+}
+
+#lifestyle {
+  top: 230px;
+}
+
+#join {
+  top: 300px;
 }
 
 .astro-pic {
-  width: 500px;
-  height: 338px;
+    height: 338px;
+    margin-right: 15px;
 }
+
 .par-pic {
-  width: 500px;
-  height: 338px;
+    height: 338px;
 }
+
 .missile-pic {
-  width: 1600px;
-  height: 750px;
-  padding 100%;
+    width: 100%;
+    background-image: url("Pictures/missile.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
 }
 
-.cars-slide{
-    width: 1000px !important; 
+.missile-caption {
+    position: absolute;
+    right: 250px;
+    top: 250px;
+    font-size: 2.5em;
 }
 
-.full-color{
-   background-color: #000000;
-   color: #7f8291;
-}
-.par-tag{
-  text-align: justify;
-  font-size:20px;
-
+.badge-pic {
+    position: absolute;
+    height: 250px;
 }
 
-p{
+.full-color {
+    background-color: #000000;
+    color: #7f8291;
 }
 
-.starship-photo{
-  width: 500px;
-  height: 338px;
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(#63646b, #3b3e4b 20%, #3b3e4b 80%, #63646b 95%);
+    font-family: 'Space Mono', monospace;
+    padding: 15px 30px;
 }
 
-.foot-tag{
-  font-size:25px;
+footer p {
+    margin-bottom: 5px;
 }
 
-a{
-  color: silver;
+footer p {
+    font-size: 20px;
 }
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.vertical-center {
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
 /* Sample stuff to attempt to recreate */
 .content-inner {
-  max-width: 100% !important;
-  padding: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
 }
+
 .collection-type-index .content-inner.has-content {
-  padding: 40px !important;
+    padding: 40px !important;
 }
 
 .customer-support {
-  background-image: url(Pictures/missile.png);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #ee7541;
-  min-height: 500px;
-  color: white;
-  text-align: center;
+    background-image: url(Pictures/missile.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ee7541;
+    min-height: 500px;
+    color: white;
 }
-

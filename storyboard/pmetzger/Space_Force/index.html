@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
     <title>SpaceForce.gov</title>
 </head>
 
 <body class="full-color">
-
-    <!-- *** Main Nav ***
     <header>
-        
+        <!-- *** Main Nav ***-->
         <nav>
             <div class="my-nav">
                 <div class="my-nav-container">
                     <div class="my-navbar-main clearfix">
-
-                        <ul class="my-navbar-nav">
+                        <ul class="my-navbar-nav clearfix">
                             <li>
                                 <a href="#">
                                     ABOUT</a>
@@ -41,244 +38,121 @@
                             </li>
 
                         </ul>
-                        <div class="align-right">
-                            <img class="align-center nav-logo" src="Pictures/spaceforce-logo.png">
+                        <img class="align-center nav-logo" src="Pictures/spaceforce-logo.png">
+                        <div class="search align-right">
+                            <a href="#">
+                                SEARCH
+                            </a>
+                            <input class="hidden" type="text" placeholder="SEARCH">
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="support-links">
-
-            </div>
         </nav>
     </header>
--->
-
-    <header>
-        <!-- *** Non-Fixed Nav ***-->
-        <div>
-            <nav class="navbar sticky-top navbar-dark bg-dark navbar navbar-expand-sm navbar-light mb-3">
-                <a href="#" class="navbar-brand"></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RECRUITMENT</a>
-                    </li>
-                </ul>
-                <p>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-                </p>
-                <div class="align-right">
-                    <img class="align-center nav-logo" src="Pictures/spaceforce-logo.png">
-                </div>
-                <p>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                </p>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SEARCH</a>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-
-
     <!-- *** MAIN BODY ***-->
-    <div class="container">
-        <div>
-            <p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-
-            </p>
-        </div>
+    <div class="main">
         <!-- SLIDER -->
-        <div id="slider2" class=" container  cars-slide col-lg-8 carousel slide mb-5" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="  d-block img-fluid" src="Pictures/starship.png" alt="First Slide">
+        <div class="container">
+            <div id="slider2" class="cars-slide carousel slide mb-5" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class=" d-block w-100 img-fluid" src="Pictures/starship.png" alt="First Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class=" d-block w-100 img-fluid" src="Pictures/satellite.png" alt="Second Slide">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class=" d-block img-fluid" src="Pictures/satellite.png" alt="Second Slide">
-                </div>
-            </div>
-            <!-- CONTROLS -->
-            <a href="#slider2" class="carousel-control-prev" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
+                <!-- CONTROLS -->
+                <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
 
-            <a href="#slider2" class="carousel-control-next" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+                <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
 
             <!-- *** PARAGRAPH 1 *** -->
-        </div class="container row">
-        <h2 class="text-center"><br>Welcome to Your Newest Branch of the United States Armed Forces</h2> <br>
-        <p class=" par-tag">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-            The United StatesSpace Force (USSF) is America's first line of defense in the growing threat of stellar
-            <br>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-
-            warfare and interstellar threats. USSF provides space situational advantage; battle management<br>
-
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-
-            command and control of space forces; space lift and range operators; space support to nuclear<br>
-
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-
-            command and control; missile warning; satelite communications and position, navigation and timing,<br>
-
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-
-            nuclear intercontinental ballistic missiles, cyber operations and the total missile defense missions.<br>
-            <br>
-            <br>
-            <br>
-        </p>
-
-
-    </div>
-
-    <div>
-        <!-- PAR 2-->
-        <div>
-
-            <!-- *** PARAGRAPH 2 *** -->
-        </div class="row col-lg-12">
-        <h2 class="text-center">Discover The United States Space Force</h2> <br><br> <br>
-
-        <div>
-            <img class="align-left rocket-pic" src="Pictures/rocket.png">
-            <img class="align-right stars-pic" src="Pictures/stars-background.png">
-            <br>
-            <br>
-            <br>
+            <h2 class="center lighten">Welcome to Your Newest Branch of the United States Armed Forces</h2> <br>
+            <p class="justify lighten bump-font">The United States Space Force (USSF) is America's first line of defense in
+                the growing
+                threat of stellar warfare<br>
+                and interstellar threats. USSF provides space situational advantage; battle management<br>
+                command and control of space forces; space lift and range operators; space support to nuclear<br>
+                command and control; missile warning; satelite communications and position, navigation and timing,<br>
+                nuclear intercontinental ballistic missiles, cyber operations and the total missile defense missions.<br>
+                <br>
+            </p>
+            <h2 class="center lighten heading">Discover The United States Space Force</h2> <br>
         </div>
-    </div>
-
-
-
-
-
-    <div>
-        <!-- PAR 3 -->
-        <div>
-            <div>
-
-                <!-- *** PARAGRAPH 3 *** -->
-            </div class="container row col-lg-12">
-            <h2 class="text-center"><br>Start your journey. Transform your life and become part of something out of
-                this
-                world.</h2>
-            <br>
-            <br>
-            <br>
-
-            <div class="container">
-                <img class="align-left astro-pic" src="Pictures/astronauts.png">
-                <img class="align-right par-pic" src="Pictures/Recruitment.png">
-                <br>
-                <br>
+        <div class="clearfix">
+            <div class="float-left rocket-pic"></div>
+            <div class="float-right stars-pic">
+                <div id="mission">
+                    <img src="Pictures/arrow-yellow.png">
+                    <span>Mission</span>
+                </div>
+                <div id="education">
+                    <img src="Pictures/arrow-white.png">
+                    <span>Education</span>
+                </div>
+                <div id="careers">
+                    <img src="Pictures/arrow-green.png">
+                    <span>Careers</span>
+                </div>
+                <div id="lifestyle">
+                    <img src="Pictures/arrow-blue.png">
+                    <span>Lifestyle</span>
+                </div>
+                <div id="join">
+                    <img src="Pictures/arrow-orange.png">
+                    <span>How To Join</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- *** MISSILE PIC *** -->
-
-    <div class="container-fluid">
-        <img class="align-center missile-pic" src="Pictures/missile.png">
-
-        <br>
-        <br>
-    </div>
-
-    <!-- *** FOOTER ***-->
-    <div>
-        <div class="" style="background-color: 	#000000">
-            <p class="foot-tag ">&nbsp&nbsp&nbsp&nbsp ©2018 United States Space Force</p>
-            <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-            <a class="contact-pic" href="#"> Privacy Policy </a>
-            <a>&nbsp&nbsp</a>
-            <a class="contact-pic" href="#"> About our Ads </a>
-            <a>&nbsp&nbsp</a>
-            <a class="contact-pic" href="#"> Sitemap </a>
-            <a>&nbsp&nbsp</a>
-            <a class="contact-pic" href="#"> Terms of Use </a>
-            <a>&nbsp&nbsp</a>
-
-
+        <!-- *** PARAGRAPH 3 *** -->
+        <div class="container space">
+            <h2 class="center lighten heading">Start your journey. Transform your life and become part of something out of this world.</h2>
+            <div class="center">
+                <img class="astro-pic" src="Pictures/astronauts.png">
+                <img class="par-pic" src="Pictures/Recruitment.png">
+            </div>
         </div>
-    </div>
-    <!-- *** Footer *** -->
-    <div class="align-right" style="background-color: 	#000000">
-        <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
+        <!-- *** MISSILE PIC *** -->
+        <div class="relative">
+            <img class="badge-pic" src="Pictures/ussf-badge.png">
+            <p class="missile-caption">Your First Line of Defense.</p>
+            <div class="missile-pic"></div>
+        </div>
 
-        </a>
-        <a>
-            www.SpaceForce.gov
-        </a>
-        <img class="" src="Pictures/spaceforce-logo.png"><br>
-        <!-- 
-        <p class="text-silver" href="#">&nbsp&nbsp&nbsp&nbsp ©2018 United States Space Force</p>
-        -->
-
-
-
-
-
+        <!-- *** FOOTER ***-->
+        <footer class="clearfix">
+            <div class="float-left">
+                <p>&copy;2018 United States Space Force</p>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>About Our Ads</li>
+                    <li>Sitemap</li>
+                    <li>Terms of Use</li>
+                </ul>
+            </div>
+            <div class="float-right">
+                <div class="clearfix">
+                    <p class="float-left vertical-center">www.SpaceForce.gov</p>
+                    <img src="Pictures/spaceforce-logo.png">
+                </div>
+            </div>
+        </footer>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     <script>
         $('.carousel').carousel({
@@ -287,15 +161,17 @@
             pause: 'hover',
             wrap: true
         });
+        
+        $('.search a').click(function() {
+            $(this).addClass('hidden');
+            $(this).siblings('input').removeClass('hidden');
+        })
 
-        $('#slider4').on('slide.bs.carousel', function () {
-            console.log('SLIDE!');
+        $('.stars-pic > div span').hover(function() {
+            $(this).siblings('img').css('left', 0);
+        }, function() {
+            $(this).siblings('img').css('left', -40);
         });
-
-        $('#slider4').on('slid.bs.carousel', function () {
-            console.log('SLID!');
-        });
-
     </script>
 
 </body>
