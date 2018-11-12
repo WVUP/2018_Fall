@@ -1,101 +1,242 @@
-
-.topnav{
+.navbar {
+  overflow: hidden;
   background-color: #111683;
   background: linear-gradient(to bottom,  #4651c9 0%,#111683 90%);
+  font-family: Arial;
   height: 45px;
   position: fixed;
-  z-index: 9999999;
+  z-index: 99999999;
 }
 
-a.nav-link{
+.navbar a {
+  float: left;
   font-size: 12px;
+  color:#E3B11F;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
   font-weight: 700;
-  color: #E3B11F;
-  margin-left: -6px;
-  padding-top: 12px;
 }
 
-a.nav-link.active{
+a#home{
   background-color: #E3B11F;
   color: #111683;
+  margin-left: -16px;
   height: 45px;
-  margin-left: 0px;
+  width: 60px;
+  padding-top: 15px;
+}
+
+div#main.body{
+  background-color: #E3B11F;
+  background: linear-gradient(to bottom,  #E3B11F 0%,#E3B11F 33%, lightyellow 90%);
+  height: 1800px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
 }
 
-div#left.column{
-  background-color:#E3B11F;
-  background: linear-gradient(to bottom,#E3B11F 0%, rgb(255, 234, 118) 90%);
-  height: 1600px;
-  width: 230px;
-  margin-left: -22px;
-  opacity: .9;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+
+.body1{
+  display: flex;
+}
+
+.leftnav{
+  flex: 22%;
+  height: 100%;
+  z-index: 20;
+
+}
+
+.mainimg{
+  height: 350px;
+  flex: 80%;
+}
+
+img#grad{
+  width: 870px;
+  height: 350px;
+  z-index: -1;
+
+}
+
+img#logo{
+  float: right;
+  margin-top: -350px;
+  z-index: 9999999;
+  position: relative;
+}
+
+img#hat{
+  z-index: 30;
+  position: relative;
 }
 
 img#bell{
-  padding-left: 5px;
-  padding-top:120px;
+  padding-left: 10px;
+  padding-top: 120px;
   position: fixed;
+  margin-left: -220px;
   z-index: -1;
-}
-
-div#leftnav{
-  padding-top: 310px;
 }
 
 li{
   list-style: none;
 }
 
-a.left-nav{
+ul#leftnav{
+  text-align: right;
+  font-size: 10pt;
+  padding-right: 10px;
+  margin-top: -135px;
   color: #111683;
 }
 
-ul#leftnav{
-  text-align: right;
-  font-size: 13px;
-  padding-right: 9px;
-}
-
 img#btn{
+  padding: 10px;
+}
+
+img#btn:hover{
+  background: #111683;
+  height: 50;
+  width: 220;
+}
+
+img#wheelchair{
+  padding-left: 25px;
   padding-top: 20px;
-  padding-left: 6px;
 }
 
-.logo{
-  padding-left: 634px;
-  margin-top:-348px;
-}
-
-img#grad{
-  width: 874px;
-  padding-top: 45px;
-  z-index: -1;
-}
-
-.main{
-  background-color:white;
-  height:1350px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-}
-
-.footer{
-  height: 140px;
+.main1{
   background-color: white;
-  border-radius: 20px;
-  margin-top: 5px;
+  height: 1300px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; 
+  display: flex;
 }
 
-div#small.column{
+div#body.container{
+  width: 200px;
+}
+
+td#one{
+  background-color: #005eb8;
+}
+
+tr{
+  width: 100%;
+}
+
+table{
+  width: 545px;
+  height: 65px;
+  margin-left: -330px;
+  padding-top: 50px;
+  
+}
+
+strong{
+  padding: 10px;
+}
+
+.left{
+  flex: 70%;
+}
+
+.right{
+  flex: 30%;
   background-color: #5392ce;
-  height: 600px;
-  z-index: 9999999999;
-  width: 250px;
+  background: linear-gradient(to bottom,  #5392ce 0%,#5392ce 33%, skyblue 60%, lightblue 90%);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: -80px;
+  height: 1100px;
+  padding-top: 30px;
+}
+
+.foot{
+  background-color: white;
+  height: 135px;
   border-radius: 20px;
-  margin-top: -1000px;
-  margin-left: 600px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p#calender{
+  text-align: center;
+  font-size: 12pt;
+  color: #111683;
+  font-weight: 700;
+}
+
+div#right.container{
+  text-align: center;
+}
+
+p{
+  text-align: left;
+  font-size: 10pt;
+  color: #111683;
+  font-weight: 700;
+}
+
+p#events{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12pt;
+}
+
+p#title{
+  font-size: 18pt;
+  color: #111683;
+  padding-left: 20px;
+  padding-right: 10px;
+  line-height: 1.5rem;
+  padding-top: 30px;
+}
+
+p#text{
+  color: gray;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+a#old{
+  color: #111683;
+  padding-left: 20px;
+}
+
+button#mybtn{
+  padding-left: 30px;
+}
+
+ul#foot{
+  display: inline;
+  color: #111683;
+  padding-top: 40px;
+}
+
+li#foot{
+  float: left;
+  padding-top: 10px;
+
+}
+
+a#foot{
+  color: #111683;
+  padding-left: 20px;
+}
+
+a#foot1{
+  padding-left: 60px;
+  color: #111683;
+}
+
+p#foot{
+  color: gray;
+  text-align: center;
+  font-size: 9pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
