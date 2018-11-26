@@ -34,6 +34,21 @@ Generate HTML for each participant that incorporates the parents shared data and
 
 
 
+## Additional Instructions after reviewing storyboard
+---------  
+
+dorr storyboard RoaneBooster2
+
+Site can be done for any school, team, etc….just has to have the same nav structure and achieve the same goals.
+
+News, Directory, FAQ are up to each student to implement how they want. Spend most of your time getting the forms and that section working and finish up with the new/directory/faq section
+
+Merge registration and parent information forms to simplify structure (Slides 6 and 7).
+Ensure password validation and compare passwords (keyup, submit, whatever events)
+
+Post-Registration and Login will both land you on setting up child accounts.  This needs to allow end user to select/enter how many students they are creating forms for.  This will generate the same markup for each student (can be one long page, accordion, tabs, etc.,)
+
+Completing the form will then display  (render)  ‘printable’ markup that merges the parent information with each student.  
 
 
 
