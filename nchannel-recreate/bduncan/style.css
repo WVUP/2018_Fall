@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+.section1{
+    background-color: #3b3e4b;
+    height: 85px;
+    width: 100%;
+    display: block;
+}
+.logo{
+    margin-left: 20%;
+    margin-top: 1%
+}
+.section1 ul{ 
+    display: inline-block;
+    margin-left: 16%;
+    list-style-type: none;
+    
+
+}
+.section1 a{ 
+    text-decoration: none;
+    list-style-type: none;
+    
+
+}
+
+.section1 li {
+    float: left;
+    
+}
+
+.section1 li a {
+    color:#7f8291;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Kreon", "Times New Roman", serif;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.section1 li a:hover {
+    color: #FFF;
+}
+
+/*For some reason between the black and blue section there was a small white space?
+*/
+.section2{
+    margin-top: -21px;
+    background-color: #9cdcf2;
+    height: 583px;
+    width: 100%;
+    display: block;
+}
+
+.section2 img{
+    margin-left: 34%;
+
+}
+
+.section2 h1, h2{
+    text-align: center;
+    color: #FFF;
+    font-family: "Kreon", "Times New Roman", serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 30pt;
+
+}
+
+.section2 h1{
+    padding-top: 50px; 
+    font-weight:bold; 
+
+}
+
+.section2 h2{
+    margin-left: 32%;
+    font-size: 20px;
+    width: 660px; 
+
+}
+.section2 button{
+    display: block;
+    margin-left: 45%;
+    margin-top: -5px;
+    color: white;
+    background-color: #ee7541;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+.section2 button:hover{
+    
+    background-color: gray;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.section3{
+    background-color: #ee7541;
+    height: 40px;
+    padding: 28px 56px 28px 700px;
+    min-width: 100%;
+    display: block;
+}
+.section3 a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: "Kreon", "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 30pt;
+    
+}
+
+
+
+
+.body-area #features{
+
+    margin: 50px 0;
+}
+
+.row{
+
+    overflow: hidden;
+    width: 100%;
+}
+
+.col{
+
+    width: 40%;
+    overflow: hidden;
+    float: left;
+    margin: 45px 6% 0 4%;
+    color: #6b6b6b;
+    position: relative;
+    padding: 0 0 0 130px;
+    box-sizing: border-box;
+
+}
+
+.col img{
+
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.col h2{
+
+    font-family: "Kreon", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19pt;
+    margin: 0 0 3px 0;
+}
+
+.col h3{
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    color: #ee7541;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.col p{
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    line-height: 18pt;
+    font-size: 16px;
+}
+
+.features-integrations{
+
+    text-align: center;
+    padding: 5px 0;
+    margin: 40px 0 0 0;
+}
+
+.features-integrations a{
+
+    text-decoration: none;
+    background-color: #22b0e6;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px 20px 12px 20px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    border-radius: 0px 10px 0px 10px;
+}
+
+
+.section5{
+    background-color: #f4f4f4;
+    height: 458px;
+    width: 100%;
+    display: block;
+    padding: 75px 0 0 0;
+}
+.section6{
+    background-color: white;
+}
+.section7{    
+    min-height: 500px;
+    background-color: #ee7541;
+    background-image: url(orange-back.jpg);
+    height: 842px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 115px 0 0 0;
+}
+.section8{
+    text-align: center;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    height: 842px;
+}
+.section9{
+    background-color: #3b3e4b;
+    overflow: hidden;
+    padding: 35px 0 0 0;
+    height: 12em;
+}
+.section10{
+    height: 1em;
+    text-align: center;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-color: #333643;
+    padding: 20px 0;
+}
