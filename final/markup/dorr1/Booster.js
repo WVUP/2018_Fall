@@ -8,6 +8,8 @@ function checkPasswordMatch() {
 
     if (password != confirmPassword)
         $("#CheckPasswordMatch").html("Passwords do not match!");
+    else
+        $("#CheckPasswordMatch").html("");
 }
 
 $(document).ready(function () {

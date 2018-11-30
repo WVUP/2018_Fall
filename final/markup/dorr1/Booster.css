@@ -137,6 +137,7 @@ div#name{
     width: 100%;
     margin-left: 20px;
 }
+
 div#address{
     margin-top: 20px;
 }
@@ -146,7 +147,6 @@ label{
     text-align: right;
     width: 8em;
     color: white;
-    display: inline-block;
 }  
 
 label#state{
@@ -198,7 +198,7 @@ div#login li{
 div#CheckPasswordMatch.registrationFormAlert{
     height: 40px;
     margin-left: 230px;
-    color: yellow;
+    color: red;
     font-weight: 700;
 }
 
