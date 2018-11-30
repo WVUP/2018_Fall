@@ -115,75 +115,54 @@ div.container{
 
 /* Registration Page */
 
-body#register{
-    background-image: url(images/raiderchalk.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-}
 
-body#register input{
+div#register.container input{
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 h1#head{
-    color: white;
+    color: black;
     text-align: center;
+    margin-left: -45px;
 }
 form{
     margin-top: 20px;
+    text-align: center;
 }
-div#name{
+
+/* Address CSS */
+
+div#names{
     width: 100%;
-    margin-left: 20px;
-}
-
-div#address{
-    margin-top: 20px;
-}
-
-label{
-    padding-right: 0.5em;
-    text-align: right;
-    width: 8em;
-    color: white;
-}  
-
-label#state{
-    padding-right: 0.5em;
-    text-align: left;
-    width: 2.5em; 
-    color: white;
-}
-
-label#zip{
-    padding-right: 0.5em;
-    text-align: left;
-    width: 2em;
-    color: white;
+    display: inline;
 }
 
 input#street{
-    width: 700px;
+    width: 550px;
+    display: inline;
 } 
 
-input#zip{
-    width: 95px;
+select#state{
+    border-radius: 10px;
 }
 
 /* Login Credential CSS */
 
+.login{
+}
+
 div#login{
     margin-top: 20px;
-    margin-left: 170px;
 }
 
 div#login input{
     width: 300px;
 }
 
-div#login label{
-    width: 207px;
+ul#register{
+    text-align: left;
+    margin-left: 160px;
 }
 
 div#login li{
