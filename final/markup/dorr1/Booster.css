@@ -115,80 +115,73 @@ div.container{
 
 /* Registration Page */
 
-
-div#register.container input{
-    border-radius: 10px;
-    text-align: left;
-}
-
-h1#head{
-    color: black;
-    text-align: center;
-    margin-left: -45px;
-}
-form{
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Address CSS */
-
 div#names{
-    width: 100%;
     display: inline;
+}
+
+form input{
+    border-radius: 10px;
+    margin: 3px;
+}
+
+input#zip{
+    width: 125px;
 }
 
 input#street{
-    width: 550px;
-    display: inline;
-} 
+    width: 490px;
+}
+
+input#city{
+    width: 275px;
+}
 
 select#state{
-    border-radius: 10px;
+    width: 75px;
+    height: 42px;
 }
 
-/* Login Credential CSS */
-
-.login{
-}
-
-div#login{
-    margin-top: 20px;
-}
-
-div#login input{
-    width: 300px;
-}
-
-ul#register{
-    text-align: left;
-    margin-left: 160px;
-}
-
-div#login li{
-    display: block;
-    color: yellow;
-    font-weight: 700;
-    margin-top: 5px;
-    font-size: 12pt;
-    margin-left: 150px;
-}
-
-div#CheckPasswordMatch.registrationFormAlert{
-    height: 40px;
-    margin-left: 230px;
-    color: red;
-    font-weight: 700;
-}
-
-/* Buttons on Register Page */
-
-.footer{
+div#pass{
     display: inline;
-    margin-left: 455px;
 }
 
+/* Password Complexity*/
+
+#message {
+    color: #000;
+    position: relative;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 280px;
+}
+
+#message p {
+    font-size: 14px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+/* Buttons on Register Page */
 .footer input{
+    display: inline;
     margin-top: 20px;
 }
+
 
