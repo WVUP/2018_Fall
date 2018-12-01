@@ -61,10 +61,9 @@ conf.onkeyup = function () {
     
 }
 
-
-function Reset() {
-    confirm("Are you sure you want to start over!");
-}
+$( "login" ).click(function() {
+    $( this ).replaceWith( $( "" ) );
+  });
 
 
 

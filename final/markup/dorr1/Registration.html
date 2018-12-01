@@ -33,10 +33,10 @@
             <div class="logins">
                 <ul>
                     <li>
-                        <a id="logins" href="#">Login</a>
+                        <a id="logins" name="login" href="Login.html">Login</a>
                     </li>
                     <li>
-                        <a id="logins" href="Register.html">Register</a>
+                        <a id="logins" href="Registration.html">Register</a>
                     </li>
                 </ul>
 
@@ -61,19 +61,20 @@
                 <form id="registerform">
                     <div class="names">
                         <div id="names">
-                            <input type="text" name="ParentFirst" id="ParentFirst" placeholder="First Name">
+                            <input type="text" name="ParentFirst" id="ParentFirst" placeholder="First Name" required>
                         </div>
                         <div id="names">
-                            <input type="text" name="ParentLast" id="ParentLast" placeholder="Last Name">
+                            <input type="text" name="ParentLast" id="ParentLast" placeholder="Last Name" required>
                         </div>
                     </div>
                     <h5>Mailing Address</h5>
                     <div class="street">
-                        <input type="text" name="street" id="street" placeholder="Street">
+                        <input type="text" name="street" id="street" placeholder="Street" required>
                     </div>
                     <div class="address">
-                        <input type="text" name="city" id="city" placeholder="City">
-                        <select name="state" id="state">
+                        <input type="text" name="city" id="city" placeholder="City" required>
+                        <select name="state" id="state" required>
+                            <option value="">Select State</option>
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -125,22 +126,22 @@
                             <option value="WI">WI</option>
                             <option value="WY">WY</option>
                         </select>
-                        <input type="text" name="zip" id="zip" placeholder="ZIP">
+                        <input type="text" name="zip" id="zip" placeholder="ZIP" required>
                     </div>
                     <div id="login">
-                        <input type="text" placeholder="johndoe@gmail.com" name="email" id="email">
+                        <input type="text" placeholder="johndoe@gmail.com" name="email" id="email" required>
                         <br>
                         <div id="pass">
                             <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                 required>
                         </div>
                         <div id="pass">
-                            <input type="password" id="confpassword" name="confpassword" placeholder="Confirm Password" />
+                            <input type="password" id="confpassword" name="confpassword" placeholder="Confirm Password" required/>
                         </div>
                         <div id="message">
                             <p id="letter" class="invalid">Must contain a lowercase letter</p>
                             <p id="capital" class="invalid">Must contain a uppercase letter</p>
-                            <p id="number" class="invalid">Must contain atleast one number</p>
+                            <p id="number" class="invalid">Must contain at least one number</p>
                             <p id="length" class="invalid">Must be a minimum of 8 characters</p>
                             <p id="same" class="invalid">Passwords Match</p>
                         </div>

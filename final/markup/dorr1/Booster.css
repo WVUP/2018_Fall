@@ -29,14 +29,12 @@ p#county{
 
 }
 
-
 .logins{
     flex: 30%;
     display: inline;
     text-align: right;
     margin: 20px;
 }
-
 
 li{
     display: inline;
@@ -152,7 +150,7 @@ div#pass{
     position: relative;
     margin-top: 10px;
     text-align: left;
-    margin-left: 280px;
+    margin-left: 35%;
 }
 
 #message p {
