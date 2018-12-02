@@ -72,6 +72,11 @@ function showhide() {
     }
 }
 
+// Storage
+function store(){
+    var ParentFirst= document.getElementById("ParentFirst");
+    localStorage.setItem("ParentFirst", ParentFirst.value);
+   }
 
 
 

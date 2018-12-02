@@ -15,12 +15,11 @@
     <!-- Embedded CSS -->
     <style>
         body {
-            background-image: url(images/Raider.jpg);
+            background-image: url(images/raider.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
     </style>
-    <script src="Booster.js"></script>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
             <div class="logins">
                 <ul>
                     <li>
-                        <a id="logins" href="Login.html">Login</a>
+                        <a id="logins" name="login" href="Login.html">Login</a>
                     </li>
                     <li>
                         <a id="logins" href="Registration.html">Register</a>
@@ -43,7 +42,7 @@
         </div>
         <div class="navi2">
             <nav class="nav justify-content-center|justify-content-end">
-                <a class="nav-link active" href="Booster.html">Home</a>
+                <a class="nav-link active" href="Booster_HomePage.html">Home</a>
                 <a class="nav-link" href="News.html">News</a>
                 <a class="nav-link" href="Directory.html">Directory</a>
                 <a class="nav-link" href="FAQ.html">FAQ</a>
@@ -55,20 +54,19 @@
             <img src="images/RoaneRaiders.png" id="RoaneRaiders">
         </div>
         <div class="two">
-            <div class="container">
-                <h1>Roane County High School<br>Boosters</h1>
-                <hr>
-                <p>Welcome to the Raiders Online Boosters Portal</p>
-                <p>Welcome Parents/Guardians!
-                    <br>
-                    If you are new to the site please<strong>"Register"</strong> an account
-                    to access all necessary forms in one easy to complete
-                    location.</p>
-                <p>Feel free to access our <strong>"News"</strong>section to stay informed about all
-                    the exciting things that Roane Raiders Boosters are undertaking.</p>
-                <p>If you have any questions please check out our<strong>"FAQ"</strong>section</p>
-                <br>
-                <h1>Go Raiders!!</h1>
+            <br>
+            <br>
+            <br>
+            <div id="register" class="container">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd" placeholder="Password">
+                    </div>
+                    <button id="login" type="submit" class="btn btn-default">Login</button>
+                </form>
             </div>
         </div>
         <div class="three">
@@ -78,6 +76,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Booster.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
