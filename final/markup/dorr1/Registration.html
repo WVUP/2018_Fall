@@ -20,8 +20,6 @@
             background-size: cover;
         }
     </style>
-    <script src="Booster.js"></script>
-    
 </head>
 
 <body>
@@ -58,98 +56,102 @@
         <div class="two">
             <h1 id="head">Please Complete the Form Below to Register</h1>
             <div id="register" class="container">
-                <form id="registerform">
-                    <div class="names">
-                        <div id="names">
-                            <input type="text" name="ParentFirst" id="ParentFirst" placeholder="First Name" required>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="ParentFirst" placeholder="First Name">
                         </div>
-                        <div id="names">
-                            <input type="text" name="ParentLast" id="ParentLast" placeholder="Last Name" required>
-                        </div>
-                    </div>
-                    <h5>Mailing Address</h5>
-                    <div class="street">
-                        <input type="text" name="street" id="street" placeholder="Street" required>
-                    </div>
-                    <div class="address">
-                        <input type="text" name="city" id="city" placeholder="City" required>
-                        <select name="state" id="state" required>
-                            <option value="">Select State</option>
-                            <option value="AL">AL</option>
-                            <option value="AK">AK</option>
-                            <option value="AZ">AZ</option>
-                            <option value="AR">AR</option>
-                            <option value="CA">CA</option>
-                            <option value="CO">CO</option>
-                            <option value="CT">CT</option>
-                            <option value="DE">DE</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="HI">HI</option>
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="IA">IA</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="ME">ME</option>
-                            <option value="MD">MD</option>
-                            <option value="MA">MA</option>
-                            <option value="MI">MI</option>
-                            <option value="MN">MN</option>
-                            <option value="MS">MS</option>
-                            <option value="MO">MO</option>
-                            <option value="MT">MT</option>
-                            <option value="NE">NE</option>
-                            <option value="NV">NV</option>
-                            <option value="NH">NH</option>
-                            <option value="NJ">NJ</option>
-                            <option value="NM">NM</option>
-                            <option value="NY">NY</option>
-                            <option value="NC">NC</option>
-                            <option value="ND">ND</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="OR">OR</option>
-                            <option value="PA">PA</option>
-                            <option value="RI">RI</option>
-                            <option value="SC">SC</option>
-                            <option value="SD">SD</option>
-                            <option value="TN">TN</option>
-                            <option value="TX">TX</option>
-                            <option value="UT">UT</option>
-                            <option value="VT">VT</option>
-                            <option value="VA">VA</option>
-                            <option value="WA">WA</option>
-                            <option value="WV">WV</option>
-                            <option value="WI">WI</option>
-                            <option value="WY">WY</option>
-                        </select>
-                        <input type="text" name="zip" id="zip" placeholder="ZIP" required>
-                    </div>
-                    <div id="login">
-                        <input type="text" placeholder="johndoe@gmail.com" name="email" id="email" required>
-                        <br>
-                        <div id="pass">
-                            <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                required>
-                        </div>
-                        <div id="pass">
-                            <input type="password" id="confpassword" name="confpassword" placeholder="Confirm Password" required/>
-                        </div>
-                        <div id="message">
-                            <p id="letter" class="invalid">Must contain a lowercase letter</p>
-                            <p id="capital" class="invalid">Must contain a uppercase letter</p>
-                            <p id="number" class="invalid">Must contain at least one number</p>
-                            <p id="length" class="invalid">Must be a minimum of 8 characters</p>
-                            <p id="same" class="invalid">Passwords Match</p>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="ParentLast" placeholder="Last Name">
                         </div>
                     </div>
-                    <div class="footer">
-                        <input type="reset" onclick="Reset()" value="Clear">
-                        <input type="submit" onclick="Submit()" value="Submit">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Street">
                     </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="inputCity" placeholder="City">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose State</option>
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AZ">AZ</option>
+                                <option value="AR">AR</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DE">DE</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="IA">IA</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="ME">ME</option>
+                                <option value="MD">MD</option>
+                                <option value="MA">MA</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MS">MS</option>
+                                <option value="MO">MO</option>
+                                <option value="MT">MT</option>
+                                <option value="NE">NE</option>
+                                <option value="NV">NV</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>
+                                <option value="NY">NY</option>
+                                <option value="NC">NC</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WV">WV</option>
+                                <option value="WI">WI</option>
+                                <option value="WY">WY</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div id="message">
+                        <p id="letter" class="invalid">Must contain a lowercase letter</p>
+                        <p id="capital" class="invalid">Must contain a uppercase letter</p>
+                        <p id="number" class="invalid">Must contain at least one number</p>
+                        <p id="length" class="invalid">Must be a minimum of 8 characters</p>
+                        <p id="same" class="invalid">Passwords Match</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="password" class="form-control" id="inputPasswordConf" placeholder="Password Confirmation">
+                        </div>
+                    </div>
+                    <a name="" id="submit" class="btn btn-dark" href="Student.html" role="button">Register</a>
+                    <br>
+                    <br>
                 </form>
             </div>
         </div>

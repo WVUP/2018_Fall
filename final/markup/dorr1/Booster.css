@@ -1,3 +1,4 @@
+/* Section Applies to navbar */
 .top{
     position: fixed;
     width: 100%;
@@ -48,8 +49,6 @@ a#logins{
 
 }
 
-
-/* Section Applies to navbar */
 .navi2{
     height: 40px;
     background-color: silver;
@@ -91,10 +90,8 @@ img#RoaneRaiders{
     flex: 60%;
     background-color: silver;
     border-radius: 80px;
+    margin-bottom:80px;
     margin-top: 180px;
-    margin-bottom: 70px;
-    padding-bottom: 20px;
-    padding-top: 10px;
     border-color: black;
     border-style: solid;
     opacity: .9;
@@ -113,34 +110,8 @@ div.container{
 
 /* Registration Page */
 
-div#names{
-    display: inline;
-}
-
-form input{
-    border-radius: 10px;
-    margin: 3px;
-}
-
-input#zip{
-    width: 125px;
-}
-
-input#street{
-    width: 490px;
-}
-
-input#city{
-    width: 275px;
-}
-
-select#state{
-    width: 75px;
-    height: 42px;
-}
-
-div#pass{
-    display: inline;
+div#register.container{
+    width: 75%;
 }
 
 /* Password Complexity*/
@@ -176,10 +147,6 @@ div#pass{
     left: -35px;
     content: "✖";
 }
-/* Buttons on Register Page */
-.footer input{
-    display: inline;
-    margin-top: 20px;
-}
+
 
 
