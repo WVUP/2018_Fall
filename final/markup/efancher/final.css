@@ -124,7 +124,7 @@ div.hl-registration-whole{
     size: 35;
     border: 1px solid white;
     color: white;
-    background-color: gray;
+    background-color: lightgray;
 }
 div.registration-buttons{
     display: flex; 
