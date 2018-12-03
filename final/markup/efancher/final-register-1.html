@@ -12,21 +12,24 @@
      <!-- Custom CSS -->
      <link rel="stylesheet" href="final.css">
     </head>
+    
   <body>
       <div class="hl-registration">
-            <h2>Welcome Parents/ Guardians</h2>
-            <p style="width: 85%;">To first register please sign up with your email<br>
+            <h3 class="centerText" style="width: 50%; margin: auto;">Welcome Parents/ Guardians</h3>
+            <p style="width: 300px; margin: auto;">To first register please sign up with your email
             and create a password
             </p>
 
             <form id="registration-form">
                 <div class="hl-registration-whole">
-                    <div class="hl-registration-title">
+                    <label class="hl-registration-title" for="email">
+                    <!-- <div class="hl-registration-title"> -->
                         E-mail
-                    </div>
-                    <input class="hl-registration-input" id="email" type="email">
+                    <!-- </div> -->
+                    </label>
+                    <input class="hl-registration-input" id="email" type="email" required>
                 </div>
-                <ul>
+                <ul style="width: 385.5px; margin: auto;">
                     <li>Password between 8-20 characters in length</li>
                     <li>Must have at least 1 Lower and Upper case letter</li>
                     <li>Must include at least one number</li>
@@ -34,19 +37,25 @@
                 </ul>
 
                 <div class="hl-registration-whole">
-                    <div class="hl-registration-title">
+                    <label class="hl-registration-title" for="password">
+                    <!-- <div class="hl-registration-title"> -->
                         Password
-                    </div>
-                    <input class="hl-registration-input" id="password-1" type="password">
+                    <!-- </div> -->
+                    </label>
+                    <input class="hl-registration-input" id="password-1" type="password" pattern="[[A-Z]{1-17}[a-z]{1-17}[!@#$%^&*()]{1-17}[0-9]{1-17}]{8-20}" required>
                 </div>
                 <div class="hl-registration-whole">
-                    <div class="hl-registration-title">
-                        Confirm
-                    </div>
-                    <input class="hl-registration-input" id="password-2" type="password">
+                    <label class="hl-registration-title" for="password">
+                    <!-- <div class="hl-registration-title"> -->
+                        Password
+                    <!-- </div> -->
+                    </label>
+                    <input class="hl-registration-input" id="password-2" type="password" pattern="[[A-Z]{1-17}[a-z]{1-17}[!@#$%^&*()]{1-17}[0-9]{1-17}]{8-20}" required>
                 </div>
-                <button class="registration-button" id="back" href="#back">Back</button>
-                <button class="registration-button" style="float: right;" id="next">Next</button>
+                <div class="registration-buttons">
+                    <button class="registration-button" id="back" href="#back">Back</button>
+                    <button class="registration-button" id="next" href="final-register-2.html">Next</button>
+                </div>
             </form>
       </div>
       

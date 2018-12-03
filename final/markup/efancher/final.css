@@ -5,6 +5,9 @@ html.body{
 hr{
     border: 0.5px solid black;
 }
+.centerText{
+    text-align: center;
+}
 div.hl-header{
     position: fixed;
     z-index: 9999;
@@ -91,9 +94,9 @@ div.hl-body-container{
 }
 div.hl-registration{
     display: block;
-    margin: 0 30%;
+    margin: 0 25%;
     justify-content: center;
-    background-image: url("Gray\ Paw.png");
+    background-image: url("Bobcat\ Logo\ Washed\ Out.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -102,23 +105,32 @@ div.hl-registration{
 }
 div.hl-registration-whole{
     display: block;
-    /* width: 75%; */
+    width: 75%;
     height: 50px;
     background-color: transparent;
+    margin: auto;
 }
-div.hl-registration-title{
+.hl-registration-title{
     display: inline-block;
     width: 20%;
     color: white;
     text-align: center;
+    border: 1px solid white;
     background-color: rgb(0, 132, 68);
 }
-div.hl-registration-input{
+.hl-registration-input{
     display: inline-block;
-    width: 300px;
+    width: 79%;
+    size: 35;
     border: 1px solid white;
     color: white;
     background-color: gray;
+}
+div.registration-buttons{
+    display: flex; 
+    width: 60%; 
+    margin: auto; 
+    justify-content: space-between;
 }
 button.registration-button{
     background-color: transparent;
