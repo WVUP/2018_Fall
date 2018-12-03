@@ -1,0 +1,87 @@
+.content{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    text-align: center;
+    margin: 100px 10% 0 10%; 
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+}
+.content h1{
+    margin: 5px 5px 0px 10px;
+    font-size: 50px;
+
+}
+.content h2{
+    margin: 0 0 0 10px;
+    font-size: 40px;
+
+}
+.content p{
+    margin: 0 0 0 10px;
+    font-size: 30px;
+}
+.row{
+    margin: 55px 0 45px 45px;
+    display: block;
+}
+
+/*Left*/
+.left{
+    margin: 0 -12px 0 0;
+    width: 33%;
+    display: inline-block;
+    text-align: left;
+    
+}
+.left img{
+    float: left;
+}
+.left h2{
+    margin: 0;
+
+}
+.left h3{
+    margin: 0;
+    font-size: 24px;
+}
+/*Center*/
+.center{
+    
+    text-align: left;
+    width: 33%;
+    display: inline-block;
+   
+}
+.center img{
+    float: left;
+}
+.center h2{
+    margin: 0;
+
+}
+.center h3{
+    margin: 0;
+    font-size: 24px;
+}
+
+/*Right*/
+.right{
+    
+    text-align: left;
+    width: 34%;
+    display: inline-block;
+   
+}
+.right img{
+    float: left;
+}
+.right h2{
+    margin: 0;
+
+}
+.right h3{
+    margin: 0;
+    font-size: 24px;
+}

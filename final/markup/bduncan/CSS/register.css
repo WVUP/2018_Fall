@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+
+.content{
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    margin: 75px 20% 0 20%; 
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+}
+.content h1{
+    margin: 15 0 0 0;
+    font-size: 40px;
+
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.progressBar{
+
+}
+.form{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: 0 10% 0 10%;
+    
+}
+.formH2{
+    background-color: orange;
+    width: 300px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15 0 15 0;
+}
+
+.formInput{
+    width: 400px;
+    height: 75px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.invalid{
+    color: red;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 0 215px
+
+}
+.valid{
+    color: black
+    
+}
+.submitButton{
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin: 0 0 0 659;
+    border-radius: 10px 10px;
+    
+}

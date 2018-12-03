@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+.topNav{
+    display: block;
+    height: 86px;
+    width: 100%;
+    background-color: orange;
+}
+.topNav img{
+    display: inline-block;
+    height: inherit;
+}
+.topNav h1{
+    color: black;
+    display: inline-block;
+    height: inherit;
+    position: absolute;
+    text-align: center;
+}
+.topNav ul{
+    height: inherit;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.topNav li{
+display: inline;
+}
+
+.topNav li a{
+    padding: 21px;
+    font-size: 28px;
+    text-align: center;
+    height: inherit;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-align: center;
+}
+.topNav li a:hover{
+    text-decoration: underline; 
+}
+
+.bottomNav{
+    display: block;
+    height: 58px;
+    background-color: lightgray;
+
+}
+.bottomNav ul{
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.bottomNav li{
+    float: left;
+
+
+    }
+.bottomNav li a:hover{
+    background-color: gray;
+    color: orange;
+}
+.bottomNav :active{
+    background-color: gray;
+    color: orange;
+}
+.bottomNav li a{
+    height: 48px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-align: center;
+}
+.bottomNav ul{
+    margin: 0;
+}
+
+.active li{
+    background-color: black;
+    color: orange;
+
+}
+.background{
+    position: absolute;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 84.6%;
+    background-image: url(https://zhs.pasco.k12.fl.us/wp-content/uploads/zhs/2018/07/23154750_1457020577667087_1242356268601109263_o.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
