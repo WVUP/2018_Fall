@@ -1,0 +1,75 @@
+.content{
+    width: 80%;
+    height: 20%;
+    position: relative;
+    text-align: left;
+    margin: 100px 10% 0 10%; 
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+    
+}
+.content h1{
+    margin: 0 0 0 10px;
+    font-size: 30px;
+
+}
+.content h2{
+    margin: 0 0 0 10px;
+    font-size: 40px;
+
+}
+.content p{
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+.content2{
+    width: 80%;
+    height: 20%;
+    position: relative;
+    text-align: left;
+    margin: 50px 10% 0 10%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+    
+}
+.content2 h1{
+    margin: 0 0 0 10px;
+    font-size: 30px;
+
+}
+.content2 h2{
+    margin: 0 0 0 10px;
+    font-size: 40px;
+
+}
+.content2 p{
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+.content3{
+    width: 80%;
+    height: 20%;
+    position: relative;
+    text-align: left;
+    margin: 50px 10% 0 10%; 
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+    
+}
+.content3 h1{
+    margin: 0 0 0 10px;
+    font-size: 30px;
+
+}
+.content3 h2{
+    margin: 0 0 0 10px;
+    font-size: 40px;
+
+}
+.content3 p{
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}

@@ -1,0 +1,21 @@
+.content{
+    width: 60%;
+    height: 65%;
+    position: absolute;
+    text-align: center;
+    margin: 100px 20% 0 20%; 
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px 20px;
+}
+.content h1{
+    font-size: 50px;
+
+}
+.content h2{
+    font-size: 40px;
+
+}
+.content p{
+    font-size: 30px;
+}
