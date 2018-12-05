@@ -3,8 +3,8 @@ var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
-var conf = document.getElementById("inputPasswordConf")
-var same = document.getElementById("same")
+var conf = document.getElementById("inputPasswordConf");
+var same = document.getElementById("same");
 
 pass.onkeyup = function () {
     // Validate lowercase letters
@@ -73,17 +73,33 @@ function showhide() {
 }
 
 // Storage
+window.onload = function() {
 
-
-
-
-
-
+    // Check for LocalStorage support.
+    if (localStorage) {
   
-
-
-
-
-
-
-
+      // Add an event listener for form submissions
+      document.getElementById('ParentRegister').addEventListener('submit', function() {
+        var ParentFirst = document.getElementById('ParentFirst').value;
+        var ParentLast = document.getElementById('ParentLast').value;
+        var inputStreet = document.getElementById('inputStreet').value;
+        var inputCity = document.getElementById('inputCity').value;
+        var inputState = document.getElementById('inputState').value;
+        var inputZip = document.getElementById('inputZip').value;
+        var inputEmail = document.getElementById('inputEmail').value;
+        var inputPassword = document.getElementById("inputPasswordConf").value;
+  
+        // Save in localStorage.
+        localStorage.setItem('ParentFirst', ParentFirst);
+        localStorage.setItem('ParentLast', ParentLast);
+        localStorage.setItem('inputStreet', inputStreet);
+        localStorage.setItem('inputCity', inputCity);
+        localStorage.setItem('inputState', inputState);
+        localStorage.setItem('inputZip', inputZip);
+        localStorage.setItem('inputEmail', inputEmail);
+        localStorage.setItem('inputPasswordConf', inputPassword);
+      });
+  
+    }
+  
+  }
