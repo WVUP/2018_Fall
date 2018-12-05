@@ -106,7 +106,7 @@ div.hl-registration{
 div.hl-registration-whole{
     display: block;
     width: 75%;
-    height: 50px;
+    min-height: 50px;
     background-color: transparent;
     margin: auto;
 }
@@ -129,12 +129,34 @@ div.hl-registration-whole{
 div.registration-buttons{
     display: flex; 
     width: 60%; 
-    margin: auto; 
     justify-content: space-between;
+    margin: 0 auto 50px auto;
 }
 button.registration-button{
     background-color: transparent;
     color: black;
     border: 1px solid black;
     border-radius: 6pt;
+    cursor: pointer;
+}
+.hide{
+    display: none !important;
+}
+.successMessage{
+    display: block;
+    color: rgb(0, 78, 0);
+    background-color: rgb(105, 131, 105);
+    border: 1pt solid rgb(0, 78, 0);
+    border-radius: 12pt;
+    font-size: 16pt;
+    text-align: center;
+    margin: 40px 35%;
+}
+.button{
+    text-decoration: none;
+    color: inherit;
+}
+.button:hover{
+    text-decoration: none;
+    color: initial;
 }
