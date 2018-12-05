@@ -1,0 +1,156 @@
+[class*="col s8 offset-s2"]{
+    height: 4rem;
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    background: -webkit-linear-gradient(top, #4651c9 0%,#111683 90%);
+    list-style: none;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+[class*="col s2 offset-s2"]{
+    height: 100rem;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+[class*="col s6 white"]{
+    height: 100rem;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 60px;
+    border: 0%;
+    background-color: #E3B11F;
+    border-radius: 25px;
+}
+
+[class*="col s9 offset-s3"]{
+    height: 100rem;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 60px;
+    border-radius: 25px;
+}
+
+
+
+body{
+    background-color: #9CBCDA;
+}
+.navBar{
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    font-size: 13px;
+    width: 100%;
+    
+    
+}
+img{
+    width: 100%;
+}
+
+.HomeImage{
+    box-shadow: 0px 50px rgba(255, 255, 255, 0.3); 
+}
+
+.navBar li {
+    
+    float: left;
+}
+
+.navBar li a {
+    display: inline-flex;  
+    color: #E3B11F;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    height: 10px;
+    line-height: 30px;
+    height: 9.5%;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0 -1px 0 #000000;
+    
+
+}
+
+.navBar li button {
+    display: block;
+    color: #E3B11F;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    height: 0px;
+    line-height: 40px;
+    height: 10%;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 0 -1px 0 #000000;
+    white-space: nowrap;
+
+}
+
+.navBar li a:hover {
+    color: white;
+}
+.navBar button{
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    max-height: auto;
+}
+.sideBarLinks a{
+    background: none;
+    border: none;
+    text-shadow: none;
+    color: #111683;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    float: none;
+    display: block;
+    height: auto;
+    line-height: normal;
+    background-color: transparent !important;
+    background-image: none !important;
+    filter: none !important;
+}
+
+.sideBarLinks button{
+    background: none;
+    border: none;
+    text-shadow: none; 
+}
+.sideBarLinks a.button:hover{
+    background: #4651c9;
+    color: white;
+    text-shadow: none; 
+}
+.images{
+    padding: 10px;
+}
+.news{
+    padding: 2%;
+    margin-right: 30%;
+    word-wrap: break-word;
+}
+.newsText{
+    display: block;
+    font-size: 14px;
+    
+    line-height: 13px;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+.newsText a{
+   text-decoration:  none;
+   color: black;
+}
