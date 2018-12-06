@@ -79,6 +79,7 @@ a#logins{
 img#RoaneRaiders{
     height: 250px;
     width: 250px;
+    opacity: .5;
 }
 
 .one{
@@ -94,7 +95,7 @@ img#RoaneRaiders{
     margin-top: 180px;
     border-color: black;
     border-style: solid;
-    opacity: .9;
+    opacity: .5;
 }
 
 div.container{

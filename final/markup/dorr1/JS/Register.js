@@ -87,7 +87,8 @@ window.onload = function() {
         var inputState = document.getElementById('inputState').value;
         var inputZip = document.getElementById('inputZip').value;
         var inputEmail = document.getElementById('inputEmail').value;
-        var inputPassword = document.getElementById("inputPasswordConf").value;
+        var inputPhone = document.getElementById("inputPhone").value;
+        var inputPasswordConf = document.getElementById("inputPasswordConf").value;
   
         // Save in localStorage.
         localStorage.setItem('ParentFirst', ParentFirst);
@@ -97,9 +98,12 @@ window.onload = function() {
         localStorage.setItem('inputState', inputState);
         localStorage.setItem('inputZip', inputZip);
         localStorage.setItem('inputEmail', inputEmail);
-        localStorage.setItem('inputPasswordConf', inputPassword);
+        localStorage.setItem('inputPhone', inputPhone);
+        localStorage.setItem('inputPasswordConf', inputPasswordConf);
       });
-  
     }
-  
   }
+
+function gotologin(){
+    window.open("Login.html");
+}
