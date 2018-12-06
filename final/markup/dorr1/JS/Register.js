@@ -104,6 +104,6 @@ window.onload = function() {
     }
   }
 
-function gotologin(){
-    window.open("Login.html");
+function gotologin() {
+        location.href=("Login.html");
 }
