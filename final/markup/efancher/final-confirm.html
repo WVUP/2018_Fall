@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Compiled and minified CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    Compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="final.css">
+    </head>
+    <style>
+      .width-50{
+        width: 50%;
+      }
+      .width-unset{
+        width: unset;
+      }
+      .sportsOptions{
+        width: 10%;
+        size: 25;
+      }
+    </style>
+  <body>
+      <div class="hl-registration centerText">
+          <h4>Signup Confirmation</h4>
+          <p class="centerText">
+            Please print this page for your records
+          </p>
+          <form id="registration-form">
+              <div class="hl-registration-whole">
+                  <label class="hl-registration-title" for="email-signin">
+                      E-mail
+                  </label>
+                  <input class="hl-registration-input" name="email-signin" id="email-signin" type="email" required>
+              </div>
+              <div class="hl-registration-whole">
+                  <label class="hl-registration-title" for="password-signin">
+                      Password
+                  </label>
+                  <input class="hl-registration-input" name="password-signin" id="password-signin" type="password" pattern="LdA{18}" required>
+              </div>
+      </div>
+      <div class="registration-buttons">
+          <button class="registration-button" id="back" onclick="toggleRegTwo()">Back</button>
+          <button class="registration-button" id="next" onclick="submitSignin()">Finish</button>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="final.js"></script>
+</body>
+</html>
