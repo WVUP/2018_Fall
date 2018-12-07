@@ -23,10 +23,11 @@ function toggleRegTwo(){
     
 // }
 let numStudents;
-function displayStudents(numStudents){
+function displayStudents(){
     numStudents = document.getElementById('numStudents').value;
     let studentNumDiv = document.getElementById('regThree');
     let students= document.getElementById('studentSignup');
+    localStorage.setItem("numStudents", numStudents);
 
     students.classList.toggle('hide');
     studentNumDiv.classList.toggle('hide');
@@ -91,41 +92,79 @@ function submitRegister(){
     
 
     console.log(parentInfo);
-    localStorage.setItem("parent1",JSON.stringify(parentInfo));
-    console.log(localStorage.getItem("parent1"));
-}
-function submitSignup(){
-    let parentEmail = document.getElementById('email-signin').value;
-    let parentPass = document.getElementById('password-signin').value;
-    
-    let parent = JSON.parse(localStorage.getItem("parent1"));
-    if((parent.email) == parentEmail){
-        studentInfo(parent, null);
-    }
-
-    console.log(parent);
-    localStorage.setItem("parent1",JSON.stringify(parent));
+    localStorage.setItem("parent",JSON.stringify(parentInfo));
     console.log(localStorage.getItem("parent"));
 }
-function studentSignup(parentInfo, numStudents, student){
-    let studentName = document.getElementById('firstNameStudent').value + ' ' + document.getElementById('lastNameStudent');
-    let studentDOB = document.getElementById('studentDOB').value;
-    let gradeLevel = document.getElementById('gradeLevel').value;
-    let sports = document.getElementById('sportChoices').value;
+function submitSignin(){
+    let parentEmail = document.getElementById('email-signin').value;
+    let parentPass = document.getElementById('password-signin').value;
+    let parentConfirm = JSON.parse(localStorage.getItem("parent"));
+    
+    if((parentConfirm.email == parentEmail) && (parentConfirm.password == parentPass)){
+        window.open('final-signup.html');
+    }
+    else{
+        event.preventDefault();
+        document.getElementById('signinFailure').classList.toggle('hide');
+    }
 
+}
+function studentSignup(){
+    numStudents = JSON.parse(localStorage.getItem("numStudents"));
     for(let i = 0; i < numStudents; i++){
-        studentInfo[i] = {
+        let studentName = document.getElementById(`firstNameStudent${i+1}`).value + ' ' + document.getElementById(`lastNameStudent${i+1}`).value;
+        let studentDOB = document.getElementById(`studentDOB${i+1}`).value;
+        let gradeLevel = document.getElementById(`gradeLevel${i+1}`).value;
+        let sportsCheck = document.querySelectorAll(`#sportChoices${i+1} > [type=checkbox]`);
+        console.log(sportsCheck);
+        let sports = "";
+        sportsCheck.forEach(element => {
+            console.dir(element);
+            if(element.checked){
+                sports += element.value + ', ';
+            }
+        });
+        // let studentName = document.getElementById('firstNameStudent1').value + ' ' + document.getElementById('lastNameStudent1');
+        // let studentDOB = document.getElementById('studentDOB1').value;
+        // let gradeLevel = document.getElementById('gradeLevel1').value;
+        // let sports = document.getElementById('sportChoices1').value;
+        
+        studentInfo = { 
             name:studentName,
             DOB:studentDOB,
             grade:gradeLevel,
-            sports:sports,
+            sports:sports.slice(0, sports.length-2),
         }
+    
+    
+        console.log(studentInfo);
+        localStorage.setItem(`child${i}`, JSON.stringify(studentInfo));
     }
-    userInfo = {
-        parent:parentInfo,
-        student:studentInfo,
+}
+function confirmPage(){
+    // userInfo = {
+    //     parent:parentInfo,
+    //     student:studentInfo,
+    // }
+    // console.log(userInfo);
+    numStudents = JSON.parse(localStorage.getItem("numStudents"));
+    let parentConfirm = JSON.parse(localStorage.getItem("parent"));
+    let address = parentConfirm.address;
+    console.log(parentConfirm);
+    // console.log(studentConfirm);
+
+    document.getElementById('parentNameConfirm').innerText = parentConfirm.name;
+    document.getElementById('parentEmailConfirm').innerText = parentConfirm.email;
+    document.getElementById('addressConfirm').innerText = `${address.street} \n ${address.city}, ${address.state}, ${address.zip}`;
+    
+    for(let i = 0; i < numStudents; i++){
+        let studentDisplayConfirm = document.getElementById(`studentConfirm[${i}]`);
+        studentDisplayConfirm.classList.toggle('hide');
+        let studentConfirm = JSON.parse(localStorage.getItem(`child${i}`));
+        document.getElementById(`studentNameConfirm[${i}]`).innerText = studentConfirm.name;
+        document.getElementById(`studentDOBConfirm[${i}]`).innerText = studentConfirm.DOB;
+        document.getElementById(`studentGradeConfirm[${i}]`).innerText = studentConfirm.grade;
+        document.getElementById(`studentSportsConfirm[${i}]`).innerText = studentConfirm.sports;
     }
-    console.log(studentInfo);
-    localStorage.setItem("child1",JSON.stringify(studentInfoInfo));
-    console.log(userInfo);
+    
 }

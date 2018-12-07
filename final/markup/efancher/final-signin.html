@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Signin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,6 +17,9 @@
 
      <!-- Custom CSS -->
      <link rel="stylesheet" href="final.css">
+
+     <!-- Browser Icon -->
+    <link rel="icon" type="image/png" href="Bobcat Logo 2 Transparent Background.png"/>
     </head>
     <style>
       .width-50{
@@ -31,7 +34,7 @@
       }
     </style>
   <body>
-      <div class="hl-registration centerText">
+      <div id="signin" class="hl-registration centerText">
           <h4>Please sign in to continue</h4>
           <p class="centerText">
             Student Information
@@ -47,12 +50,17 @@
                   <label class="hl-registration-title" for="password-signin">
                       Password
                   </label>
-                  <input class="hl-registration-input" name="password-signin" id="password-signin" type="password" pattern="LdA{18}" required>
+                  <input class="hl-registration-input" name="password-signin" id="password-signin" type="password" required>
               </div>
       </div>
+      <div id="signinFailure" class="failureMessage hide">
+          User does not exist or Email/Password combination does not match our records
+        
+        <!-- <button class="registration-button"><a href="final-signinGo back</button> -->
+      </div>
       <div class="registration-buttons">
-          <button class="registration-button" id="back" onclick="toggleRegTwo()">Back</button>
-          <button class="registration-button" id="next" onclick="submitSignin()">Finish</button>
+          <button class="registration-button" id="back">Cancel</button>
+          <button class="registration-button" id="next" onclick="submitSignin()">Sign in</button>
       </div>
       
     <!-- Optional JavaScript -->

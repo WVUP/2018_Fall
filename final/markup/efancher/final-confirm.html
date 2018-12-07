@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Success!</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,8 +15,14 @@
     Compiled and minified JavaScript
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
      <!-- Custom CSS -->
      <link rel="stylesheet" href="final.css">
+
+     <!-- Browser Icon -->
+    <link rel="icon" type="image/png" href="Bobcat Logo 2 Transparent Background.png"/>
     </head>
     <style>
       .width-50{
@@ -30,30 +36,151 @@
         size: 25;
       }
     </style>
-  <body>
-      <div class="hl-registration centerText">
-          <h4>Signup Confirmation</h4>
-          <p class="centerText">
-            Please print this page for your records
-          </p>
-          <form id="registration-form">
-              <div class="hl-registration-whole">
-                  <label class="hl-registration-title" for="email-signin">
-                      E-mail
-                  </label>
-                  <input class="hl-registration-input" name="email-signin" id="email-signin" type="email" required>
-              </div>
-              <div class="hl-registration-whole">
-                  <label class="hl-registration-title" for="password-signin">
-                      Password
-                  </label>
-                  <input class="hl-registration-input" name="password-signin" id="password-signin" type="password" pattern="LdA{18}" required>
-              </div>
-      </div>
-      <div class="registration-buttons">
-          <button class="registration-button" id="back" onclick="toggleRegTwo()">Back</button>
-          <button class="registration-button" id="next" onclick="submitSignin()">Finish</button>
-      </div>
+<body>
+    <div class="hl-registration centerText">
+        <h4>Signup Confirmation</h4>
+        <p class="centerText">
+        Please print this page for your records
+        </p>
+        <div id="printPage" onclick="window.print()" style="cursor: pointer; float: right;">
+            <i class="fas fa-print"></i>
+            Print this page
+        </div>
+        <div class="hl-registration-whole">
+            Parent Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="parentNameConfirm"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="parentEmailConfirm"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td id="addressConfirm"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hl-registration-whole hide" id="studentConfirm[0]">
+            Student 1 Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="studentNameConfirm[0]"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="studentDOBConfirm[0]"></td>
+                </tr>
+                <tr>
+                    <td>Grade Level:</td>
+                    <td id="studentGradeConfirm[0]"></td>
+                </tr>
+                <tr>
+                    <td>Sport(s):</td>
+                    <td id="studentSportsConfirm[0]"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hl-registration-whole hide" id="studentConfirm[1]">
+            Student 2 Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="studentNameConfirm[1]"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="studentDOBConfirm[1]"></td>
+                </tr>
+                <tr>
+                    <td>Grade Level:</td>
+                    <td id="studentGradeConfirm[1]"></td>
+                </tr>
+                <tr>
+                    <td>Sport(s):</td>
+                    <td id="studentSportsConfirm[1]"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hl-registration-whole hide" id="studentConfirm[2]">
+            Student 3 Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="studentNameConfirm[2]"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="studentDOBConfirm[2]"></td>
+                </tr>
+                <tr>
+                    <td>Grade Level:</td>
+                    <td id="studentGradeConfirm[2]"></td>
+                </tr>
+                <tr>
+                    <td>Sport(s):</td>
+                    <td id="studentSportsConfirm[2]"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hl-registration-whole hide" id="studentConfirm[3]">
+            Student 4 Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="studentNameConfirm[3]"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="studentDOBConfirm[3]"></td>
+                </tr>
+                <tr>
+                    <td>Grade Level:</td>
+                    <td id="studentGradeConfirm[3]"></td>
+                </tr>
+                <tr>
+                    <td>Sport(s):</td>
+                    <td id="studentSportsConfirm[3]"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="hl-registration-whole hide" id="studentConfirm[4]">
+            Student 5 Info:
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="studentNameConfirm[4]"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td id="studentDOBConfirm[4]"></td>
+                </tr>
+                <tr>
+                    <td>Grade Level:</td>
+                    <td id="studentGradeConfirm[4]"></td>
+                </tr>
+                <tr>
+                    <td>Sport(s):</td>
+                    <td id="studentSportsConfirm[4]"></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <p class="centerText" style="color: gray; font-style: italic;">
+        Press "Done" to be redirected back to the homepage
+        </p>
+    <div class="registration-buttons">
+        <button class="registration-button" style="opacity: 0;" id="back"></button>
+        <button class="registration-button" id="next">
+            <a class="button" href="final-home.html">
+                Done
+            </a>
+        </button>
+    </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -63,5 +190,10 @@
 
     <!-- Custom JS -->
     <script src="final.js"></script>
+    <script>
+        window.onload = () => {
+            confirmPage();
+        }
+    </script>
 </body>
 </html>
