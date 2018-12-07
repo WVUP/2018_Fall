@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="Booster.css">
+    <link rel="stylesheet" href="CSS/Booster.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
     <!-- Embedded CSS -->
     <style>
         body {
-            background-image: url(images/raider.jpg);
+            background-image: url(images/chalk.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -56,7 +56,7 @@
         <div class="two">
             <br>
             <div id="register" class="container">
-                <form id="ParentRegister" action="" >
+                <form id="ParentRegister" action="">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="ParentFirst" placeholder="First Name" required>
@@ -131,7 +131,14 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        <div class="form-group col-md-12">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <input type="phone" class="form-control" id="inputPhone" placeholder="Phone Number" required>
+                        </div>
                     </div>
                     <div id="message">
                         <p id="letter" class="invalid">Must contain a lowercase letter</p>
@@ -148,7 +155,7 @@
                             <input type="password" class="form-control" id="inputPasswordConf" placeholder="Password Confirmation" required>
                         </div>
                     </div>
-                    <button id="submit" type="submit" class="btn btn-default">Register</button>
+                    <button id="submit" type="submit" onclick="gotologin()" class="btn btn-default">Register</button>
                     <br>
                     <br>
                 </form>
@@ -161,7 +168,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="Register.js"></script>
+    <script src="JS/Register.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
