@@ -15,380 +15,888 @@
      <!-- Browser Icon -->
     <link rel="icon" type="image/png" href="Bobcat Logo 2 Transparent Background.png"/>
     </head>
+    <style>
+        .sportsTable{
+            text-align: left;
+        }
+    </style>
 <body>
-    <div class="hl-registration centerText">
-        <h4>Student Sport Signup</h4>
-        <p class="centerText">
-        Student Information
-        </p>
-        <form id="registration-form">
-            <div class="hl-registration centerText" id="regThree">
-                <!-- <h4>Please finish creating your profile to continue</h4> -->
-                <label class="hl-registration-title" style="width: fit-content;" for="numStudents">Number of students:</label>
-                <select style="width: 100px;" name="numStudents" id="numStudents" required>
-                    <option value="NULL">Select One:</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <div class="registration-buttons">
-                    <button class="registration-button" style="opacity: 0">Back</button>
-                    <button class="registration-button" id="next" onclick="displayStudents();">Next</button>
-                </div>
+    <!-- <div class="hl-header">
+        <div class="hl-header-main">
+            <div class="hl-header-left">
+                <a href="#" style="width: 7%; height: 95%;">
+                    <img src="Bobcat Logo 2 Transparent Background.png" style="height: 100%; width: 100%;">
+                </a>
+                <a href="#" class="hl-header-left">Houghton Lake Community Schools</a>
             </div>
-            <div id="studentSignup" class="hide">
-                <div class="hide spaceBelow" id="student1">
-                    <p class="centerText spaceAbove">
-                    Student 1 Information
-                    </p>
-                
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="firstNameStudent1">
-                            First Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="firstNameStudent1" id="firstNameStudent1" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="lastNameStudent1">
-                            Last Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="lastNameStudent1" id="lastNameStudent1" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="studentDOB1">
-                            DOB
-                        </label>
-                        <input class="hl-registration-input width-unset" name="studentDOB1" type="date" id="studentDOB1" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="gradeLevel1">
-                            Grade Level
-                        </label>
-                        <select style="width: 100px;" name="gradeLevel1" id="gradeLevel1" required>
-                            <option value="NULL">Select One:</option>
-                            <option disabled value="0">Kindergarden</option>
-                            <option disabled value="1">First Grade</option>
-                            <option disabled value="2">Second Grade</option>
-                            <option value="3">Third Grade</option>
-                            <option value="4">Fourth Grade</option>
-                            <option value="5">Fifth Grade</option>
-                            <option value="6">Sixth Grade</option>
-                            <option value="7">Seventh Grade</option>
-                            <option value="8">Eigth Grade</option>
-                            <option value="9">Freshman</option>
-                            <option value="10">Sophomore</option>
-                            <option value="11">Junior</option>
-                            <option value="12">Senior</option>
-                        </select>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <p class="centerText">
-                            Select sports you wish to enroll:
-                        </p>
-                        <div style="width: 65%; margin: auto;" name="sportChoices1" id="sportChoices1" required>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football">Football</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Volleyball">Volleyball</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Baseball">Baseball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Track and Field">Track and Field</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Softball">Softball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Golf">Golf</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Cross Country">Cross Country</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football Cheerleading">Football Cheerleading</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">Competitive Cheerleading</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Wrestling">Wrestling</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Lacrosse">Lacrosse</input>
-                        </div>
-                    </div>
-                </div>
-                <div class="hide spaceBelow" id="student2">
-                    <p class="centerText spaceAbove">
-                    Student 2 Information
-                    </p>
-                
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="firstNameStudent2">
-                            First Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="firstNameStudent2" id="firstNameStudent2" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="lastNameStudent2">
-                            Last Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="lastNameStudent2" id="lastNameStudent2" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="studentDOB2">
-                            DOB
-                        </label>
-                        <input class="hl-registration-input width-unset" type="date" name="studentDOB2" id="studentDOB2" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="gradeLevel2">
-                            Grade Level
-                        </label>
-                        <select style="width: 100px;" name="gradeLevel2" id="gradeLevel2" required>
-                            <option value="NULL">Select One:</option>
-                            <option disabled value="0">Kindergarden</option>
-                            <option disabled value="1">First Grade</option>
-                            <option disabled value="2">Second Grade</option>
-                            <option value="3">Third Grade</option>
-                            <option value="4">Fourth Grade</option>
-                            <option value="5">Fifth Grade</option>
-                            <option value="6">Sixth Grade</option>
-                            <option value="7">Seventh Grade</option>
-                            <option value="8">Eigth Grade</option>
-                            <option value="9">Freshman</option>
-                            <option value="10">Sophomore</option>
-                            <option value="11">Junior</option>
-                            <option value="12">Senior</option>
-                        </select>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <p class="centerText">
-                            Select sports you wish to enroll:
-                        </p>
-                        <div style="width: 65%; margin: auto;" name="sportChoices2" id="sportChoices2" required>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football">Football</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Volleyball">Volleyball</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Baseball">Baseball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Track and Field">Track and Field</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Softball">Softball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Golf">Golf</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Cross Country">Cross Country</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football Cheerleading">Football Cheerleading</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">Competitive Cheerleading</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Wrestling">Wrestling</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Lacrosse">Lacrosse</input>
-                        </div>
-                    </div>
-                </div>
-                <div class="hide spaceBelow" id="student3">
-                    <p class="centerText spaceAbove">
-                    Student 3 Information
-                    </p>
-                
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="firstNameStudent3">
-                            First Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="firstNameStudent3" id="firstNameStudent3" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="lastNameStudent3">
-                            Last Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="lastNameStudent3" id="lastNameStudent3" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="studentDOB3">
-                            DOB
-                        </label>
-                        <input class="hl-registration-input width-unset" name="studentDOB3" type="date" id="studentDOB3" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="gradeLevel3">
-                            Grade Level
-                        </label>
-                        <select style="width: 100px;" name="gradeLevel3" id="gradeLevel3" required>
-                            <option value="NULL">Select One:</option>
-                            <option disabled value="0">Kindergarden</option>
-                            <option disabled value="1">First Grade</option>
-                            <option disabled value="2">Second Grade</option>
-                            <option value="3">Third Grade</option>
-                            <option value="4">Fourth Grade</option>
-                            <option value="5">Fifth Grade</option>
-                            <option value="6">Sixth Grade</option>
-                            <option value="7">Seventh Grade</option>
-                            <option value="8">Eigth Grade</option>
-                            <option value="9">Freshman</option>
-                            <option value="10">Sophomore</option>
-                            <option value="11">Junior</option>
-                            <option value="12">Senior</option>
-                        </select>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <p class="centerText">
-                            Select sports you wish to enroll:
-                        </p>
-                        <div style="width: 65%; margin: auto;" name="sportChoices3" id="sportChoices3" required>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football">Football</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Volleyball">Volleyball</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Baseball">Baseball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Track and Field">Track and Field</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Softball">Softball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Golf">Golf</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Cross Country">Cross Country</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football Cheerleading">Football Cheerleading</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">Competitive Cheerleading</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Wrestling">Wrestling</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Lacrosse">Lacrosse</input>
-                        </div>
-                    </div>
-                </div>
-                <div class="hide spaceBelow" id="student4">
-                    <p class="centerText spaceAbove">
-                    Student 4 Information
-                    </p>
-                
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="firstNameStudent4">
-                            First Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="firstNameStudent4" id="firstNameStudent4" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="lastNameStudent4">
-                            Last Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="lastNameStudent4" id="lastNameStudent4" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="studentDOB4">
-                            DOB
-                        </label>
-                        <input class="hl-registration-input width-unset" name="studentDOB4" type="date" id="studentDOB4" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="gradeLevel4">
-                            Grade Level
-                        </label>
-                        <select style="width: 100px;" name="gradeLevel4" id="gradeLevel4" required>
-                            <option value="NULL">Select One:</option>
-                            <option disabled value="0">Kindergarden</option>
-                            <option disabled value="1">First Grade</option>
-                            <option disabled value="2">Second Grade</option>
-                            <option value="3">Third Grade</option>
-                            <option value="4">Fourth Grade</option>
-                            <option value="5">Fifth Grade</option>
-                            <option value="6">Sixth Grade</option>
-                            <option value="7">Seventh Grade</option>
-                            <option value="8">Eigth Grade</option>
-                            <option value="9">Freshman</option>
-                            <option value="10">Sophomore</option>
-                            <option value="11">Junior</option>
-                            <option value="12">Senior</option>
-                        </select>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <p class="centerText">
-                            Select sports you wish to enroll:
-                        </p>
-                        <div style="width: 65%; margin: auto;" name="sportChoices4" id="sportChoices4" required>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football">Football</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Volleyball">Volleyball</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Baseball">Baseball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Track and Field">Track and Field</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Softball">Softball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Golf">Golf</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Cross Country">Cross Country</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football Cheerleading">Football Cheerleading</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">Competitive Cheerleading</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Wrestling">Wrestling</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Lacrosse">Lacrosse</input>
-                        </div>
-                    </div>
-                </div>
-                <div class="hide spaceBelow" id="student5">
-                    <p class="centerText spaceAbove">
-                    Student 5 Information
-                    </p>
-                
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="firstNameStudent5">
-                            First Name
-                        </label>
-                        <input class="hl-registration-input width-unset" id="firstNameStudent5" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="lastNameStudent5">
-                            Last Name
-                        </label>
-                        <input class="hl-registration-input width-unset" name="lastNameStudent5" id="lastNameStudent5" type="text" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="studentDOB5">
-                            DOB
-                        </label>
-                        <input class="hl-registration-input width-unset" name="studentDOB5" type="date" id="studentDOB5" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <label class="hl-registration-title" for="gradeLevel5">
-                            Grade Level
-                        </label>
-                        <select style="width: 100px;" name="gradeLevel5" id="gradeLevel5" required>
-                            <option value="NULL">Select One:</option>
-                            <option disabled value="0">Kindergarden</option>
-                            <option disabled value="1">First Grade</option>
-                            <option disabled value="2">Second Grade</option>
-                            <option value="3">Third Grade</option>
-                            <option value="4">Fourth Grade</option>
-                            <option value="5">Fifth Grade</option>
-                            <option value="6">Sixth Grade</option>
-                            <option value="7">Seventh Grade</option>
-                            <option value="8">Eigth Grade</option>
-                            <option value="9">Freshman</option>
-                            <option value="10">Sophomore</option>
-                            <option value="11">Junior</option>
-                            <option value="12">Senior</option>
-                        </select>
-                    </div>
-                    <div class="hl-registration-whole width-50">
-                        <p class="centerText">
-                            Select sports you wish to enroll:
-                        </p>
-                        <div style="width: 65%; margin: auto;" name="sportChoices" id="sportChoices5" required>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football">Football</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Volleyball">Volleyball</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Baseball">Baseball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Track and Field">Track and Field</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Softball">Softball</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Golf">Golf</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Cross Country">Cross Country</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Football Cheerleading">Football Cheerleading</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">Competitive Cheerleading</input>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Wrestling">Wrestling</input>
-                            <br>
-                            <input class="sportsOptions" type="checkbox" name="sportsList[]" value="Lacrosse">Lacrosse</input>
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-buttons">
-                    <button class="registration-button" id="back" onclick="displayStudents();">Back</button>
-                    <button class="registration-button" id="next" onclick="studentSignup();">
-                        <a class="button" href="final-confirm.html">
-                            Finish
-                        </a>
-                    </button>
-                </div>
+            <div class="hl-header-right">
+                <a class="hl-header-right" href="final-signin.html">Login</a>
+                <a class="hl-header-right" href="final-register.html">Register</a>
             </div>
-        </form>
+        </div>
+        <div class="hl-subheader">
+            <a href="final-home.html" class="hl-subheader-links">
+                Home
+            </a>
+            <a href="final-news.html" class="hl-subheader-links">
+                News
+            </a>
+            <a href="final-directory.html" class="hl-subheader-links">
+                Directory
+            </a>
+            <a href="final-faq.html" class="hl-subheader-links">
+                FAQ
+            </a>
+            <a class="hl-subheader-links" href="final-signup.html">
+                Signup Student
+            </a>
+        </div>
+    </div> -->
+    <div class="hl-registration spaceAbove">
+        <div class="centerText padding-top">
+            <h4>Student Sport Signup</h4>
+            <p class="centerText">
+            Student Information
+            </p>
+            <form id="registration-form">
+                <div class="centerText" id="regThree">
+                    <!-- <h4>Please finish creating your profile to continue</h4> -->
+                    <label class="hl-registration-title" style="width: fit-content;" for="numStudents">Number of students:</label>
+                    <select style="width: 100px;" name="numStudents" id="numStudents" required>
+                        <option value="NULL">Select One:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="registration-buttons">
+                        <button class="registration-button" style="opacity: 0">Back</button>
+                        <button class="registration-button" id="next" onclick="displayStudents();">Next</button>
+                    </div>
+                </div>
+                <div id="studentSignup" class="hide spaceBelow">
+                    <div class="hide spaceBelow" id="student1">
+                        <p class="centerText spaceAbove">
+                        Student 1 Information
+                        </p>
+                    
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="firstNameStudent1">
+                                First Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="firstNameStudent1" id="firstNameStudent1" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="lastNameStudent1">
+                                Last Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="lastNameStudent1" id="lastNameStudent1" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="studentDOB1">
+                                DOB
+                            </label>
+                            <input class="hl-registration-input width-unset" name="studentDOB1" type="date" id="studentDOB1" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="gradeLevel1">
+                                Grade Level
+                            </label>
+                            <select style="width: 100px;" name="gradeLevel1" id="gradeLevel1" required>
+                                <option value="NULL">Select One:</option>
+                                <option disabled value="0">Kindergarden</option>
+                                <option disabled value="1">First Grade</option>
+                                <option disabled value="2">Second Grade</option>
+                                <option value="3">Third Grade</option>
+                                <option value="4">Fourth Grade</option>
+                                <option value="5">Fifth Grade</option>
+                                <option value="6">Sixth Grade</option>
+                                <option value="7">Seventh Grade</option>
+                                <option value="8">Eigth Grade</option>
+                                <option value="9">Freshman</option>
+                                <option value="10">Sophomore</option>
+                                <option value="11">Junior</option>
+                                <option value="12">Senior</option>
+                            </select>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <p class="centerText">
+                                Select sports you wish to enroll:
+                            </p>
+                            <div style="width: 75%; margin: auto;" name="sportChoices1" id="sportChoices1" required>
+                                <table class="sportsTable">
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="football" type="checkbox" name="sportsList[]" value="Football">
+                                        </td>
+                                        <td>
+                                            <label for="football">
+                                                Football 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="volleyball" type="checkbox" name="sportsList[]" value="Volleyball">
+                                        </td>
+                                        <td>
+                                            <label for="volleyball">
+                                                Volleyball
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="baseball" type="checkbox" name="sportsList[]" value="Baseball">
+                                        </td>
+                                        <td>
+                                            <label for="baseball">
+                                                Baseball
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="track" type="checkbox" name="sportsList[]" value="Track and Field">
+                                        </td>
+                                        <td>
+                                            <label for="track">
+                                                Track and Field
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="softball" type="checkbox" name="sportsList[]" value="Softball">
+                                        </td>
+                                        <td>
+                                            <label for="softball">
+                                                Softball 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="golf" type="checkbox" name="sportsList[]" value="Golf">
+                                        </td>
+                                        <td>
+                                            <label for="golf">
+                                                Golf
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="crosscountry" type="checkbox" name="sportsList[]" value="Cross Country">
+                                        </td>
+                                        <td>
+                                            <label for="crosscountry">
+                                                Cross Country
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="fcheer" type="checkbox" name="sportsList[]" value="Football Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="fcheer">
+                                                Football Cheerleading
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="ccheer" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="ccheer">
+                                                Competitive Cheerleading
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="wrestling" type="checkbox" name="sportsList[]" value="Wrestling">
+                                        </td>
+                                        <td>
+                                            <label for="wrestling">
+                                                Wrestling
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="lacrosse" type="checkbox" name="sportsList[]" value="Lacrosse">
+                                        </td>
+                                        <td>
+                                            <label for="lacrosse">
+                                                Lacrosse
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input disabled class="sportsOptions" name="" type="checkbox" name="sportsList[]" value="">
+                                        </td>
+                                        <td>
+                                            <label for="">
+                                                
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide spaceBelow" id="student2">
+                        <p class="centerText spaceAbove">
+                        Student 2 Information
+                        </p>
+                    
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="firstNameStudent2">
+                                First Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="firstNameStudent2" id="firstNameStudent2" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="lastNameStudent2">
+                                Last Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="lastNameStudent2" id="lastNameStudent2" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="studentDOB2">
+                                DOB
+                            </label>
+                            <input class="hl-registration-input width-unset" type="date" name="studentDOB2" id="studentDOB2" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="gradeLevel2">
+                                Grade Level
+                            </label>
+                            <select style="width: 100px;" name="gradeLevel2" id="gradeLevel2" required>
+                                <option value="NULL">Select One:</option>
+                                <option disabled value="0">Kindergarden</option>
+                                <option disabled value="1">First Grade</option>
+                                <option disabled value="2">Second Grade</option>
+                                <option value="3">Third Grade</option>
+                                <option value="4">Fourth Grade</option>
+                                <option value="5">Fifth Grade</option>
+                                <option value="6">Sixth Grade</option>
+                                <option value="7">Seventh Grade</option>
+                                <option value="8">Eigth Grade</option>
+                                <option value="9">Freshman</option>
+                                <option value="10">Sophomore</option>
+                                <option value="11">Junior</option>
+                                <option value="12">Senior</option>
+                            </select>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <p class="centerText">
+                                Select sports you wish to enroll:
+                            </p>
+                            <div style="width: 75%; margin: auto;" name="sportChoices2" id="sportChoices2" required>
+                                <table class="sportsTable">
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="football" type="checkbox" name="sportsList[]" value="Football">
+                                        </td>
+                                        <td>
+                                            <label for="football">
+                                                Football 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="volleyball" type="checkbox" name="sportsList[]" value="Volleyball">
+                                        </td>
+                                        <td>
+                                            <label for="volleyball">
+                                                Volleyball
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="baseball" type="checkbox" name="sportsList[]" value="Baseball">
+                                        </td>
+                                        <td>
+                                            <label for="baseball">
+                                                Baseball
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="track" type="checkbox" name="sportsList[]" value="Track and Field">
+                                        </td>
+                                        <td>
+                                            <label for="track">
+                                                Track and Field
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="softball" type="checkbox" name="sportsList[]" value="Softball">
+                                        </td>
+                                        <td>
+                                            <label for="softball">
+                                                Softball 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="golf" type="checkbox" name="sportsList[]" value="Golf">
+                                        </td>
+                                        <td>
+                                            <label for="golf">
+                                                Golf
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="crosscountry" type="checkbox" name="sportsList[]" value="Cross Country">
+                                        </td>
+                                        <td>
+                                            <label for="crosscountry">
+                                                Cross Country
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="fcheer" type="checkbox" name="sportsList[]" value="Football Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="fcheer">
+                                                Football Cheerleading
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="ccheer" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="ccheer">
+                                                Competitive Cheerleading
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="wrestling" type="checkbox" name="sportsList[]" value="Wrestling">
+                                        </td>
+                                        <td>
+                                            <label for="wrestling">
+                                                Wrestling
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="lacrosse" type="checkbox" name="sportsList[]" value="Lacrosse">
+                                        </td>
+                                        <td>
+                                            <label for="lacrosse">
+                                                Lacrosse
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input disabled class="sportsOptions" name="" type="checkbox" name="sportsList[]" value="">
+                                        </td>
+                                        <td>
+                                            <label for="">
+                                                
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide spaceBelow" id="student3">
+                        <p class="centerText spaceAbove">
+                        Student 3 Information
+                        </p>
+                    
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="firstNameStudent3">
+                                First Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="firstNameStudent3" id="firstNameStudent3" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="lastNameStudent3">
+                                Last Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="lastNameStudent3" id="lastNameStudent3" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="studentDOB3">
+                                DOB
+                            </label>
+                            <input class="hl-registration-input width-unset" name="studentDOB3" type="date" id="studentDOB3" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="gradeLevel3">
+                                Grade Level
+                            </label>
+                            <select style="width: 100px;" name="gradeLevel3" id="gradeLevel3" required>
+                                <option value="NULL">Select One:</option>
+                                <option disabled value="0">Kindergarden</option>
+                                <option disabled value="1">First Grade</option>
+                                <option disabled value="2">Second Grade</option>
+                                <option value="3">Third Grade</option>
+                                <option value="4">Fourth Grade</option>
+                                <option value="5">Fifth Grade</option>
+                                <option value="6">Sixth Grade</option>
+                                <option value="7">Seventh Grade</option>
+                                <option value="8">Eigth Grade</option>
+                                <option value="9">Freshman</option>
+                                <option value="10">Sophomore</option>
+                                <option value="11">Junior</option>
+                                <option value="12">Senior</option>
+                            </select>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <p class="centerText">
+                                Select sports you wish to enroll:
+                            </p>
+                            <div style="width: 75%; margin: auto;" name="sportChoices3" id="sportChoices3" required>
+                                <table class="sportsTable">
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="football" type="checkbox" name="sportsList[]" value="Football">
+                                        </td>
+                                        <td>
+                                            <label for="football">
+                                                Football 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="volleyball" type="checkbox" name="sportsList[]" value="Volleyball">
+                                        </td>
+                                        <td>
+                                            <label for="volleyball">
+                                                Volleyball
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="baseball" type="checkbox" name="sportsList[]" value="Baseball">
+                                        </td>
+                                        <td>
+                                            <label for="baseball">
+                                                Baseball
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="track" type="checkbox" name="sportsList[]" value="Track and Field">
+                                        </td>
+                                        <td>
+                                            <label for="track">
+                                                Track and Field
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="softball" type="checkbox" name="sportsList[]" value="Softball">
+                                        </td>
+                                        <td>
+                                            <label for="softball">
+                                                Softball 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="golf" type="checkbox" name="sportsList[]" value="Golf">
+                                        </td>
+                                        <td>
+                                            <label for="golf">
+                                                Golf
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="crosscountry" type="checkbox" name="sportsList[]" value="Cross Country">
+                                        </td>
+                                        <td>
+                                            <label for="crosscountry">
+                                                Cross Country
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="fcheer" type="checkbox" name="sportsList[]" value="Football Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="fcheer">
+                                                Football Cheerleading
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="ccheer" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="ccheer">
+                                                Competitive Cheerleading
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="wrestling" type="checkbox" name="sportsList[]" value="Wrestling">
+                                        </td>
+                                        <td>
+                                            <label for="wrestling">
+                                                Wrestling
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="lacrosse" type="checkbox" name="sportsList[]" value="Lacrosse">
+                                        </td>
+                                        <td>
+                                            <label for="lacrosse">
+                                                Lacrosse
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input disabled class="sportsOptions" name="" type="checkbox" name="sportsList[]" value="">
+                                        </td>
+                                        <td>
+                                            <label for="">
+                                                
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide spaceBelow" id="student4">
+                        <p class="centerText spaceAbove">
+                        Student 4 Information
+                        </p>
+                    
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="firstNameStudent4">
+                                First Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="firstNameStudent4" id="firstNameStudent4" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="lastNameStudent4">
+                                Last Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="lastNameStudent4" id="lastNameStudent4" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="studentDOB4">
+                                DOB
+                            </label>
+                            <input class="hl-registration-input width-unset" name="studentDOB4" type="date" id="studentDOB4" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="gradeLevel4">
+                                Grade Level
+                            </label>
+                            <select style="width: 100px;" name="gradeLevel4" id="gradeLevel4" required>
+                                <option value="NULL">Select One:</option>
+                                <option disabled value="0">Kindergarden</option>
+                                <option disabled value="1">First Grade</option>
+                                <option disabled value="2">Second Grade</option>
+                                <option value="3">Third Grade</option>
+                                <option value="4">Fourth Grade</option>
+                                <option value="5">Fifth Grade</option>
+                                <option value="6">Sixth Grade</option>
+                                <option value="7">Seventh Grade</option>
+                                <option value="8">Eigth Grade</option>
+                                <option value="9">Freshman</option>
+                                <option value="10">Sophomore</option>
+                                <option value="11">Junior</option>
+                                <option value="12">Senior</option>
+                            </select>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <p class="centerText">
+                                Select sports you wish to enroll:
+                            </p>
+                            <div style="width: 75%; margin: auto;" name="sportChoices4" id="sportChoices4" required>
+                                <table class="sportsTable">
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="football" type="checkbox" name="sportsList[]" value="Football">
+                                        </td>
+                                        <td>
+                                            <label for="football">
+                                                Football 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="volleyball" type="checkbox" name="sportsList[]" value="Volleyball">
+                                        </td>
+                                        <td>
+                                            <label for="volleyball">
+                                                Volleyball
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="baseball" type="checkbox" name="sportsList[]" value="Baseball">
+                                        </td>
+                                        <td>
+                                            <label for="baseball">
+                                                Baseball
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="track" type="checkbox" name="sportsList[]" value="Track and Field">
+                                        </td>
+                                        <td>
+                                            <label for="track">
+                                                Track and Field
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="softball" type="checkbox" name="sportsList[]" value="Softball">
+                                        </td>
+                                        <td>
+                                            <label for="softball">
+                                                Softball 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="golf" type="checkbox" name="sportsList[]" value="Golf">
+                                        </td>
+                                        <td>
+                                            <label for="golf">
+                                                Golf
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="crosscountry" type="checkbox" name="sportsList[]" value="Cross Country">
+                                        </td>
+                                        <td>
+                                            <label for="crosscountry">
+                                                Cross Country
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="fcheer" type="checkbox" name="sportsList[]" value="Football Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="fcheer">
+                                                Football Cheerleading
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="ccheer" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="ccheer">
+                                                Competitive Cheerleading
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="wrestling" type="checkbox" name="sportsList[]" value="Wrestling">
+                                        </td>
+                                        <td>
+                                            <label for="wrestling">
+                                                Wrestling
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="lacrosse" type="checkbox" name="sportsList[]" value="Lacrosse">
+                                        </td>
+                                        <td>
+                                            <label for="lacrosse">
+                                                Lacrosse
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input disabled class="sportsOptions" name="" type="checkbox" name="sportsList[]" value="">
+                                        </td>
+                                        <td>
+                                            <label for="">
+                                                
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide spaceBelow" id="student5">
+                        <p class="centerText spaceAbove">
+                        Student 5 Information
+                        </p>
+                    
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="firstNameStudent5">
+                                First Name
+                            </label>
+                            <input class="hl-registration-input width-unset" id="firstNameStudent5" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="lastNameStudent5">
+                                Last Name
+                            </label>
+                            <input class="hl-registration-input width-unset" name="lastNameStudent5" id="lastNameStudent5" type="text" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="studentDOB5">
+                                DOB
+                            </label>
+                            <input class="hl-registration-input width-unset" name="studentDOB5" type="date" id="studentDOB5" placeholder="MM/DD/YYYY" pattern="0-9{2}-{/}-0-9{2}-{/}-0-9{4}" required>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <label class="hl-registration-title" for="gradeLevel5">
+                                Grade Level
+                            </label>
+                            <select style="width: 100px;" name="gradeLevel5" id="gradeLevel5" required>
+                                <option value="NULL">Select One:</option>
+                                <option disabled value="0">Kindergarden</option>
+                                <option disabled value="1">First Grade</option>
+                                <option disabled value="2">Second Grade</option>
+                                <option value="3">Third Grade</option>
+                                <option value="4">Fourth Grade</option>
+                                <option value="5">Fifth Grade</option>
+                                <option value="6">Sixth Grade</option>
+                                <option value="7">Seventh Grade</option>
+                                <option value="8">Eigth Grade</option>
+                                <option value="9">Freshman</option>
+                                <option value="10">Sophomore</option>
+                                <option value="11">Junior</option>
+                                <option value="12">Senior</option>
+                            </select>
+                        </div>
+                        <div class="hl-registration-whole width-50">
+                            <p class="centerText">
+                                Select sports you wish to enroll:
+                            </p>
+                            <div style="width: 75%; margin: auto;" name="sportChoices" id="sportChoices5" required>
+                                <table class="sportsTable">
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="football" type="checkbox" name="sportsList[]" value="Football">
+                                        </td>
+                                        <td>
+                                            <label for="football">
+                                                Football 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="volleyball" type="checkbox" name="sportsList[]" value="Volleyball">
+                                        </td>
+                                        <td>
+                                            <label for="volleyball">
+                                                Volleyball
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="baseball" type="checkbox" name="sportsList[]" value="Baseball">
+                                        </td>
+                                        <td>
+                                            <label for="baseball">
+                                                Baseball
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="track" type="checkbox" name="sportsList[]" value="Track and Field">
+                                        </td>
+                                        <td>
+                                            <label for="track">
+                                                Track and Field
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="softball" type="checkbox" name="sportsList[]" value="Softball">
+                                        </td>
+                                        <td>
+                                            <label for="softball">
+                                                Softball 
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="golf" type="checkbox" name="sportsList[]" value="Golf">
+                                        </td>
+                                        <td>
+                                            <label for="golf">
+                                                Golf
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="crosscountry" type="checkbox" name="sportsList[]" value="Cross Country">
+                                        </td>
+                                        <td>
+                                            <label for="crosscountry">
+                                                Cross Country
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="fcheer" type="checkbox" name="sportsList[]" value="Football Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="fcheer">
+                                                Football Cheerleading
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="ccheer" type="checkbox" name="sportsList[]" value="Competitive Cheerleading">
+                                        </td>
+                                        <td>
+                                            <label for="ccheer">
+                                                Competitive Cheerleading
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="sportsOptions" name="wrestling" type="checkbox" name="sportsList[]" value="Wrestling">
+                                        </td>
+                                        <td>
+                                            <label for="wrestling">
+                                                Wrestling
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="sportsOptions" name="lacrosse" type="checkbox" name="sportsList[]" value="Lacrosse">
+                                        </td>
+                                        <td>
+                                            <label for="lacrosse">
+                                                Lacrosse
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input disabled class="sportsOptions" name="" type="checkbox" name="sportsList[]" value="">
+                                        </td>
+                                        <td>
+                                            <label for="">
+                                                
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration-buttons">
+                        <button class="registration-button" id="back" onclick="displayStudents();">Back</button>
+                        <button class="registration-button" id="next" onclick="studentSignup();">
+                            <a class="button" href="final-confirm.html">
+                                Finish
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->

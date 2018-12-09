@@ -101,11 +101,17 @@ function submitSignin(){
     let parentConfirm = JSON.parse(localStorage.getItem("parent"));
     
     if((parentConfirm.email == parentEmail) && (parentConfirm.password == parentPass)){
-        window.open('final-signup.html');
+        // event.preventDefault();
+        let signinHide = document.getElementById('signinContainer');
+        let signinSuccess = document.getElementById('signinSuccess');
+        signinHide.classList.add('hide');
+        signinSuccess.classList.remove('hide');
+
     }
     else{
-        event.preventDefault();
-        document.getElementById('signinFailure').classList.toggle('hide');
+        // event.preventDefault();
+        let failMessage = document.getElementById('signinFailure');
+        failMessage.classList.add('hide');
     }
 
 }
