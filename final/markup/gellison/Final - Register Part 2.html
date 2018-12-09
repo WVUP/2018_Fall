@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roane Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+
+        var room = 1;
+        function add_fields() 
+        {
+            var objTo = document.getElementById('room_fileds')
+            var divtest = document.createElement("div");
+            divtest.innerHTML = '<div class="form-group col-md-6"><label for="inputCName">Childs First Name*</label><input type="text" class="form-control" id="inputChildFName" placeholder="John"></div><div class="form-group col-md-4"><label for="inputLName">Childs Last Name*</label><input type="text" class="form-control" id="inputChildLName" placeholder="Doe"></div><div class="form-group col-md-2"><label for="inputDOB">Childs Date of Birth*</label><input type="date" class="form-control" name="bday"></div><div class="form-group col-md-12"><label for="inputSport">Select Childs Sport*</label><br><input type="checkbox" name="sport1" value="Football">Football<br><input type="checkbox" name="sport2" value="Baseball">Baseball<br><input type="checkbox" name="sport3" value="Softball">Softball<br><input type="checkbox" name="sport4" value="Golf">Golf<br><input type="checkbox" name="sport5" value="Cheerleading">Cheerleading<br> <input type="checkbox" name="sport6" value="Volleyball">Volleyball<br> <input type="checkbox" name="sport7" value="Track & Field">Track & Field<br> <input type="checkbox" name="sport8" value="Basketball">Basketball<br> <input type="checkbox" name="sport9" value="Soccer">Soccer<br> <input type="checkbox" name="sport10" value="Wrestling">Wrestling</div>';
+    
+            objTo.appendChild(divtest)
+        }
+        
+    </script>
+
+    <style>
+
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden; 
+        }
+
+        body{
+            background-image: url("https://raw.githubusercontent.com/WVUP/2018_Fall/master/final/markup/dorr1/images/image5.jpg");
+            background-repeat: no-repeat;
+            background-size: 2000px 1000px;
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            width: 70px;
+            height: 70px;
+            margin-top: 8px;
+        }
+
+        .loginText {
+            color: white !important;
+            font-size: 25px;
+            margin-right: 5px;
+            margin-top: 11px;
+        }
+
+        .navbar-text {
+            color: white !important;
+            font-size: 30px;
+        }
+
+        .navbar-inverse {
+            background-color: maroon;
+            border: none;
+            margin-bottom: none !important;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .topnav {
+            background-color: rgb(192, 192, 192);
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px 50px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(102, 102, 102);
+            color: maroon;
+        }
+
+        .topnav a.active {
+            background-color: #666666;
+            color: white;
+        }
+
+        .jumbotron {
+            align-self: center;
+            margin-top: 120px;
+            background-color: rgba(123, 123, 124, 0.8);
+        }
+
+        .btn {
+            background-color: maroon !important;
+            border-color: maroon !important;
+        }
+
+        .button5 {
+            border-radius: 50%;
+        }
+
+        .button {
+            background-color: maroon;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <ul>
+            <img src="https://raw.githubusercontent.com/WVUP/2018_Fall/master/final/markup/dorr1/images/roane_white.png" class="logo">
+        </ul>
+        <p class="navbar-text">Roane County Schools</p>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="loginText" href="Final - Login.html">Login</a></li>
+            <li><a class="loginText" href="Final - Register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="topnav">
+        <a href="Final - Home.html">Home</a>
+        <a href="Final - News.html">News</a>
+        <a href="Final - Directory.html">Directory</a>
+        <a href="Final - FAQ.html">FAQ</a>
+    </div>
+
+    <!-- Registration -->
+    <div class="row">
+        <div class="container">
+            <div class="jumbotron">
+                <h2 style="text-align:center; color: black;">Add Children</h2>
+                <hr>
+                <h4>* Required</h4>
+                <div>
+                    <form>
+                        <input type="button" id="more_fields" onclick="add_fields();" value="Add Child" id="room_fileds">
+                        <div class="form-row" id="room_fileds">
+                            <div class="form-group col-md-6">
+                                <label for="inputCName">Childs First Name*</label>
+                                <input type="text" class="form-control" id="inputChildFName" placeholder="John" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputLName">Childs Last Name*</label>
+                                <input type="text" class="form-control" id="inputChildLName" placeholder="Doe" required>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputDOB">Childs Date of Birth*</label>
+                                <input type="date" class="form-control" name="bday" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputSport">Select Childs Sport*</label><br>
+                                <input type="checkbox" name="sport1" value="Football">Football<br>
+                                <input type="checkbox" name="sport2" value="Baseball">Baseball<br>
+                                <input type="checkbox" name="sport3" value="Softball">Softball<br>
+                                <input type="checkbox" name="sport4" value="Golf">Golf<br>
+                                <input type="checkbox" name="sport5" value="Cheerleading">Cheerleading<br> 
+                                <input type="checkbox" name="sport6" value="Volleyball">Volleyball<br> 
+                                <input type="checkbox" name="sport7" value="Track & Field">Track & Field<br> 
+                                <input type="checkbox" name="sport8" value="Basketball">Basketball<br> 
+                                <input type="checkbox" name="sport9" value="Soccer">Soccer<br> 
+                                <input type="checkbox" name="sport10" value="Wrestling">Wrestling
+                            </div>
+                        </div>
+                        <button style="margin-left: 14px;" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
