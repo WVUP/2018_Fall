@@ -6,11 +6,12 @@ function validate(){
     var accounts = [];
 
     accounts = JSON.parse(localStorage.getItem("accounts"));
-
-    for (var i = 0; i < accounts.length; i++){
-        if(accounts[i].email == email){
-            alert("An account already exists with that Email");
-            return false;
+    if(accounts !== null){
+        for (var i = 0; i < accounts.length; i++){
+            if(accounts[i].email == email){
+                alert("An account already exists with that Email");
+                return false;
+            }
         }
     }
     
@@ -23,16 +24,6 @@ function validate(){
         alert("Passwords must be between 8-20 characters");
         return false;
     }
-    /*
-    var number = /\d/;
-    var m;
-    if((m = number.exec(password)) !==null){
-        if (m.match == false){
-            alert("Passwords must include at least 1 number");
-        }
-        };
-        */
-    
     
     createAccount();
 }
@@ -65,6 +56,9 @@ function pushToLocal(account){
         accounts.push(account);
         localStorage.setItem("accounts", JSON.stringify(accounts));
     }
+    event.preventDefault();
+    window.location.href = "login.html";
+    alert("Registered! Now please login with your account.")
 }
 
 function login(){
@@ -78,6 +72,7 @@ function login(){
     for (var i = 0; i < accounts.length; i++){
         if(accounts[i].email == email && accounts[i].password == password){
             console.log("logged in");
+            localStorage.setItem("user", i);
             event.preventDefault();
             window.location.href = "addChild.html";
             return true;   
@@ -89,6 +84,17 @@ function login(){
 
 }
 
+function getFirstName(){
+    var user = localStorage.getItem("user");
+    var accounts = [];
+
+    accounts = JSON.parse(localStorage.getItem("accounts"));
+
+    var firstName = accounts[user].firstName;
+
+    document.getElementById("Greeting").innerHTML = "Hello, " + firstName; 
+}
+
 function numChildren(){ 
     $("#selectNum").toggleClass("hidden");
     $("#students").toggleClass("hidden");
@@ -96,7 +102,6 @@ function numChildren(){
     switch ($("#numChild").val()){
     
         case "1":
-        console.log('this is working');
         $('#student2').toggleClass("hidden");
         $('#student3').toggleClass("hidden");
         $('#student4').toggleClass("hidden");
@@ -115,4 +120,33 @@ function numChildren(){
         $('#student5').toggleClass("hidden");
         break;
     }
+}
+
+function addChildren(){
+    var user = localStorage.getItem("user");
+    var accounts = [];
+
+    accounts = JSON.parse(localStorage.getItem("accounts"));
+
+    for(var i = 0; i < $('#numChild').val(); i++){
+    }
+}
+
+function printInfo(){
+    var user = localStorage.getItem("user");
+    var accounts = [];
+
+    accounts = JSON.parse(localStorage.getItem("accounts"));
+
+    document.getElementById("print").innerHTML = 
+    "<div>" +
+    "<h1>You're Information</h1>"+
+    "<p>Name: " + accounts[user].firstName + " " + accounts[user].lastName + "<br>" +
+    "<p>Email Address: " + accounts[user].email +
+    "<p>Street Address: " + accounts[user].street +
+    "<p>City: " + accounts[user].city +
+    "<p>State: " + accounts[user].state +
+    "<p>Zip Code: " + accounts[user].zip +
+    "<p>Number of Children: " + accounts[user].children.length +
+    "</div>";
 }

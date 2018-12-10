@@ -88,6 +88,11 @@ header .topHeader div{
     font-weight: bold;
 }
 
+.topHeader p{
+    font-size: 30px;
+    margin: 0 15px;
+}
+
 /* NavBar */
 
 header .navbar{
@@ -269,7 +274,7 @@ main div.main-reg{
 
 main div.main-reg div{
     text-align: center;
-    width: 65%;
+    width: 75%;
 }
 
 main div.main-reg div h1{
@@ -322,6 +327,7 @@ main div.main-reg div select{
 
 main div.main-reg div ul{
     margin: 10px 0;
+    margin-left: 10%;
 }
 
 main div.main-reg div ul li{
@@ -458,4 +464,32 @@ main div.main-child div select#grade{
 main div.main-child div input[type='checkbox']{
     height: 43px;
     width: 43px;
+}
+
+/* Main-Print */
+
+main div.main-print{
+    background-image: url(../images/Background\ Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 25px 20px;
+}
+
+main div.main-print div{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+main div.main-print div h1{
+    align-self: center;
+    font-size: 50px;
+}
+
+main div.main-print div p{
+    font-size: 20px;
+    align-self: left;
 }
