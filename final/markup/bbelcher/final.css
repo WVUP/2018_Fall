@@ -1,0 +1,71 @@
+#navbar {
+    /* overflow: hidden; */
+    background-color: #002741;   
+  }
+
+  #bottomnavbar {
+    /* overflow: hidden; */    
+    background-color: darkgrey;    
+    /* align-self: flex-end; */
+  }
+
+  #mainbody {    
+    background-image:url(images/background.jpg);     
+    min-height: 600px;    
+    /* height: 100%;      */
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+   }  
+
+   .row{
+       width: 80%; 
+       text-align: center;
+   }
+
+  .column1 {  
+    width: 49%;
+    text-align: left;
+    /* align-self: flex-end; */    
+  } 
+  
+  .column2 {    
+    width: 49%;
+    text-align: right; 
+    align-self: flex-end;     
+  }
+  
+  #btmnvcln1 {
+    /* padding-left: 15px;  */
+    width: 80%;
+    /* text-align: left; */
+    /* align-self: flex-end; */    
+  }
+
+  #textbox {
+      width: 80%; 
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin: auto;
+  }
+
+  #CustInfo{
+    margin:auto;
+    /* background-color: pink; */
+  }
+
+
+  #formcolumn1 {  
+    width: 49%;
+    text-align: right;
+    
+    /* align-self: flex-end; */    
+  } 
+  
+  #formcolumn2 {    
+    width: 49%;
+    text-align: center; 
+    align-self: flex-end;     
+  }
