@@ -30,7 +30,7 @@ html, body {
     margin: 0;
 	padding: 0;
 	top: 20px;
-	left: 103rem;
+	right: 10rem;
 	z-index: 999999;
 }
 
@@ -41,7 +41,7 @@ html, body {
     margin: 0;
 	padding: 0;
 	top: 20px;
-	left: 110rem;
+	right: 2rem;
 	z-index: 999998;
 }
 /* End Upper Navbar */
