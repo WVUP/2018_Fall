@@ -1,0 +1,54 @@
+/* Changing the arrow color based on page */
+
+header .arrow:nth-child(2) .triangle {
+    border-left: 30px solid rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(2) .rectangle {
+    background-color: rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(2) .red-rectangle,
+header .arrow:nth-child(3) .red-rectangle {
+    background-color: rgb(85, 19, 19);
+}
+
+header .arrow:nth-child(2) .red-triangle,
+header .arrow:nth-child(3) .red-triangle {
+    border-left: 30px solid rgb(85, 19, 19);
+}
+
+.main {
+    width: 900px;
+}
+
+.group {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#cityLabel {
+    width: 10%;
+}
+
+#city {
+    width: 25%;
+}
+
+#stateLabel {
+    width: 10%;
+}
+
+#zipLabel {
+    width: 10%;
+}
+
+#zip {
+    width: 25%;
+}
+
+h3 {
+    text-align: center;
+}
+

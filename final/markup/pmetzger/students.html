@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/students.css">
+    <title>Register - Student(s)</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="arrow clearfix">
+            <p>Welcome</p>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Profile</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Student(s)</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </header>
+    <div class="main">
+        <h1>Please finish creating your profile to continue</h1>
+        <form onsubmit="next(event)">
+            <div class="group">
+                <h4>Student Information</h4>
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>DOB</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Grade Level</label>
+                    <input type="text">
+                </div>
+            </div>
+            <h4>Select All That Apply</h4>
+            <div class="group">
+                <div class="block">
+                    <select size="5" multiple="multiple">
+                        <option>Football</option>
+                        <option>Baseball</option>
+                        <option>Softball</option>
+                        <option>Golf</option>
+                        <option>Cheerleading</option>
+                    </select>
+                </div>
+                <div class="block">
+                    <select size="5" multiple="multiple">
+                        <option>Volleyball</option>
+                        <option>Track and Field</option>
+                        <option>Basketball</option>
+                        <option>Cross Country</option>
+                        <option>Wrestling</option>
+                    </select>
+                </div>
+            </div>
+            <button onclick="resetForm(event)">Start Over</button>
+            <input type="submit" onclick="next(event)" value="Next">
+        </form>
+    </div>
+
+    <script src="assets/js/students.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/* Changing color of arrows based on which page we are on */
+
+header .arrow:nth-child(3) .triangle {
+    border-left: 30px solid rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(3) .rectangle {
+    background-color: rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(2) .red-rectangle {
+    background-color: rgb(29, 25, 25);
+}
+
+header .arrow:nth-child(2) .red-triangle {
+    border-left: 30px solid rgb(29, 25, 25);
+}
+
+header .arrow:nth-child(3) .red-rectangle {
+    background-color: rgb(85, 19, 19);
+}
+
+header .arrow:nth-child(3) .red-triangle {
+    border-left: 30px solid rgb(85, 19, 19);
+}
+
+/* Form */
+
+.group {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group {
+    width: 60%;
+    margin: 0 auto;
+}
+
+select {
+    width: 200px;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    border: solid grey 1px;
+}
+
+.block select {
+    margin: -5px -20px -5px -5px;
+    color: white;
+}
+
+select option {
+    padding: 5px;
+}
+
+select option:nth-child(odd) {
+    background-color: rgb(158, 158, 200);
+}
+
+select option:nth-child(even) {
+    background-color: rgb(129, 129, 167);
+}
