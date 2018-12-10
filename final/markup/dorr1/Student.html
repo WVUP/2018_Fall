@@ -55,33 +55,38 @@
         <div class="two">
             <br>
             <div id="register" class="container">
-                <form id="StudentInfo">
+                <form id="StudentInfo" class="needs-validation" novalidate>
                     <div class="student1">
                         <h3 id="h3">Student 1</h3>
                         <hr id="hr">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="StudentFirst1" placeholder="First Name">
+                                <input type="text" class="form-control" id="StudentFirst1" placeholder="First Name"
+                                    required>
+                                <div class="invalid-feedback">*First Name*</div>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="StudentLast1" placeholder="Last Name">
+                                <input type="text" class="form-control" id="StudentLast1" placeholder="Last Name"
+                                    required>
+                                <div class="invalid-feedback">*Last Name*</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <select id="inputGrade1" class="form-control">
-                                    <option selected>Grade Level</option>
+                                <select id="inputGrade1" class="form-control" required>
+                                    <option value="">Grade Level</option>
                                     <option value="9th">9th Grade</option>
                                     <option value="10th">10th Grade</option>
                                     <option value="11th">11th Grade</option>
                                     <option value="12th">12th Grade</option>
                                 </select>
+                                <div class="invalid-feedback">*Grade*</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <select id="inputAge1" class="form-control">
-                                    <option selected>Age</option>
+                                <select id="inputAge1" class="form-control" required>
+                                    <option value="">Age</option>
                                     <option value="14">14</option>
                                     <option value="15">15</option>
                                     <option value="16">16</option>
@@ -89,85 +94,89 @@
                                     <option value="18">18</option>
                                     <option value="19">19</option>
                                 </select>
+                                <div class="invalid-feedback">*Age*</div>
                             </div>
                         </div>
                         <a>Choose all that apply</a>
                         <div class="form-row" style="text-align:left;margin-left: 15%">
                             <div class="form-group col-md-6">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkFootball1">
-                                    <label class="custom-control-label" for="checkFootball">Football</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkFootball1">
+                                    <label class="form-check-label" for="checkFootball">Football</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkBaseball1">
-                                    <label class="custom-control-label" for="checkBaseball">Baseball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkBaseball1">
+                                    <label class="form-check-label" for="checkBaseball">Baseball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkSoftball1">
-                                    <label class="custom-control-label" for="checkSoftball">Softball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkSoftball1">
+                                    <label class="form-check-label" for="checkSoftball">Softball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkBasketball1">
-                                    <label class="custom-control-label" for="checkBasketball">Basketball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkBasketball1">
+                                    <label class="form-check-label" for="checkBasketball">Basketball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkVolleyball1">
-                                    <label class="custom-control-label" for="checkVolleyball">Volleyball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkVolleyball1">
+                                    <label class="form-check-label" for="checkVolleyball">Volleyball</label>
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkCheerlead1">
-                                    <label class="custom-control-label" for="checkCheerlead">Cheerleading</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkCheerlead1">
+                                    <label class="form-check-label" for="checkCheerlead">Cheerleading</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkTrack1">
-                                    <label class="custom-control-label" for="checkTrack">Track and Field</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkTrack1">
+                                    <label class="form-check-label" for="checkTrack">Track and Field</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkCrossCountry1">
-                                    <label class="custom-control-label" for="checkCrossCountry">Cross Country</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkCrossCountry1">
+                                    <label class="form-check-label" for="checkCrossCountry">Cross Country</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkWrestle1">
-                                    <label class="custom-control-label" for="checkWrestle">Wrestling</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkWrestle1">
+                                    <label class="form-check-label" for="checkWrestle">Wrestling</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkGolf1">
-                                    <label class="custom-control-label" for="checkGolf">Golf</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkGolf1">
+                                    <label class="form-check-label" for="checkGolf">Golf</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="addStudent2" class="btn btn-success" data-toggle="collapse" data-target="#student2"
-                        onclick="showhide()">Add Student <i class="fa fa-plus-circle    "></i></button>
+                    <button type="button" id="addStudent2" class="btn btn-warning collapse show" data-toggle="collapse"
+                        data-target="#student2, #addStudent2, #removeStudent2, .multi-collapse">Add Student <i class="fa fa-plus-circle    "></i></button>
                     <!----------------------------------------Add Student 2 Form------------------------------------------->
                     <div id="student2" class="collapse">
                         <h3>Student 2</h3>
                         <hr>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="StudentFirst2" placeholder="First Name">
+                                <input type="text" class="form-control multi-collapse" id="StudentFirst2" placeholder="First Name">
+                                <div class="invalid-feedback">*First Name*</div>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="StudentLast2" placeholder="Last Name">
+                                <input type="text" class="form-control multi-collapse" id="StudentLast2" placeholder="Last Name">
+                                <div class="invalid-feedback">*Last Name*</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <select id="inputGrade2" class="form-control">
-                                    <option selected>Grade Level</option>
+                                <select id="inputGrade2" class="form-control multi-collapse">
+                                    <option value="">Grade Level</option>
                                     <option value="9th">9th Grade</option>
                                     <option value="10th">10th Grade</option>
                                     <option value="11th">11th Grade</option>
                                     <option value="12th">12th Grade</option>
                                 </select>
+                                <div class="invalid-feedback">*Grade*</div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <select id="inputAge2" class="form-control">
-                                    <option selected>Age</option>
+                                <select id="inputAge2" class="form-control multi-collapse">
+                                    <option value="">Age</option>
                                     <option value="14">14</option>
                                     <option value="15">15</option>
                                     <option value="16">16</option>
@@ -175,59 +184,60 @@
                                     <option value="18">18</option>
                                     <option value="19">19</option>
                                 </select>
+                                <div class="invalid-feedback">*Age*</div>
                             </div>
                         </div>
                         <a>Choose all that apply</a>
                         <div class="form-row" style="text-align:left;margin-left: 15%">
                             <div class="form-group col-md-6">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkFootball2">
-                                    <label class="custom-control-label" for="checkFootball">Football</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkFootball2">
+                                    <label class="form-check-label" for="checkFootball">Football</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkBaseball2">
-                                    <label class="custom-control-label" for="checkBaseball">Baseball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkBaseball2">
+                                    <label class="form-check-label" for="checkBaseball">Baseball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkSoftball2">
-                                    <label class="custom-control-label" for="checkSoftball">Softball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkSoftball2">
+                                    <label class="form-check-label" for="checkSoftball">Softball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkBasketball2">
-                                    <label class="custom-control-label" for="checkBasketball">Basketball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkBasketball2">
+                                    <label class="form-check-label" for="checkBasketball">Basketball</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkVolleyball2">
-                                    <label class="custom-control-label" for="checkVolleyball">Volleyball</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkVolleyball2">
+                                    <label class="form-check-label" for="checkVolleyball">Volleyball</label>
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkCheerlead2">
-                                    <label class="custom-control-label" for="checkCheerlead">Cheerleading</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkCheerlead2">
+                                    <label class="form-check-label" for="checkCheerlead">Cheerleading</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkTrack2">
-                                    <label class="custom-control-label" for="checkTrack">Track and Field</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkTrack2">
+                                    <label class="form-check-label" for="checkTrack">Track and Field</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkCrossCountry2">
-                                    <label class="custom-control-label" for="checkCrossCountry">Cross Country</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkCrossCountry2">
+                                    <label class="form-check-label" for="checkCrossCountry">Cross Country</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkWrestle2">
-                                    <label class="custom-control-label" for="checkWrestle">Wrestling</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkWrestle2">
+                                    <label class="form-check-label" for="checkWrestle">Wrestling</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="checkGolf2">
-                                    <label class="custom-control-label" for="checkGolf">Golf</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkGolf2">
+                                    <label class="form-check-label" for="checkGolf">Golf</label>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" id="removeStudent2" class="btn btn-danger" data-toggle="collapse"
-                            data-target="#student2" onclick="showhide()">Remove Student <i class="fa fa-minus-circle    "></i></button>
                     </div>
-                    <button type="submit" id="submit" onclick="gotoform()" class="btn btn-dark">Submit</button>
+                    <button type="button" id="removeStudent2" class="btn btn-danger collapse" data-toggle="collapse"
+                        data-target="#student2, #addStudent2, #removeStudent2, .multi-collapse">Remove Student <i class="fa fa-minus-circle    "></i></button>
+                    <button type="submit" id="submit" class="btn btn-success">Submit</button>
                 </form>
                 <br>
                 <br>
@@ -241,9 +251,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="JS/Student.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"

@@ -10,7 +10,7 @@ function check() {
 
     // check if stored data from register-form is equal to data from login form
     if(loginEmail.value == inputEmail && loginPassword.value == inputPasswordConf) {
-        window.open("Student.html")
+        window.open("Student.html");
     }else {
         alert('Invalid Username and/or Password');
     }

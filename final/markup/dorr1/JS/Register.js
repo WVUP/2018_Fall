@@ -2,6 +2,7 @@ var pass = document.getElementById("inputPassword");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
+var special = document.getElementById("special");
 var length = document.getElementById("length");
 var conf = document.getElementById("inputPasswordConf");
 var same = document.getElementById("same");
@@ -37,6 +38,16 @@ pass.onkeyup = function () {
         number.classList.add("invalid");
     }
 
+    // Validate special
+    var specials = /[!@#$%^&*()]/g;
+    if (pass.value.match(specials)) {
+        special.classList.remove("invalid");
+        special.classList.add("valid");
+    } else {
+        special.classList.remove("valid");
+        special.classList.add("invalid");
+    }
+
     // Validate length
     if (pass.value.length >= 8) {
         length.classList.remove("invalid");
@@ -58,52 +69,129 @@ conf.onkeyup = function () {
         same.classList.add("invalid");
     }
 
-    
+
 }
 
-// Add/Remove more students to Form
-function showhide() {
-    
-    var x = document.getElementById("addStudent2");
-    if (x.style.display === "none") {
-        x.style.display = "inline-block";
+//Validate Form has been filled out 
+function validateForm() {
+    var ParentsFirst = document.forms["ParentRegister"]["ParentFirst"].value;
+    if (ParentsFirst == "") {
+        alert("First Name Required");
+        return false;
     } else {
-        x.style.display = "none";
+        localStorage.setItem('ParentFirst', ParentsFirst);
+    }
+
+    var ParentsLast = document.forms["ParentRegister"]["ParentLast"].value;
+    if (ParentsLast == "") {
+        alert("Last Name Required");
+        return false;
+    } else {
+        localStorage.setItem('ParentLast', ParentsLast);
+    }
+
+    var inputsStreet = document.forms["ParentRegister"]["inputStreet"].value;
+    if (inputsStreet == "") {
+        alert("Street Required");
+        return false;
+    } else {
+        localStorage.setItem('inputStreet', inputsStreet);
+    }
+
+    var inputsCity = document.forms["ParentRegister"]["inputCity"].value;
+    if (inputsCity == "") {
+        alert("City Required");
+        return false;
+    } else {
+        localStorage.setItem('inputCity', inputsCity);
+    }
+
+    var inputsState = document.forms["ParentRegister"]["inputState"].value;
+    if (inputsState == "") {
+        alert("Choose a State");
+        return false;
+    } else {
+        localStorage.setItem('inputState', inputsState);
+    }
+
+    var inputsZip = document.forms["ParentRegister"]["inputZip"].value;
+    if (inputsZip == "") {
+        alert("Zip Code Required");
+        return false;
+    } else {
+        localStorage.setItem('inputZip', inputsZip);
+    }
+
+    var inputsEmail = document.forms["ParentRegister"]["inputEmail"].value;
+    if (inputsEmail == "") {
+        alert("Email Required");
+        return false;
+    } else {
+        localStorage.setItem('inputEmail', inputsEmail);
+    }
+
+    var inputsPhone = document.forms["ParentRegister"]["inputPhone"].value;
+    if (inputsPhone == "") {
+        alert("Phone Number Required");
+        return false;
+    } else {
+        localStorage.setItem('inputPhone', inputsPhone);
+    }
+
+    var inputsPassword = document.forms["ParentRegister"]["inputPassword"].value;
+    if (inputsPassword == "") {
+        alert("Choose a Password");
+        return false;
+    }
+
+    var inputsPasswordConf = document.forms["ParentRegister"]["inputPasswordConf"].value;
+    if (inputsPasswordConf == "") {
+        alert("Enter Password again to Confirm");
+        return false;
+    } else {
+        localStorage.setItem('inputPasswordConf', inputsPasswordConf);
+        window.load(Login.html);
     }
 }
 
-// Storage
-window.onload = function() {
 
-    // Check for LocalStorage support.
-    if (localStorage) {
-  
-      // Add an event listener for form submissions
-      document.getElementById('ParentRegister').addEventListener('submit', function() {
-        var ParentFirst = document.getElementById('ParentFirst').value;
-        var ParentLast = document.getElementById('ParentLast').value;
-        var inputStreet = document.getElementById('inputStreet').value;
-        var inputCity = document.getElementById('inputCity').value;
-        var inputState = document.getElementById('inputState').value;
-        var inputZip = document.getElementById('inputZip').value;
-        var inputEmail = document.getElementById('inputEmail').value;
-        var inputPhone = document.getElementById("inputPhone").value;
-        var inputPasswordConf = document.getElementById("inputPasswordConf").value;
-  
-        // Save in localStorage.
-        localStorage.setItem('ParentFirst', ParentFirst);
-        localStorage.setItem('ParentLast', ParentLast);
-        localStorage.setItem('inputStreet', inputStreet);
-        localStorage.setItem('inputCity', inputCity);
-        localStorage.setItem('inputState', inputState);
-        localStorage.setItem('inputZip', inputZip);
-        localStorage.setItem('inputEmail', inputEmail);
-        localStorage.setItem('inputPhone', inputPhone);
-        localStorage.setItem('inputPasswordConf', inputPasswordConf);
-      });
-    }
-  }
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        //Bootstrap Valid Form Method
+        var forms = document.getElementsByClassName('needs-validation');
+        //Do not submit if invalid or save to local storage if valid
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    var ParentsFirst = document.getElementById('ParentFirst').value;
+                    var ParentsLast = document.getElementById('ParentLast').value;
+                    var inputsStreet = document.getElementById('inputStreet').value;
+                    var inputsCity = document.getElementById('inputCity').value;
+                    var inputsState = document.getElementById('inputState').value;
+                    var inputsZip = document.getElementById('inputZip').value;
+                    var inputsEmail = document.getElementById('inputEmail').value;
+                    var inputsPhone = document.getElementById("inputPhone").value;
+                    var inputsPasswordConf = document.getElementById("inputPasswordConf").value;
+                    //Local Storage
+                    localStorage.setItem('ParentFirst', ParentsFirst);
+                    localStorage.setItem('ParentLast', ParentsLast);
+                    localStorage.setItem('inputStreet', inputsStreet);
+                    localStorage.setItem('inputCity', inputsCity);
+                    localStorage.setItem('inputState', inputsState);
+                    localStorage.setItem('inputZip', inputsZip);
+                    localStorage.setItem('inputEmail', inputsEmail);
+                    localStorage.setItem('inputPhone', inputsPhone);
+                    localStorage.setItem('inputPasswordConf', inputsPasswordConf);
+                    //Go to Login
+                    window.open("Login.html");
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
 
-function gotologin() {
-        location.href=("Login.html");
-}
