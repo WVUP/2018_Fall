@@ -7,7 +7,7 @@ body{
 .content{
     text-align: center;
     width: 60%;
-    height: 80%;
+    height: 85%;
     position: absolute;
     margin: 75px 20% 0 20%; 
     background-color: white;
@@ -23,15 +23,36 @@ body{
 .content p{
     font-size: 20px;
 }
+#step1{
+    visibility: visible;
+    width: auto;
+    height: auto;
+    
+}
+
+#step2{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+#step3{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
 
 .progressBar{
-
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    
 }
 .form{
     display: block;
-    width: 80%;
+    width: 86%;
     height: 100%;
-    margin: 0 10% 0 10%;
+    margin: 0 7% 0 7%;
     
 }
 .formH2{
@@ -43,6 +64,25 @@ body{
     vertical-align: middle;
     padding: 15 0 15 0;
 }
+.formH3{
+    background-color: orange;
+    width: 100px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15 0 15 0;
+}
+.formH4{
+    background-color: orange;
+    width: 100px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15 0 15 0;
+}
+
 
 .formInput{
     width: 400px;
@@ -50,11 +90,36 @@ body{
     background-color: black;
     color: orange;
     font-size: 20px;
-
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
-
+.formInput2{
+    width: 600px;
+    height: 75px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.formInput2{
+    width: 600px;
+    height: 75px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.formInput4{
+    width: 100px;
+    height: 75px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
 .invalid{
     color: red;
     font-weight: bold;
@@ -63,8 +128,9 @@ body{
 
 }
 .valid{
-    color: black
-    
+    color: black;
+    text-align: justify;
+    margin: 0 0 0 215px
 }
 .submitButton{
     display: block;
@@ -74,3 +140,4 @@ body{
     border-radius: 10px 10px;
     
 }
+
