@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- My CSS -->
+     <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+      <div class="taskbar">
+        <div class="header">
+          <div style="display:inline" class="header-font">
+            <a href="Index.html"><img src="images/WHSlogo.jpg", style="width: 5%;" alt="">Warren High School</a>
+
+      
+              <a style="padding-left: 70%; " href="Login.html">Login</a>
+              <a style="padding-left:2%" href="Register.html">Register</a>
+          </div>
+
+            <div class="header-font">
+              <ul class="tabs">
+                  <li class="">
+                    <a href="Index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="News.html">News</a>
+                  </li>
+                  <li>
+                    <a href="FAQ.html">FAQ</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h4 style="text-align:center">
+      Welcome Parents/Guardians!
+    </h4>
+
+    <h5 style="text-align:center">
+        To first register please sign up with your email
+        and create a password        
+    </h5>
+
+    <div style="text-align:center">
+      
+      <form action="View.html" id="infoForm">
+          Email Address: <br>
+          <input type="email" id="Email">
+        
+
+        <br>
+        <br>
+        Password: <br>
+        <input type="password" id="Password">
+
+        <br>
+        <br>
+        Confirm Password: <br>
+        <input type="password" id="ConfirmPassword">
+        <br>
+        <br>
+
+        <h5>
+          Parent/Guardian Information
+        </h5>
+        First Name: <br>
+        <input type="text" id="ParentFirstName">
+        <br>
+        Last Name: <br>
+        <input type="text" id="ParentLastName">
+
+        <br>
+        <br>
+        
+        <h6>
+          Address
+        </h6>
+        Street: <br>
+        <input type="text" id="Street">
+        <br>
+        City: <br>
+        <input type="text" id="City">
+        <br>
+        State: <br>
+        <input type="text" id="State">
+        <br>
+        ZipCode: <br>
+        <input type="text" id="ZipCode">
+        <br>
+        <br>
+
+        <h5>
+            Student Information
+        </h5>
+        First Name: <br>
+        <input type="text" id="StudentFirstName">
+        <br>
+        Last Name: <br>
+        <input type="text" id="StudentLastName">
+        <br>
+        Date of Birth: <br>
+        <input type="text" id="DOB" id="">
+        <br>
+        Grade Level: <br>
+        <input type="text" id="GradeLevel">
+
+        <br>
+        <br>
+        <h6>
+          Select all that apply:
+        </h6>
+
+        <input type="checkbox" id="Football"> Football<br>
+        <input type="checkbox" id="Baseball"> Baseball<br>
+        <input type="checkbox" id="Softball"> Softball<br>
+        <input type="checkbox" id="Basketball"> Basketball<br>
+        <input type="checkbox" id="Golf"> Golf<br>
+        <input type="checkbox" id="Cheerleading"> Cheerleading<br>
+        <input type="checkbox" id="Volleyball"> Volleyball<br>
+        <input type="checkbox" id="Track&Field"> Track & Field<br>
+        <input type="checkbox" id="CrossCountry"> Cross Country<br>
+        <input type="checkbox" id="Wrestling"> Wrestling<br>
+
+        <br>
+        <br>
+
+      </form>
+      <button id="submit" form="infoForm" onclick="getInput()">Submit</button>
+
+      <br>
+      <br>
+
+
+    </div>
+
+    
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
