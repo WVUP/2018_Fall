@@ -9,12 +9,12 @@
     document.getElementById("inputPhone").value = localStorage.getItem("inputPhone");
     document.getElementById("StudentFirst1").innerHTML = localStorage.getItem("StudentFirst1");
     document.getElementById("StudentLast1").innerHTML = localStorage.getItem("StudentLast1");
-    document.getElementById("StudentGrade1").innerHTML = localStorage.getItem("StudentGrade1").value;
+    document.getElementById("StudentGrade1").innerHTML = localStorage.getItem("StudentGrade1");
     document.getElementById("StudentAge1").innerHTML = localStorage.getItem("StudentAge1");
-    //document.getElementById("StudentSports1").innerHTML = localStorage.getItem("StudentSports1");
-    //document.getElementById("StudentFirst2").innerHTML = localStorage.getItem("StudentFirst2");
-    //document.getElementById("StudentLast2").innerHTML = localStorage.getItem("StudentLast2");
-    //document.getElementById("StudentGrade2").innerHTML = localStorage.getItem("StudentGrade2");
-    //document.getElementById("StudentAge2").innerHTML = localStorage.getItem("StudentAge2");
-    //document.getElementById("StudentSports2").innerHTML = localStorage.getItem("StudentSports2");
+    document.getElementById("StudentSports1").innerHTML = localStorage.getItem("StudentSports1");
+    document.getElementById("StudentFirst2").innerHTML = localStorage.getItem("StudentFirst2");
+    document.getElementById("StudentLast2").innerHTML = localStorage.getItem("StudentLast2");
+    document.getElementById("StudentGrade2").innerHTML = localStorage.getItem("StudentGrade2");
+    document.getElementById("StudentAge2").innerHTML = localStorage.getItem("StudentAge2");
+    document.getElementById("StudentSports2").innerHTML = localStorage.getItem("StudentSports2");
   }

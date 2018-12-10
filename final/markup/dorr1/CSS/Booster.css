@@ -84,7 +84,7 @@ img#RoaneRaiders{
 
 .one{
     flex: 20%;
-    margin-top: 330px;
+    margin-top: 25%;
 }
 
 .two{
@@ -92,10 +92,33 @@ img#RoaneRaiders{
     background-color: silver;
     border-radius: 80px;
     margin-bottom:80px;
-    margin-top: 150px;
+    margin-top: 15%;
     border-color: black;
     border-style: solid;
     opacity: .5;
+}
+
+.middle{
+    flex: 60%;
+}
+
+.News#one{
+    margin-top: 20%;
+}
+
+.News{
+    background-color: silver;
+    border-radius: 20px;
+    margin-bottom:40px;
+    margin-top: 40px;
+    border-color: black;
+    border-style: solid;
+    opacity: .5;
+    height:auto;
+    font-size: 18pt;
+    text-align: left;
+    padding: 20px;
+    display: flex;
 }
 
 div.container{
@@ -106,7 +129,7 @@ div.container{
 
 .three{
     flex: 20%;
-    margin-top: 330px;
+    margin-top: 25%;
 }
 
 /* Registration Page */
