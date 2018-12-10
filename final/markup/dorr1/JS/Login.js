@@ -12,7 +12,9 @@ function check() {
     if(loginEmail.value == inputEmail && loginPassword.value == inputPasswordConf) {
         window.open("Student.html");
     }else {
-        alert('Invalid Username and/or Password');
+        alert('Invalid Username and/or Password ');
+        
+
     }
 
 }

@@ -195,3 +195,13 @@ function validateForm() {
     }, false);
 })();
 
+function autoform() {
+    document.getElementById('ParentFirst').value = "Aaron";
+    document.getElementById('ParentLast').value = "Freeland";
+    document.getElementById('inputStreet').value = "300 Campus Drive";
+    document.getElementById('inputCity').value = "Parkersburg";
+    document.getElementById('inputState').value = "WV";
+    document.getElementById('inputZip').value = "26104";
+    document.getElementById('inputEmail').value = "afreeland@wvup.edu";
+    document.getElementById("inputPhone").value = "304-424-8000";
+}
