@@ -1,0 +1,196 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background-image: url("../images/roane_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 1920px 1180px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+}
+
+/* Upper Navbar CSS */
+#nav-county {
+	color: white;
+	font-size: 36px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 15px;
+	left: 7rem;
+	z-index: 999999;
+}
+
+#nav-login {
+	color: white;
+	font-size: 26px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 20px;
+	left: 103rem;
+	z-index: 999999;
+}
+
+#nav-regis {
+	color: white;
+	font-size: 26px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 20px;
+	left: 110rem;
+	z-index: 999998;
+}
+/* End Upper Navbar */
+
+/* Lower Navbar CSS */
+#nav-ul-lower {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #D6D6D6;
+}
+
+#nav-li-lower {
+	float: left;
+}
+
+#nav-li-lower a {
+	font-size: 22px;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 11px 50px 11px 50px;
+	text-decoration: none;
+}
+
+#nav-li-lower a:hover {
+	background-color: #AFABAA;
+	color: red !important;
+}
+
+.nav-lower-active {
+	background-color: #3C3837;
+	color: white !important;
+}
+/* End Lower Navbar */
+
+/* Homepage text box & side images */
+.homepage-text {
+	display: block;
+	margin: 5rem 30rem;
+	padding: 0.5rem;
+	color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border: 1px solid black;
+}
+
+#homepage-h2 {
+	text-align: center;
+	color: black;
+	font-size: 36px;
+}
+
+#homepage-p {
+	margin-left: -3rem;
+	margin-right: -3rem;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	width: 35rem;
+}
+
+#homepage-hr { 
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+    border-style: inset;
+    border-width: 1px;
+	border-color: black;
+}
+
+#homepage-logo {
+    display: inline-flex;
+    background-image: url("../images/roane_logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: fixed;
+	top: 25rem;
+	left: 9rem;
+	width: 25%;
+	height: 200px;
+	z-index: 100;
+}
+
+#homepage-logo-2 {
+    display: inline-flex;
+    background-image: url("../images/roane_logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: fixed;
+	top: 25rem;
+	right: -9rem;
+	width: 25%;
+	height: 200px;
+	z-index: 100;
+}
+/* End Homepage CSS */
+
+/* News, Directory & FAQ CSS begin */
+.base-text {
+	display: block;
+	margin: 5rem 30rem;
+	padding: 0.5rem;
+	color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border: 1px solid black;
+}
+
+#news-h2 {
+	padding: 1px 1px;
+	margin-left: -8rem;
+}
+
+#news-p {
+	font-size: 18px;
+	padding: 1px 1px;
+	margin-left: -10rem;
+	margin-right: -10rem;
+}
+
+#faq-h2 {
+	padding: 1px 1px;
+	margin-left: -8rem;	
+}
+
+#faq-p {
+	font-size: 20px;
+	padding: 1px 1px;
+	margin-left: -10rem;
+	margin-right: -10rem;	
+}
+
+#directory-h2 {
+	padding: 1px 1px;
+	margin-left: -8rem;
+}
+
+#directory-p {
+	font-size: 18px;
+	padding: 1px 1px;
+	margin-left: -10rem;
+	margin-right: -10rem;
+}
+/* End News, Directory & FAQ CSS */

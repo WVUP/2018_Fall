@@ -1,0 +1,256 @@
+/* Begin Registration & Profile CSS */
+.html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	background: url("../images/roane_logo.png") no-repeat center center fixed !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+	background-size: 1065px 1065px;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    background-blend-mode: lighten;
+}
+
+#nav-register-active {
+	font-size: 22px;
+	color: white;
+    border-style: solid;
+    border-width: 1px;
+	border-color: black;
+	padding-left: 250px;
+	padding-right: 200px;
+	background-color: red;
+}
+
+#nav-register {
+	font-size: 22px;
+	color: white;
+	border-style: solid;
+    border-width: 1px;
+	border-color: black;
+	padding-left: 250px;
+	padding-right: 200px;
+	background-color: grey;
+}
+
+#register-h2 {
+	padding: 1px 1px;
+	margin-top: 2rem;
+	font-size: 40px;
+	text-align: center;
+}
+
+#register-p {
+	font-size: 24px;
+	margin-top: 1rem;
+	padding: 1px 1px;
+	text-align: center;
+}
+
+#register-form {
+	margin-top: 3rem;
+}
+
+#register-email {
+	font-size: 22px;
+	color: black;
+	margin-right: 1rem;
+}
+
+#register-password {
+	font-size: 22px;
+	color: black;
+	margin-right: 1rem;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+}
+
+#message {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border: 1px solid black;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+	text-align: center;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+#profile-form {
+	display: block;
+	margin: 5rem 30rem;
+	padding: 0.5rem;
+	color: black;
+	font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border: 1px solid black;
+}
+
+#profile-input {
+	margin: 5px -1rem 10px 1rem;
+}
+/* End Registration & Profile CSS */
+
+/* Login CSS */
+#nav-county {
+	color: white;
+	font-size: 36px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 15px;
+	left: 7rem;
+	z-index: 999999;
+}
+
+#nav-login {
+	color: white;
+	font-size: 26px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 20px;
+	left: 103rem;
+	z-index: 999999;
+}
+
+#nav-regis {
+	color: white;
+	font-size: 26px;
+    position: absolute;
+    margin: 0;
+	padding: 0;
+	top: 20px;
+	left: 110rem;
+	z-index: 999998;
+}
+
+#nav-ul-lower {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #D6D6D6;
+}
+
+#nav-li-lower {
+	float: left;
+}
+
+#nav-li-lower a {
+	font-size: 22px;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 11px 50px 11px 50px;
+	text-decoration: none;
+}
+
+#nav-li-lower a:hover {
+	background-color: #AFABAA;
+	color: red !important;
+}
+
+.nav-lower-active {
+	background-color: #3C3837;
+	color: white !important;
+}
+
+.login-text {
+	display: block;
+	margin: 5rem 30rem;
+	padding: 0.5rem;
+	color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(192, 192, 192, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	border: 1px solid black;
+}
+
+.img-center {
+	display: block;
+	margin: 20px auto 20px auto;
+	width: 35%;
+}
+
+.form-signin .checkbox {
+	margin: 0 0 0 25px;
+	font-weight: 500;
+}
+/* End Login CSS */
+
+/* Other CSS */
+#home-button {
+	position: absolute;
+	bottom: 0rem;
+	right: 10rem;
+	z-index: 999999;
+	font-size: 26px;
+	height: 50px;
+	width: 15rem;
+	background-color: red;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#home-button a {
+	text-decoration: none;
+	color: white;
+}
+
+#goback-button {
+	position: absolute;
+	bottom: 0rem;
+	left: 10rem;
+	z-index: 999999;
+	font-size: 26px;
+	height: 50px;
+	width: 15rem;
+	background-color: red;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#goback-button a {
+	text-decoration: none;
+	color: white;
+}
+/* End Other CSS */
