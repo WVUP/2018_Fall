@@ -31,8 +31,69 @@
 </nav>
 </header>
 
+<div class="col-md-6 offset-md-3" id="profile-form">
+	<h2 id="register-h2">Please fill out information for the student.</h2>
 
-
+	<div class="col-md-8 order-md-1">
+		<form id="profileForm" class="needs-validation" method="post">
+            <div class="row">
+				<div class="col-md-6 mb-3" id="profile-input" style="margin-top:2rem !important;">
+					<label for="firstName">First name:</label>
+					<input type="text" class="form-control" id="firstName" placeholder="First name.." value="" required>
+					<div class="invalid-feedback">
+						Valid first name is required.
+					</div>
+				</div>
+				<div class="col-md-6 mb-3" id="profile-input" style="margin-top:2rem !important;">
+					<label for="lastName">Last name:</label>
+					<input type="text" class="form-control" id="lastName" placeholder="Last name.." value="" required>
+					<div class="invalid-feedback">
+						Valid last name is required.
+					</div>
+				</div>
+            </div>
+            <div class="row">
+				<div class="col-md-5 mb-3" id="profile-input">
+					<label for="gradeLevel">Grade Level:</label>
+					<select class="custom-select d-block w-100" id="gradeLevel" required>
+					<option value="">Choose...</option>
+					<option value="9">9th</option>
+					<option value="10">10th</option>
+					<option value="11">11th</option>
+					<option value="12">12th</option>
+					</select>
+					<div class="invalid-feedback">
+						Please select a grade level.
+					</div>
+				</div>
+				<div class="col-md-4 mb-3" id="profile-input">
+					<label for="dateBirth">Date of Birth:</label>
+					<input type="date" name="birthDate" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 mb-3" id="profile-input">
+					<label for="chosenSport">What sports?</label><br><br>
+					<input type="checkbox" name="sport1" value="Baseball">Baseball<br>
+					<input type="checkbox" name="sport2" value="Soccer">Soccer<br>
+					<input type="checkbox" name="sport3" value="Football">Football<br>
+					<input type="checkbox" name="sport4" value="Basketball">Basketball<br>
+					<input type="checkbox" name="sport5" value="Volleyball">Volleyball<br>
+				</div>
+				<div class="col-md-5 mb-3" id="profile-input">
+					<label for="chosenSport"></label>
+					<br><br>
+					<input type="checkbox" name="sport6" value="Bowling">Bowling<br>
+					<input type="checkbox" name="sport7" value="Frisbee">Frisbee<br>
+					<input type="checkbox" name="sport8" value="Golf">Golf<br>
+					<input type="checkbox" name="sport9" value="Tennis">Tennis<br>
+					<input type="checkbox" name="sport10" value="Track">Track<br>
+				</div>
+			</div>
+			<input type="submit" value="Submit" style="margin: 1rem 1rem;">
+		</form>
+	</div>
+</div>
 
 <div id="home-button">
 	<a href="index.html">Return Home</a>
