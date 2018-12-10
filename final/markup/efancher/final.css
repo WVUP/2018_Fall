@@ -62,7 +62,7 @@ div.hl-subheader{
 a.hl-subheader-links{
     width: 5%;
     text-decoration-line: none;
-    background-image: linear-gradient(gray,lightgray, gray);
+    
     padding: 1% 4%;
     color: rgb(43, 43, 43);
 
