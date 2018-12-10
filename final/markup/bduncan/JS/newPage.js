@@ -39,6 +39,10 @@ function saveData(){
     var city = document.getElementById('City').value;
     var state = document.getElementById('state').value;
     var zip = document.getElementById('zip').value;
+    var cFirstName = document.getElementById('cFirstName').value;
+    var cLastName = document.getElementById('cLastName').value;
+    var cDOB = document.getElementById('cDOB').value;
+    var cSports = document.getElementById('Sports').value;
        
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
@@ -48,4 +52,11 @@ function saveData(){
     localStorage.setItem('city', city);
     localStorage.setItem('state', state);
     localStorage.setItem('zip', zip);
+    localStorage.setItem('cFirstName', cFirstName);
+    localStorage.setItem('cLastName', cLastName);
+    localStorage.setItem('cDOB', cDOB);
+    localStorage.setItem('Sports', Sports);
+    
+
+
 }

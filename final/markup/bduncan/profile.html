@@ -3,13 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="CSS/default.css">
-    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="stylesheet" href="CSS/profile.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="JS/profile.js"></script>
 </head>
-<body>
+<body onLoad="getProfile()">
     <div class="topNav">
             <img src="http://zhs.pasco.k12.fl.us/wp-content/uploads/zhs/2018/06/Z-Bulldogs300.png" alt="">
             <h1>ZEPHYRHILLS HIGH SCHOOL</h1>
@@ -29,6 +30,28 @@
     </div>
     <div class="background">
         <div class="content">
+            <h2 id="firstNameWel" >Hello, name</h2>
+                <br>
+            <div class="parentInfo">
+                <h3 style="display: inline;">Your information </h3> <p style="display: inline; float: right; margin-right: 15;  "><i class="small material-icons" id="edit" onclick="edit()">create</i> </p>
+                <hr>
+                <h5 id="firstName">First Name: Place</h5>
+                <h5 id= "lastName">Last Name: Holder</h5>
+                <h5 id="streetAddress">Street address: 123 PlaceHolder Lane</h5>
+                <h5 id="city">City: PlaceHolder</h5>
+                <h5 id="state">State: PH</h5>
+                <h5 id="zip">Zip: 12345</h5>
+            </div>
+            <div class="childInfo">
+                
+                <h3 style="display: inline;">Child information </h3> <p style="display: inline; float: right; margin-right: 15;  "><i class="small material-icons" id="edit" onclick="edit()">create</i> </p>
+                <hr>
+                <h5 id="child1FirstName">First Name: Place</h5>
+                <h5 id="child1LastName">Last Name: Holder</h5>
+                <h5 id="child1DOB">DOB: 12/31/99 </h5>
+                <h5 id="child1Sports">Sports: PlaceHolder</h5>
+            </div>
+
 
         </div>
     </div>
