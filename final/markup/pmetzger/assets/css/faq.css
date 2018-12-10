@@ -1,0 +1,17 @@
+/* Highlight the faq nav link */
+nav .nav-list li:nth-of-type(4) {
+    background-color: rgb(75, 75, 75);
+}
+
+.blurb {
+    max-width: 95%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.80;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

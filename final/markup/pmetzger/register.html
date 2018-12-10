@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/welcome.css">
+    <title>Register - Welcome</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="arrow clearfix">
+            <p>Welcome</p>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Profile</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Student(s)</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </header>    
+    <div class="main">
+        <h1>Welcome Parents/ Guardians</h1>
+        <p>To first register please sign up with your email and create a password</p>
+        <form onsubmit="next(event)">
+            <div class="input-group">
+                <label>Email Address</label>
+                <input id="email" type="text" placeholder="johndoe@gmail.com">
+                <p class="error" id="emailErrors"></p>
+            </div>
+            <ul>
+                <li>Password between 8-20 characters in length</li>
+                <li>Must have at least 1 Lower and Upper case letter</li>
+                <li>Must include at least one number</li>
+                <li>Must use one special character "!@#%%^&*()"</li>
+            </ul>
+            <div class="input-group">
+                <label>Password</label>
+                <input id="password" type="password">
+            </div>
+            <div class="input-group">
+                <label>Confirm</label>
+                <input id="confirmPass" type="password">
+                <p class="error" id="passwordErrors"></p>
+            </div>
+            <button onclick="resetForm(event)">Start Over</button>
+            <input type="submit" onclick="validateForm(event)" value="Next">
+        </form>
+    </div>
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>

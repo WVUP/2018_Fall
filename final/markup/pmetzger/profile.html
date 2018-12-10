@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <title>Register - Profile</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="arrow clearfix">
+            <p>Welcome</p>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Profile</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="arrow clearfix">
+            <p>Student(s)</p>
+            <div class="red-rectangle"></div>
+            <div class="red-triangle"></div>
+            <div class="rectangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </header>
+    <div class="main">
+        <h1>Please finish creating your profile to continue</h1>
+        <form>
+            <div class="group">
+                <h3>Parent/Guardian</h3>
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+            <h3>Address</h3>
+            <div class="input-group">
+                <label>Street</label>
+                <input id="password" type="text">
+            </div>
+            <div class="input-group">
+                <label id="cityLabel">City</label>
+                <input id="city" type="text">
+                <label id="stateLabel">State</label>
+                <select id="state">
+                    <option></option>
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>etc</option>
+                </select>
+                <label id="zipLabel">ZIP</label>
+                <input id="zip">
+            </div>
+            <button onclick="resetForm(event)">Start Over</button>
+            <input type="submit" onclick="next(event)" value="Next">
+        </form>
+    </div>
+
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

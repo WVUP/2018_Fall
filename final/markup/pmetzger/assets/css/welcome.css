@@ -1,0 +1,17 @@
+header .arrow:nth-child(1) .triangle {
+    border-left: 30px solid rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(1) .rectangle {
+    background-color: rgb(173, 36, 36);
+}
+
+header .arrow:nth-child(2) .red-rectangle,
+header .arrow:nth-child(3) .red-rectangle {
+    background-color: rgb(85, 19, 19);
+}
+
+header .arrow:nth-child(2) .red-triangle,
+header .arrow:nth-child(3) .red-triangle {
+    border-left: 30px solid rgb(85, 19, 19);
+}
