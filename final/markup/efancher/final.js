@@ -98,9 +98,10 @@ function submitRegister(){
 function submitSignin(){
     let parentEmail = document.getElementById('email-signin').value;
     let parentPass = document.getElementById('password-signin').value;
-    let parentConfirm = JSON.parse(localStorage.getItem("parent"));
+    let parentConfirmEmail = JSON.parse(localStorage.getItem("parent")).email;
+    let parentConfirmPass = JSON.parse(localStorage.getItem("parent")).password;
     
-    if((parentConfirm.email == parentEmail) && (parentConfirm.password == parentPass)){
+    if((parentConfirmEmail == parentEmail) && (parentConfirmPass == parentPass)){
         // event.preventDefault();
         let signinHide = document.getElementById('signinContainer');
         let signinSuccess = document.getElementById('signinSuccess');
@@ -162,7 +163,7 @@ function confirmPage(){
     document.getElementById('parentNameConfirm').innerText = parentConfirm.name;
     document.getElementById('parentEmailConfirm').innerText = parentConfirm.email;
     document.getElementById('addressConfirm').innerText = `${address.street} \n ${address.city}, ${address.state}, ${address.zip}`;
-    
+    let numSports = 0;
     for(let i = 0; i < numStudents; i++){
         let studentDisplayConfirm = document.getElementById(`studentConfirm[${i}]`);
         studentDisplayConfirm.classList.toggle('hide');
@@ -171,6 +172,39 @@ function confirmPage(){
         document.getElementById(`studentDOBConfirm[${i}]`).innerText = studentConfirm.DOB;
         document.getElementById(`studentGradeConfirm[${i}]`).innerText = studentConfirm.grade;
         document.getElementById(`studentSportsConfirm[${i}]`).innerText = studentConfirm.sports;
+        numSports += (((studentConfirm.sports.match(new RegExp(",", "g")) || []).length));
     }
     
+    console.log(numSports);
+    document.getElementById('totalDue').innerHTML = `<h5>Total Due: $${calcTotal(numSports+numStudents)}.00</h5>`;
+    
+}
+function displayCalendar(){
+    let school = document.getElementById('eventSelect').value;
+    let hlms = document.getElementById('hlmsCal');
+    let hlhs = document.getElementById('hlhsCal');
+    if(school === "hlms"){
+        hlhs.classList.add('hide');
+        hlms.classList.remove('hide');
+    }
+    if(school === "hlhs"){
+        hlhs.classList.remove('hide');
+        hlms.classList.add('hide');
+    }
+}
+function calcTotal(num){
+    let rate;
+    let rate1 = 50;
+    let rate2 = 45;
+    let rate3 = 40;
+    if(num == 1){
+        rate = rate1;
+    }
+    else if(num < 3){
+        rate = rate2;
+    }
+    else{
+        rate = rate3;
+    }
+    return (rate * num)
 }

@@ -71,12 +71,12 @@ a.hl-subheader-links:hover{
     color: rgb(0, 132, 68) !important;
     background-image: linear-gradient(gray,rgb(197, 197, 197), gray);
 }
-
-a.hl-subheader-links:active{
-    color: white;
+.shActive, a.hl-subheader-links:active{
+    color: white !important;
 }
+
 .padding-top{
-    padding-top: 125px;
+    padding-top: 20%;
     background-position: center 125px!important;
 }
 div.hl-body{
@@ -171,7 +171,7 @@ button.registration-button{
     border-radius: 12pt;
     font-size: 16pt;
     text-align: center;
-    margin: 40px 35%;
+    margin: 40px 15%;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .button{

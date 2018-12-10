@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Directory</title>
+    <title>Events</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="Bobcat Logo 2 Transparent Background.png"/>
   </head>
   <style>
-    table tr:nth-child(even){
+    table tr:nth-child(odd){
         background-color: rgb(184, 184, 184);
     }
     table tr:hover{
@@ -24,17 +24,11 @@
         color: white;
         cursor:default;
     }
-    table tr:first-child:hover{
-        background-color: initial;
-        color: initial;
-        cursor: default;
-    }
     table tr:last-child td:first-child{
         border-bottom-left-radius: 40pt;
     }
     table tr:last-child td:last-child{
         border-bottom-right-radius: 40pt;
-        
     }
   </style>
   <body>
@@ -58,10 +52,10 @@
             <a href="final-news.html" class="hl-subheader-links">
                 News
             </a>
-            <a class="hl-subheader-links" href="final-events.html">
+            <a class="hl-subheader-links shActive" href="final-events.html">
                 Events
             </a>
-            <a href="final-directory.html" class="hl-subheader-links shActive">
+            <a href="final-directory.html" class="hl-subheader-links">
                 Directory
             </a>
             <a href="final-faq.html" class="hl-subheader-links">
@@ -73,57 +67,32 @@
         </div>
     </div>
     <div class="hl-body">
-        <div class="hl-body-container" style="height: 500px;">
+        <div class="hl-body-container">
             <p style="font-size: 14pt; font-weight: bold;">
-                Directory
+                Events
             </p>
             <hr>
-            <table style="margin: 0 auto; font-size: 14pt; width: 100%; text-align: center;">
+            <div id="eventSelection">
+                Which school would you like sports events for?
+                <select id="eventSelect" style="padding: 0 20px;">
+                    <option value="NULL">Select one:</option>
+                    <option value="hlms">Middle School</option>
+                    <option value="hlhs">High School</option>
+                </select>
+                <div class="registration-buttons" >
+                    <!-- <button class="registration-button" style="opacity: 0">Back</button> -->
+                    <button class="registration-button" style="margin: auto;" id="next" onclick="displayCalendar();">Submit</button>
+                </div>
+                <div id="hlhsCal" class="hide">
+                    <!-- From HL Google Calendar -->
+                    <iframe src="https://calendar.google.com/calendar/embed?src=hlcsk12.net_47ugctp72btrdsletrj7el5di8%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div id="hlmsCal" class="hide">
+                    <!-- From HL Google Calendar -->
+                    <iframe src="https://calendar.google.com/calendar/embed?src=hlcsk12.net_086mlbtv1rol860f0r1tqqbtg8%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
                 
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Work</th>
-                    <th>Fax</th>
-                </tr>
-                <tr>
-                    <td>Name1</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                <tr>
-                    <td>Name2</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                <tr>
-                    <td>Name3</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                <tr>
-                    <td>Name4</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                <tr>
-                    <td>Name5</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                <tr>
-                    <td>Name6</td>
-                    <td>example@email.com</td>
-                    <td>(989) 555-5555</td>
-                    <td>(989) 555-5555</td>
-                </tr>
-                
-            </table>
+            </div>
         </div>
     </div>
 
