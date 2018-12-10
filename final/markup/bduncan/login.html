@@ -3,19 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
+    <title>Login</title>
+    <link rel="icon" href="http://zhs.pasco.k12.fl.us/wp-content/uploads/zhs/2018/06/Z-Bulldogs300.png">
     <link rel="stylesheet" href="CSS/default.css">
-    <link rel="stylesheet" href="CSS/register.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
 
 </head>
+<!-- Inline css styles are in the page -->
 <body>
     <div class="topNav">
             <img src="http://zhs.pasco.k12.fl.us/wp-content/uploads/zhs/2018/06/Z-Bulldogs300.png" alt="">
             <h1>ZEPHYRHILLS HIGH SCHOOL</h1>
-            <ul>
+            <ul class="rightNav">
                 <li> <a href="login.html"> Login </a> </li>
-                <li> <a href="login.html"> Register </a> </li></li>
+                <li> <a href="register.html"> Register </a> </li></li>
             </ul>
     </div>
     <div class="bottomNav">
@@ -30,43 +33,30 @@
 
     <div class="background">
         <div class="content">
-            <div class="progressBar">
+            <img src="http://zhs.pasco.k12.fl.us/wp-content/uploads/zhs/2018/06/Z-Bulldogs300.png" alt="Logo" style="margin: center; padding: 15 0; ">
+            <form action="">
 
-            </div>
+                <h2 style= "margin: auto; font-size:  18px; width: 60%; text-align: left;"> Email Address/Username</h2>
+                <input type="email" name="username" id="username" style="width: 60%; height: 50px; margin: auto; ">
 
-            <div class="form">
-                <h1>Welcome Parents/ Guardians</h1>
-                <p>
-                    To first register please sign up with your email and create a password
-                </p>
-                <form action="">
-                    <h2 class="formH2" value="johndoe@gmail.com">Email Address</h2>
-                    <input class="formInput" type="text" >
-                    <ul>
-                        <li id="length" class="invalid">Password between 8-20 characters in length</li>
-                        <li id="capital" class="invalid">Must have at least 1 Lower and Upper case letter</li>
-                        <li id="number" class="invalid">Must include at least one number</li>
-                        <li id="special" class="invalid">Must use one special character “!@#$%^&*()”</li>
-                    
-                    </ul>
-                    <h2 class="formH2">Password:</h2>
-                    <input id="psw" class="formInput" type="password">
-
-                    <h2 class="formH2">Confirm Password:</h2>
-                    <input class="formInput" type="password">
-
-                    <input class="submitButton" type="submit" value="Submit" action="register2.html">
-                </form>
-            </div>
+                <h2 style= "margin: auto; padding: 20px 0 0 0; font-size:  18px; width: 60%; text-align: left;"> Password</h2>
+                <input type="password" name="password" id="password" style="width: 60%; height: 50px; margin: auto; ">
+                <br>
+                 <!-- No functionality, just for looks-->
+                <div style="margin: 15 20% 0 20%; width: 80%; text-align: left;">
+                    <input type="checkbox" id="remember" > 
+                    <label for="remember" > Remember me</label> 
+                </div>
                 
+                
+                <input type="submit" value="Login" onclick="login()" style="font-family: 'Montserrat', sans-serif; font-size: 25px; color: black; background: orange; width: 60%; height: 50px; margin: 15px 20% 0 20%; ">
+            </form>
+            
+            
+
         </div>
-           
-    
+    </div>
+    <script src="JS/login.js"></script>
 
-
-    <script src="JS/passwordValidator.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html> 

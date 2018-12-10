@@ -1,0 +1,461 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+
+ul, li, a, h1, h2, h3, h4, h5, h6, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+input[type='date']{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td{
+    border: 1px solid rgb(59, 56, 56);
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: rgb(59, 56, 56);
+    color: white;
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* topHeader */
+
+header .topHeader{
+    box-sizing: border-box;
+    background-color: rgb(148, 17, 0);
+    color: white;
+    height: 80px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .topHeader div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topHeader img{
+    margin: 0 5px;
+}
+
+.topHeader h1{
+    margin: 0 10px;
+}
+
+.topHeader a{
+    color: white;
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.topHeader a:hover {
+    font-weight: bold;
+}
+
+/* NavBar */
+
+header .navbar{
+    background-color: rgb(214, 214, 214);
+    color: rgb(59, 56, 56);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar ul{
+    display: flex;
+}
+
+header .navbar ul li{
+    height: 60px;
+    
+}
+
+header .navbar ul li a {
+    padding: 0 50px;
+    height: 60px;
+    color: rgb(59, 56, 56);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar ul li a:hover{
+    background-color: rgb(175, 171, 171);
+    color: rgb(148, 17, 0);
+}
+
+header .navbar ul li a.active{
+    background-color: rgb(59, 56, 56) !important;
+    color: white !important;
+}
+
+/* Main-Index */
+
+main div.main-index{
+    background-image: url(../images/Background\ Image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 800px;
+}
+
+main div.main-index div{
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 50px;
+    width: 50%;
+}
+
+main div.main-index div h1{
+    font-size: 40px;
+}
+
+main div.main-index div p{
+    font-size: 30px;
+}
+
+/* Main-News */
+
+main div.main-news{
+    background-image: url(../images/Background\ Image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+}
+
+main div.main-news div{
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 25px 0;
+    width: 80%;
+}
+
+main div.main-news div h1{
+    font-size: 40px;
+}
+
+main div.main-news div p{
+    font-size: 30px;
+}
+
+/* Main-Directory */
+
+main div.main-dir{
+    background-image: url(../images/Background\ Image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+}
+
+main div.main-dir div{
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 25px 0;
+    width: 80%;
+}
+
+main div.main-dir div h1{
+    font-size: 40px;
+}
+
+main div.main-dir div table{
+    width: 90%;
+    margin: 50px auto;
+}
+
+main div.main-dir div table th, main div.main-dir div table td {
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Main-FAQ */
+
+main div.main-faq{
+    background-image: url(../images/Background\ Image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+}
+
+main div.main-faq div{
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 50px;
+    text-align: left;
+    padding: 10px 50px;
+    margin: 25px 0;
+    width: 80%;
+}
+
+main div.main-faq div h1{
+    font-size: 40px;
+}
+
+main div.main-faq div p{
+    font-size: 30px;
+}
+
+/* Main-Register */
+
+main div.main-reg{
+    background-image: url(../images/Background\ Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main div.main-reg div{
+    text-align: center;
+    width: 65%;
+}
+
+main div.main-reg div h1{
+    font-size: 50px;
+}
+
+main div.main-reg div p{
+    font-size: 30px;
+}
+
+main div.main-reg div form{
+    margin: 30px 0;
+}
+
+main div.main-reg div label{
+    display: inline-block;
+    background-color: rgb(148, 17, 0);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+main div.main-reg div input{
+    border: none;
+    background-color: rgb(175, 171, 171);
+    color: white;
+    padding: 10px;
+    width: 350px;
+    font-size: 20px;
+}
+
+main div.main-reg div input#City, main div.main-reg div input#Zip{
+    width: 150px;
+}
+
+main div.main-reg div select{
+    border: none;
+    background-color: rgb(175, 171, 171);
+    color: white;
+    padding: 10px;
+    width: 75px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+main div.main-reg div ul{
+    margin: 10px 0;
+}
+
+main div.main-reg div ul li{
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20%;
+}
+
+/* Main Login */
+
+main div.main-login{
+    background-image: url(../images/Background\ Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main div.main-login div{
+    text-align: center;
+    width: 65%;
+}
+
+main div.main-login div h1{
+    font-size: 50px;
+}
+
+main div.main-login div p{
+    font-size: 30px;
+}
+
+main div.main-login div form{
+    margin: 30px 0;
+}
+
+main div.main-login div label{
+    display: inline-block;
+    background-color: rgb(148, 17, 0);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+main div.main-login div input{
+    border: none;
+    background-color: rgb(175, 171, 171);
+    color: white;
+    padding: 10px;
+    width: 350px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+/* Main Child */
+
+main div.main-child{
+    background-image: url(../images/Background\ Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main div.main-child div{
+    text-align: center;
+    width: 80%;
+}
+
+main div.main-child div h1{
+    font-size: 50px;
+}
+
+main div.main-child div p{
+    font-size: 30px;
+}
+
+main div.main-child div form{
+    margin: 30px 0;
+}
+
+main div.main-child div form div{
+    margin: 0 auto;
+}
+
+main div.main-child div label{
+    display: inline-block;
+    background-color: rgb(148, 17, 0);
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+main div.main-child div input{
+    border: none;
+    background-color: rgb(175, 171, 171);
+    color: white;
+    padding: 10px;
+    width: 350px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+main div.main-child div select{
+    border: none;
+    background-color: rgb(175, 171, 171);
+    color: white;
+    padding: 10px;
+    width: 70px;
+    font-size: 20px;
+}
+
+main div.main-child div.student{
+    margin: 50px auto;
+}
+
+main div.main-child div select#grade{
+    width: 350px;
+}
+
+main div.main-child div input[type='checkbox']{
+    height: 43px;
+    width: 43px;
+}

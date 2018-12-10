@@ -1,0 +1,343 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roane County High | Add Child</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="container">
+        <div class="topHeader">
+            <div>
+                <img height="75px" src="../images/Roane County.png" alt="Roane County">
+                <h1>Roane County Schools</h1>
+            </div>
+            <div>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>   
+            </div>
+        </div>
+    </header>
+    <header class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <div class="main-child">
+            <div>
+                <h1>Register Your Child</h1>
+                <p>Please fill out the form below</p>
+                <form name="children" action="#">
+                    <div id="selectNum">
+                        <label for="numChild"># of Children</label>
+                        <select id="numChild">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                        <button onclick="numChildren()">Confirm</button>
+                    </div>
+                    <div class="hidden" id="students">
+                        <div class="student" id="student1">
+                            <p>Student #1</p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter First Name...">
+                            <br>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter Last Name...">
+                            <br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" placeholder="MM/DD/YYY">
+                            <br>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <p>Select All That Apply</p>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="football" value="Football" type="checkbox">
+                                <label class="sportLabel" for="football">Football</label>
+                                <input class="sport" id="volleyball" value="Volleyball" type="checkbox">
+                                <label class="sportLabel" for="volleyball">Volleyball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="baseball" value="Baseball" type="checkbox">
+                                <label class="sportLabel" for="baseball">Baseball</label>
+                                <input class="sport" id="track" value="Track" type="checkbox">
+                                <label class="sportLabel" for="track">Track</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="softball" value="Softball" type="checkbox">
+                                <label class="sportLabel" for="softball">Softball</label>
+                                <input class="sport" id="basketball" value="Basketball" type="checkbox">
+                                <label class="sportLabel" for="basketball">Basketball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="golf" value="Golf" type="checkbox">
+                                <label class="sportLabel" for="golf">Golf</label>
+                                <input class="sport" id="crossCountry" value="Cross Country" type="checkbox">
+                                <label class="sportLabel" for="crossCountry">Cross Country</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="cheerleading" value="Cheerleading" type="checkbox">
+                                <label class="sportLabel" for="cheerleading">Cheerleading</label>
+                                <input class="sport" id="wrestling" value="Wresling" type="checkbox">
+                                <label class="sportLabel" for="wrestling">Wresling</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="lacrosse" value="Lacrosse" type="checkbox">
+                                <label class="sportLabel" for="lacrosse">Lacrosse</label>
+                                <input class="sport" id="soccer" value="Soccer" type="checkbox">
+                                <label class="sportLabel" for="soccer">Soccer</label>
+                            </div>
+                        </div>
+                        <div class="student" id="student2">
+                            <p>Student #2</p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter First Name...">
+                            <br>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter Last Name...">
+                            <br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" placeholder="MM/DD/YYY">
+                            <br>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <p>Select All That Apply</p>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="football" value="Football" type="checkbox">
+                                <label class="sportLabel" for="football">Football</label>
+                                <input class="sport" id="volleyball" value="Volleyball" type="checkbox">
+                                <label class="sportLabel" for="volleyball">Volleyball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="baseball" value="Baseball" type="checkbox">
+                                <label class="sportLabel" for="baseball">Baseball</label>
+                                <input class="sport" id="track" value="Track" type="checkbox">
+                                <label class="sportLabel" for="track">Track</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="softball" value="Softball" type="checkbox">
+                                <label class="sportLabel" for="softball">Softball</label>
+                                <input class="sport" id="basketball" value="Basketball" type="checkbox">
+                                <label class="sportLabel" for="basketball">Basketball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="golf" value="Golf" type="checkbox">
+                                <label class="sportLabel" for="golf">Golf</label>
+                                <input class="sport" id="crossCountry" value="Cross Country" type="checkbox">
+                                <label class="sportLabel" for="crossCountry">Cross Country</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="cheerleading" value="Cheerleading" type="checkbox">
+                                <label class="sportLabel" for="cheerleading">Cheerleading</label>
+                                <input class="sport" id="wrestling" value="Wresling" type="checkbox">
+                                <label class="sportLabel" for="wrestling">Wresling</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="lacrosse" value="Lacrosse" type="checkbox">
+                                <label class="sportLabel" for="lacrosse">Lacrosse</label>
+                                <input class="sport" id="soccer" value="Soccer" type="checkbox">
+                                <label class="sportLabel" for="soccer">Soccer</label>
+                            </div>
+                        </div>
+                        <div class="student" id="student3">
+                            <p>Student #3</p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter First Name...">
+                            <br>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter Last Name...">
+                            <br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" placeholder="MM/DD/YYY">
+                            <br>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <p>Select All That Apply</p>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="football" value="Football" type="checkbox">
+                                <label class="sportLabel" for="football">Football</label>
+                                <input class="sport" id="volleyball" value="Volleyball" type="checkbox">
+                                <label class="sportLabel" for="volleyball">Volleyball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="baseball" value="Baseball" type="checkbox">
+                                <label class="sportLabel" for="baseball">Baseball</label>
+                                <input class="sport" id="track" value="Track" type="checkbox">
+                                <label class="sportLabel" for="track">Track</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="softball" value="Softball" type="checkbox">
+                                <label class="sportLabel" for="softball">Softball</label>
+                                <input class="sport" id="basketball" value="Basketball" type="checkbox">
+                                <label class="sportLabel" for="basketball">Basketball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="golf" value="Golf" type="checkbox">
+                                <label class="sportLabel" for="golf">Golf</label>
+                                <input class="sport" id="crossCountry" value="Cross Country" type="checkbox">
+                                <label class="sportLabel" for="crossCountry">Cross Country</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="cheerleading" value="Cheerleading" type="checkbox">
+                                <label class="sportLabel" for="cheerleading">Cheerleading</label>
+                                <input class="sport" id="wrestling" value="Wresling" type="checkbox">
+                                <label class="sportLabel" for="wrestling">Wresling</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="lacrosse" value="Lacrosse" type="checkbox">
+                                <label class="sportLabel" for="lacrosse">Lacrosse</label>
+                                <input class="sport" id="soccer" value="Soccer" type="checkbox">
+                                <label class="sportLabel" for="soccer">Soccer</label>
+                            </div>
+                        </div>
+                        <div class="student" id="student4">
+                            <p>Student #4</p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter First Name...">
+                            <br>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter Last Name...">
+                            <br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" placeholder="MM/DD/YYY">
+                            <br>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <p>Select All That Apply</p>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="football" value="Football" type="checkbox">
+                                <label class="sportLabel" for="football">Football</label>
+                                <input class="sport" id="volleyball" value="Volleyball" type="checkbox">
+                                <label class="sportLabel" for="volleyball">Volleyball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="baseball" value="Baseball" type="checkbox">
+                                <label class="sportLabel" for="baseball">Baseball</label>
+                                <input class="sport" id="track" value="Track" type="checkbox">
+                                <label class="sportLabel" for="track">Track</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="softball" value="Softball" type="checkbox">
+                                <label class="sportLabel" for="softball">Softball</label>
+                                <input class="sport" id="basketball" value="Basketball" type="checkbox">
+                                <label class="sportLabel" for="basketball">Basketball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="golf" value="Golf" type="checkbox">
+                                <label class="sportLabel" for="golf">Golf</label>
+                                <input class="sport" id="crossCountry" value="Cross Country" type="checkbox">
+                                <label class="sportLabel" for="crossCountry">Cross Country</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="cheerleading" value="Cheerleading" type="checkbox">
+                                <label class="sportLabel" for="cheerleading">Cheerleading</label>
+                                <input class="sport" id="wrestling" value="Wresling" type="checkbox">
+                                <label class="sportLabel" for="wrestling">Wresling</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="lacrosse" value="Lacrosse" type="checkbox">
+                                <label class="sportLabel" for="lacrosse">Lacrosse</label>
+                                <input class="sport" id="soccer" value="Soccer" type="checkbox">
+                                <label class="sportLabel" for="soccer">Soccer</label>
+                            </div>
+                        </div>
+                        <div class="student" id="student5">
+                            <p>Student #5</p>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter First Name...">
+                            <br>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter Last Name...">
+                            <br>
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" placeholder="MM/DD/YYY">
+                            <br>
+                            <label for="grade">Grade</label>
+                            <select id="grade">
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior">Senior</option>
+                            </select>
+                            <p>Select All That Apply</p>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="football" value="Football" type="checkbox">
+                                <label class="sportLabel" for="football">Football</label>
+                                <input class="sport" id="volleyball" value="Volleyball" type="checkbox">
+                                <label class="sportLabel" for="volleyball">Volleyball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="baseball" value="Baseball" type="checkbox">
+                                <label class="sportLabel" for="baseball">Baseball</label>
+                                <input class="sport" id="track" value="Track" type="checkbox">
+                                <label class="sportLabel" for="track">Track</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="softball" value="Softball" type="checkbox">
+                                <label class="sportLabel" for="softball">Softball</label>
+                                <input class="sport" id="basketball" value="Basketball" type="checkbox">
+                                <label class="sportLabel" for="basketball">Basketball</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="golf" value="Golf" type="checkbox">
+                                <label class="sportLabel" for="golf">Golf</label>
+                                <input class="sport" id="crossCountry" value="Cross Country" type="checkbox">
+                                <label class="sportLabel" for="crossCountry">Cross Country</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="cheerleading" value="Cheerleading" type="checkbox">
+                                <label class="sportLabel" for="cheerleading">Cheerleading</label>
+                                <input class="sport" id="wrestling" value="Wresling" type="checkbox">
+                                <label class="sportLabel" for="wrestling">Wresling</label>
+                            </div>
+                            <div style="display:flex; align-items: center; justify-content: space-around">
+                                <input class="sport" id="lacrosse" value="Lacrosse" type="checkbox">
+                                <label class="sportLabel" for="lacrosse">Lacrosse</label>
+                                <input class="sport" id="soccer" value="Soccer" type="checkbox">
+                                <label class="sportLabel" for="soccer">Soccer</label>
+                            </div>
+                        </div>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
