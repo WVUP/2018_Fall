@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    background-image: url("images/sm-background2.png");
+    background-size: cover;
+}
+
+.header1{
+    height: 1.25in;
+    background-color: purple;
+    width: 100%;
+}
+
+.header1-left{
+    float: left;
+    height: 1.25in;
+    padding-right: .5in;
+    color:gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header1-right{
+    float: right;
+    height: 1.25in;
+    padding-left: .5in;
+    padding-right: .5in;
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header2{
+    height: .75in;
+    background-color: gray;
+    width: 100%;
+}
+
+.header2-left{
+    float: left;
+    height: .75in;
+    padding-right: .5in;
+    padding-left: .5in;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header2-right{
+    float: right;
+    height: .5;
+    padding-left: .5in;
+    padding-right: .5in;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner{
+    background: rgba(255, 255, 255, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inner-left{
+    background: rgba(255, 255, 255, 0.6);
+    width: 400px;
+    float: left;
+    margin: 0 auto;
+
+}
+
+.inner-right{
+    background: rgba(255, 255, 255, 0.6);
+    width: 800px;
+    float: right;
+    margin: 0 auto;
+
+}
+
+.header2-left:hover
+{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    cursor: pointer;
+}
+
+.header1-right:hover{
+    color: white;
+    cursor: pointer;
+    transition: color .5s;
+}

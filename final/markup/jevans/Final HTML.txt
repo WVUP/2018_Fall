@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Sports</title>
+        <link href="Final CSS.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = "header1">
+            <div class = "header1-left" style = "padding-top: 0in;">
+                <img src="images/sm-logo.png" style="height:1.25in">
+            </div>
+
+            <div class = "header1-left">
+                <h1>Pleasants County Schools</h1>
+            </div>
+
+            <div class = "header1-right" style="padding-right: .5in">
+                <h1>Register</h1>
+            </div>
+
+            <div class = "header1-right">
+                <h1>Sign In</h1>
+            </div>
+        </div>
+
+        <div class = "header2">
+            <div class = "header2-left">
+                <h2>Home</h2>
+            </div>
+
+            <div class = "header2-left">
+                <h2>Scoreboards</h2>
+            </div>
+
+            <div class = "header2-left">
+                <h2>News</h2>
+            </div>
+
+            <div class = "header2-left">
+                <h2>Directory</h2>
+            </div>
+
+            <div class = "header2-left">
+                <h2>FAQ</h2>
+            </div>
+        </div>
+
+        <div class = "inner">
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+            <h1>WELCOME</h1>
+        </div>
+    </body>
+</html>
