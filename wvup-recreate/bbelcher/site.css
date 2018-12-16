@@ -31,7 +31,8 @@
   .container{
     background-color: #E3B11F;
     border-bottom-left-radius: 15px;
-   border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 38px;
 }
 
 
@@ -46,6 +47,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align: center !important; 
     /* background-color: #111683; */
   }
   
@@ -125,12 +127,19 @@ body
   position: absolute;
   z-index: 10;
   margin-left: 620px;
-  top:265;
+  top:295;
   border-radius: 15px;
-
-  
-    /* margin-right: -10.0% */
+  /* margin-right: -10.0% */
 }
+
+
+#calendar{
+  text-align: center; 
+  width: 80%; 
+}
+
+
+
 /*  
 div {
   border: 1px solid black;    
@@ -146,7 +155,7 @@ div {
   border-radius: 15px;
 }
 
-h6, h7{
+h6{
   color: #1f2aee !important;  
 }
 
@@ -163,4 +172,5 @@ h6, h7{
   /* position: right;  */
   float: left; 
   /* float: left;  */
+  text-align: center !important; 
 }
