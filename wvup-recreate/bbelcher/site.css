@@ -129,10 +129,9 @@ body
   
     /* margin-right: -10.0% */
 }
- 
-/* div {
-  border: 1px solid black;  
-  
+/*  
+div {
+  border: 1px solid black;    
 }  */
 
 #footer{
@@ -163,6 +162,21 @@ body
   border-radius: 15px;
 }
 
-h6{
+h6, h7{
   color: #1f2aee !important;  
+}
+
+
+
+
+#newFooter{
+  background-color: white; 
+  border-radius: 15px;
+  padding-top: 15px;
+  margin-top: 5px;
+  margin-left: 20%;
+  width: 80%; 
+  /* position: right;  */
+  float: left; 
+  /* float: left;  */
 }
