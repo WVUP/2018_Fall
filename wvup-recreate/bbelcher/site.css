@@ -32,7 +32,7 @@
     background-color: #E3B11F;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-top: 38px;
+    margin-top: 28px;
 }
 
 
@@ -140,8 +140,8 @@ body
 
 
 
-/*  
-div {
+ 
+/* div {
   border: 1px solid black;    
 }  */
 
@@ -159,8 +159,16 @@ h6{
   color: #1f2aee !important;  
 }
 
+img {
+  float: left;
+  padding-right: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
 
-
+p.clear {
+  clear: both;
+}
 
 #footer{
   background-color: white; 
