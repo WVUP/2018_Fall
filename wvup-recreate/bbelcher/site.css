@@ -106,7 +106,8 @@ body
 
 .right-col 
 {
-  background-color: #9CBCDA;
+  /* background-color: #9CBCDA; */
+  background-color: pink; 
     /* margin-right: -10.0% */
 }
  
@@ -141,4 +142,8 @@ div {
   text-align: left; 
   padding-left: 10px; 
   border-radius: 15px;
+}
+
+h6{
+  color: #1f2aee !important;  
 }
